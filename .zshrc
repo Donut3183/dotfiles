@@ -15,5 +15,9 @@ zstyle :compinstall filename '/home/pontus/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias v='vim'
+alias _='sudo'
+alias pacin='sudo pacman -S'
+alias pacun='sudo pacman -R'
+alias pacloc='sudo pacman -Q'

@@ -1,8 +1,8 @@
 #
 # wm independent hotkeys
 #
-alt + {o}
-	{brave}
+alt + {o,p,i,j}
+	{brave,firefox,alacritty -e newsboat,alacritty -e spt}
 # terminal emulator
 super + Return
 	alacritty	
