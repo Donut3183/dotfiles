@@ -1,4 +1,5 @@
 
+export PATH=$HOME/.bin:/usr/local/bin:$PATH
 neofetch
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -21,3 +22,5 @@ alias _='sudo'
 alias pacin='sudo pacman -S'
 alias pacun='sudo pacman -R'
 alias pacloc='sudo pacman -Q'
+alias game='$HOME/scripts/win10-launcher.sh'
+source $HOME/.git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

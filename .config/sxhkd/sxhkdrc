@@ -1,15 +1,17 @@
 #
 # wm independent hotkeys
 #
-alt + {o,p,i,j,k}
-	{brave,firefox,alacritty -e newsboat,alacritty -e spt,bitwarden}
+super + shift + {w}
+	{systemctl suspend}	
+alt + {o,p,i,j,k,l,g,c}
+	{brave,firefox,alacritty -e newsboat,alacritty -e spt,bitwarden,alacritty -e lf,alacritty -e $HOME/scripts/win10-launcher.sh,chatterino}
 # terminal emulator
 super + Return
 	alacritty	
 
 # program launcher
 super + @space
-	rofi -show combi
+	rofi -modi combi -show combi -show-icons
 
 # make sxhkd reload its configuration files:
 super + Escape
