@@ -8,8 +8,7 @@ SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 autoload -U colors && colors	# Load colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-
+PROMPT="%B%F{30}%n%f%b%B@%b%B%F{30}%m %f%b%B%~%b%B »%b"
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/pontus/.zshrc'
 
