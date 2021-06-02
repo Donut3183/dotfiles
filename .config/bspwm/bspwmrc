@@ -24,3 +24,4 @@ bspc rule -a Screenkey manage=off
 picom &
 nitrogen --restore &
 $HOME/.config/polybar/hack/launch.sh &
+nvidia-settings --load-config-only &
