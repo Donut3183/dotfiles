@@ -1,9 +1,8 @@
 #! /bin/sh
-padding=$(3)
+padding="3"
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor DP-0 -d 1 2 3 4 5 
-bspc monitor HDMI-0 -d 6 7 8 9 10 
+bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 9 10 
 
 bspc config focused_border_color \#ffff00
 bspc config normal_border_color \#00897b
@@ -24,4 +23,3 @@ bspc rule -a Screenkey manage=off
 picom &
 nitrogen --restore &
 $HOME/.config/polybar/hack/launch.sh &
-nvidia-settings --load-config-only &

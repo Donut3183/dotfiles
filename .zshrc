@@ -57,5 +57,5 @@ alias ls='ls --color=auto'
 # Load some plugins
 source $HOME/.git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.git/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+#source ~/.git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
