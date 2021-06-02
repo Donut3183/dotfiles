@@ -1,8 +1,8 @@
 #
 # wm independent hotkeys
 #
-super + shift + {w}
-	{systemctl suspend}	
+super + shift + {w,a,s,l}
+	sudo {suspend,reboot,poweroff,lock}	
 alt + {o,p,i,j,k,l,g,c}
 	{brave,firefox,alacritty -e newsboat,alacritty -e spt,bitwarden,alacritty -e lf,alacritty -e $HOME/scripts/win10-launcher.sh,chatterino}
 # terminal emulator
