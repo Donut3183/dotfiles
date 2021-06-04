@@ -7,7 +7,7 @@ include /usr/share/doc/newsboat/contrib/colorschemes/inkpot
 
 macro o set browser "/home/pontus/scripts/tag.sh %u"; open-in-browser; set browser "brave --new-window %u"
 
-browser "brave --new-window %u"
+browser "librewolf --new-window %u > /dev/null 2>&1" 
 
 unbind-key ,
 unbind-key h

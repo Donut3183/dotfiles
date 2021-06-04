@@ -13,7 +13,7 @@ then
 	echo "$SERVICE is running. (PID=$PID)"
 else
 	echo "Starting $SERVICE"
-	$SERVICE $FLAG $INTERFACE $FLAG2 $RECEIVER &
+	/opt/scream/Receivers/unix/build/scream $FLAG $INTERFACE $FLAG2 $RECEIVER &
 	PID=$(pgrep "$SERVICE")
 fi
 if [[ "x$STATE" ==  "xavstängd" ]]
@@ -24,7 +24,7 @@ else
 	echo "$VM state = $STATE"
 fi
 echo "Starting Looking-Glass..."
-looking-glass-client > /dev/null 2>&1
+/opt/looking-glass-B3/client/build/looking-glass-client > /dev/null 2>&1
 
 if [[ "x$STATE" == "xavstängd" ]]
 then
