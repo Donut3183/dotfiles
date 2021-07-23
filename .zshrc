@@ -1,5 +1,5 @@
 
-export PATH=$HOME/.bin:/usr/local/bin:$PATH
+PATH=$HOME/.bin:/usr/local/bin:/usr/bin/env:$PATH
 neofetch
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -52,7 +52,8 @@ alias pacun='sudo pacman -R'
 alias pacloc='sudo pacman -Q'
 alias game='win10-launcher.sh'
 alias pacupg="sudo pacman -Syu"
-alias ls='ls --color=auto'
+alias ls='ls -la --color=auto'
+alias sysre='systemctl --user restart spotifyd.service'
 
 # Load some plugins
 source $HOME/.git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -23,7 +23,7 @@ then
 else
 	echo "$VM state = $STATE"
 fi
-echo "Starting Looking-Glass..."
+	echo "Starting Looking-Glass..."
 /opt/looking-glass-B3/client/build/looking-glass-client > /dev/null 2>&1
 
 if [[ "x$STATE" == "xavstängd" ]]

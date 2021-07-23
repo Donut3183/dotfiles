@@ -1,26 +1,31 @@
 #! /bin/sh
-padding=$(3)
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor DP-0 -d 1 2 3 4 5 
 bspc monitor HDMI-0 -d 6 7 8 9 10 
+bspc monitor DP-0 -d 1 2 3 4 5  
 
 bspc config focused_border_color \#ffff00
 bspc config normal_border_color \#00897b
 bspc config active_border_color \#00897b
-bspc config top_padding		 $padding
-bspc config border_width         $padding  
-bspc config window_gap           $padding
-bspc config bottom_padding	 $padding
+bspc config top_padding		 3 
+bspc config border_width         3 
+bspc config window_gap           3
+bspc config bottom_padding	 3
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
+bspc rule -a "Chromium" desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+bspc rule -a firefox desktop='^6'
+bspc rule -a "TeamSpeak 3" desktop='^4' 
+bspc rule -a "Brave-browser" desktop='^9' 
+bspc rule -a "looking-glass-client" desktop='^8' 
+
+firefox &
 picom &
 nitrogen --restore &
 $HOME/.config/polybar/hack/launch.sh &
