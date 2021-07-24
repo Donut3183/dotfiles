@@ -1,5 +1,6 @@
 
 PATH=$HOME/.bin:/usr/local/bin:/usr/bin/env:$PATH
+export _JAVA_AWT_WM_NONREPARENTING=1
 neofetch
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile

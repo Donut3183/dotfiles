@@ -4,7 +4,7 @@
 super + shift + {w,r,o}
 	systemctl {suspend,reboot,poweroff}	
 alt + {o,p,i,j,k,l,g,c}
-	{brave,firefox,alacritty -e newsboat,bspc desktop --focus ^2 && alacritty -e spt,bitwarden,alacritty -e lf,alacritty -e $HOME/scripts/win10-launcher.sh,flameshot gui}
+	{brave,firefox,alacritty -e newsboat,bspc desktop --focus ^2 && alacritty -e spt,bitwarden,alacritty -e ranger,alacritty -e $HOME/scripts/win10-launcher.sh,flameshot gui}
 # terminal emulator
 super + Return
 	alacritty	
