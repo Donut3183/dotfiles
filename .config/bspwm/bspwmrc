@@ -26,6 +26,7 @@ bspc rule -a "Brave-browser" desktop='^9'
 bspc rule -a "looking-glass-client" desktop='^8' 
 
 firefox &
+dunst &
 picom &
 nitrogen --restore &
 $HOME/.config/polybar/hack/launch.sh &
