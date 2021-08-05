@@ -15,10 +15,18 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 #polybar -q bottom -c "$DIR"/config.ini &
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-   MONITOR=$m polybar --reload top -c "$DIR"/config.ini &
-   MONITOR=$m polybar --reload bottom -c "$DIR"/config.ini &
-  done
-else
-  polybar --reload top -c "$DIR"/config.ini &
-  polybar --reload bottom -c "$DIR"/config.ini &
+   
+
+  if [[ $m == "DP-0" ]]; then
+	  export TRAY_POS=right
+	  MONITOR=$m polybar --reload bottom -c "$DIR"/config.ini &
+   	  MONITOR=$m polybar --reload top -c "$DIR"/config.ini &
+          unset TRAY_POS
+  else
+	export TRAY_POS=none
+   	MONITOR=$m polybar --reload bottom -c "$DIR"/config.ini &
+   	MONITOR=$m polybar --reload top -c "$DIR"/config.ini &
+   	unset TRAY_POS
+  fi
+      done
 fi

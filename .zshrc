@@ -1,6 +1,8 @@
 
-PATH=$HOME/.bin:/usr/local/bin:/usr/bin/env:$PATH
+PATH=$HOME/.bin:/usr/local/bin:/usr/bin/env:/opt:$HOME/.local/bin:$PATH
 export _JAVA_AWT_WM_NONREPARENTING=1
+export ROS_HOSTNAME=localhost
+export ROS_MASTER_URI=http://localhost:11311
 neofetch
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -46,14 +48,18 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Define aliases
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias v='vim'
-alias _='sudo'
+alias vpnon="sudo openvpn --config /home/pontus/pontuspc.ovpn --daemon > /dev/null 2>&1"
+alias vpnoff="sudo killall openvpn"
+alias mosh='mosh --no-init'
+alias v='nvim'
+alias s='sudo'
 alias pacin='sudo pacman -S'
 alias pacun='sudo pacman -R'
 alias pacloc='sudo pacman -Q'
 alias game='win10-launcher.sh'
 alias pacupg="sudo pacman -Syu"
-alias ls='ls -la --color=auto'
+alias lsl='ls -la --color=auto'
+alias ls='ls --color=auto'
 alias sysre='systemctl --user restart spotifyd.service'
 
 # Load some plugins
@@ -61,3 +67,4 @@ source $HOME/.git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source ~/.git/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
+source /opt/ros/noetic/setup.zsh

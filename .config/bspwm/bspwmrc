@@ -24,10 +24,15 @@ bspc rule -a firefox desktop='^6'
 bspc rule -a "TeamSpeak 3" desktop='^4' 
 bspc rule -a "Brave-browser" desktop='^9' 
 bspc rule -a "looking-glass-client" desktop='^8' 
+bspc rule -a "MATLAB R2021a - academic use" desktop='10'
 
+nextcloud &
+signal-desktop --start-in-tray --no-sandbox &
+element-desktop --hidden &
 firefox &
 dunst &
 picom &
 nitrogen --restore &
 $HOME/.config/polybar/hack/launch.sh &
+solaar -w hide --restart-on-wake-up &
 nvidia-settings --load-config-only &
