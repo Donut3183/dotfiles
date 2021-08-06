@@ -33,6 +33,7 @@ firefox &
 dunst &
 picom &
 nitrogen --restore &
+udiskie -atqp & 
 $HOME/.config/polybar/hack/launch.sh &
 solaar -w hide --restart-on-wake-up &
 nvidia-settings --load-config-only &
