@@ -1,0 +1,27 @@
+{
+  "disabled_plugins": {
+    "__class__": "set",
+    "__value__": [
+      "KoboTouch"
+    ]
+  },
+  "enabled_plugins": {
+    "__class__": "set",
+    "__value__": [
+      "Google Images",
+      "Big Book Search",
+      "Edelweiss"
+    ]
+  },
+  "filetype_mapping": {},
+  "plugin_customization": {},
+  "plugins": {
+    "Annotations": "/home/pontus/.config/calibre/plugins/Annotations.zip",
+    "AudioBook_Duration": "/home/pontus/.config/calibre/plugins/AudioBook_Duration.zip",
+    "DeDRM": "/home/pontus/.config/calibre/plugins/DeDRM.zip",
+    "KePub Metadata Reader": "/home/pontus/.config/calibre/plugins/KePub Metadata Reader.zip",
+    "Kobo Books": "/home/pontus/.config/calibre/plugins/Kobo Books.zip",
+    "Kobo Utilities": "/home/pontus/.config/calibre/plugins/Kobo Utilities.zip",
+    "KoboTouchExtended": "/home/pontus/.config/calibre/plugins/KoboTouchExtended.zip"
+  }
+}

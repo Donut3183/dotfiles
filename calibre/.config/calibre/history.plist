@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lineedit_history_choose_library_dialog</key>
+	<array>
+		<string>/home/pontus/Nextcloud/Documents/E-books/KOBO E-books</string>
+		<string>/home/pontus/Nextcloud/Documents/E-books/Calibre Kurslitteratur</string>
+		<string>/home/pontus/Dokument/University Library</string>
+		<string>/home/pontus/Nextcloud/Documents/E-books/Universitet library</string>
+		<string>/home/pontus/Nextcloud/Documents/E-books/University</string>
+	</array>
+	<key>lineedit_history_tag_list_search_box_My Collections</key>
+	<array/>
+	<key>lineedit_history_tag_list_search_box_My Shelves</key>
+	<array/>
+	<key>lineedit_history_tag_list_search_box_Område</key>
+	<array/>
+</dict>
+</plist>

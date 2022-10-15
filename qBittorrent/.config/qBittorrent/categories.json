@@ -1,0 +1,20 @@
+{
+    "Audiobooks": {
+        "save_path": ""
+    },
+    "E-Books": {
+        "save_path": ""
+    },
+    "ISO's": {
+        "save_path": "/home/pontus/.local/share/Torrents/Completed/ISO"
+    },
+    "Movies": {
+        "save_path": ""
+    },
+    "Training": {
+        "save_path": ""
+    },
+    "Wordpress": {
+        "save_path": ""
+    }
+}

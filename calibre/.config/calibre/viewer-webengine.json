@@ -1,0 +1,255 @@
+{
+  "highlight_export_format": "md",
+  "main_window_geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAeyAAAAVgAAC4UAAANJAAAHsgAAAHoAAAuFAAADSQAAAAAAAAAAB4AAAAeyAAAAegAAC4UAAANJ"
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAHIA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAfQD///8AAAABAAABZwAAAtD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACGAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAANoA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAFQD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawEAAAAAAAAC0AAAALsA////AAACZwAAAtAAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "controls_help_shown_count": 2,
+    "highlight_style": {
+      "kind": "color",
+      "type": "builtin",
+      "which": "yellow"
+    },
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": false,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "Sönke Ahrens"
+        ],
+        "key": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Sonke Ahrens/How to Take Smart Notes. One Simple Technique to Boost Writing, Learning and Thinking (194)/How to Take Smart Notes. One Simple Techni - Sonke Ahrens.epub",
+        "pathtoebook": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Sonke Ahrens/How to Take Smart Notes. One Simple Technique to Boost Writing, Learning and Thinking (194)/How to Take Smart Notes. One Simple Techni - Sonke Ahrens.epub",
+        "timestamp": "2022-06-15T11:09:04.059Z",
+        "title": "How to Take Smart Notes. One Simple Technique to Boost Writing, Learning and Thinking"
+      },
+      {
+        "authors": [
+          "James Williams"
+        ],
+        "key": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/James Williams/Dark Psychology (46)/Dark Psychology - James Williams.epub",
+        "pathtoebook": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/James Williams/Dark Psychology (46)/Dark Psychology - James Williams.epub",
+        "timestamp": "2022-06-15T10:13:07.164Z",
+        "title": "How to Analyze People: Dark Psychology"
+      },
+      {
+        "authors": [
+          "test"
+        ],
+        "key": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Michio Kaku/Beyond Einstein_ The Cosmic Quest for the Theory of the Universe (203)/Beyond Einstein_ The Cosmic Quest for the - Michio Kaku.epub",
+        "pathtoebook": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Michio Kaku/Beyond Einstein_ The Cosmic Quest for the Theory of the Universe (203)/Beyond Einstein_ The Cosmic Quest for the - Michio Kaku.epub",
+        "timestamp": "2022-06-13T19:01:44.732Z",
+        "title": "test"
+      },
+      {
+        "authors": [
+          "Dale Carnegie",
+          "James M. Brand"
+        ],
+        "key": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Dale Carnegie/How to Win Friends and Influence People (18)/How to Win Friends and Influence People - Dale Carnegie.epub",
+        "pathtoebook": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Dale Carnegie/How to Win Friends and Influence People (18)/How to Win Friends and Influence People - Dale Carnegie.epub",
+        "timestamp": "2022-06-13T18:47:28.420Z",
+        "title": "How to Win Friends and Influence People"
+      },
+      {
+        "authors": [
+          "Annotations (31052022, 234758)"
+        ],
+        "key": "/home/pontus/Documents/kimReoperationRateSurgery2013 - Annotations (31052022, 234758).md",
+        "pathtoebook": "/home/pontus/Documents/kimReoperationRateSurgery2013 - Annotations (31052022, 234758).md",
+        "timestamp": "2022-05-31T21:49:20.749Z",
+        "title": "kimReoperationRateSurgery2013"
+      },
+      {
+        "authors": [
+          "Albert Einstein"
+        ],
+        "key": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Albert Einstein/Relativity (192)/Relativity - Albert Einstein.epub",
+        "pathtoebook": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Albert Einstein/Relativity (192)/Relativity - Albert Einstein.epub",
+        "timestamp": "2022-05-12T20:21:58.528Z",
+        "title": "Relativity"
+      },
+      {
+        "authors": [
+          "Unknown"
+        ],
+        "key": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Okand/Relativity (191)/Relativity - Okand.epub",
+        "pathtoebook": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Okand/Relativity (191)/Relativity - Okand.epub",
+        "timestamp": "2022-05-12T20:18:19.247Z",
+        "title": "Relativity"
+      },
+      {
+        "authors": [
+          "Madsen Pirie"
+        ],
+        "key": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Madsen Pirie/How to Win Every Argument_ The Use and Abuse of Logic (2006) (190)/How to Win Every Argument_ The Use and Abu - Madsen Pirie.epub",
+        "pathtoebook": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Madsen Pirie/How to Win Every Argument_ The Use and Abuse of Logic (2006) (190)/How to Win Every Argument_ The Use and Abu - Madsen Pirie.epub",
+        "timestamp": "2022-05-12T20:15:50.862Z",
+        "title": "How to Win Every Argument: The Use and Abuse of Logic (2006)"
+      },
+      {
+        "authors": [
+          "Richard Dawkins"
+        ],
+        "key": "/home/pontus/Downloads/The God Delusion (Richard Dawkins) (z-lib.org).epub",
+        "pathtoebook": "/home/pontus/Downloads/The God Delusion (Richard Dawkins) (z-lib.org).epub",
+        "timestamp": "2022-05-12T19:55:51.414Z",
+        "title": "The God delusion"
+      },
+      {
+        "authors": [
+          "Newport, Cal"
+        ],
+        "key": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Newport, Cal/How to Win at College (176)/How to Win at College - Newport, Cal.epub",
+        "pathtoebook": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Newport, Cal/How to Win at College (176)/How to Win at College - Newport, Cal.epub",
+        "timestamp": "2022-05-12T18:48:32.168Z",
+        "title": "How to Win at College"
+      },
+      {
+        "authors": [
+          "Newport, Cal"
+        ],
+        "key": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Newport, Cal/How to Win at College_ Surprising Secrets for Success from the Country's Top Students (175)/How to Win at College_ Surprising Secrets - Newport, Cal.epub",
+        "pathtoebook": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/Newport, Cal/How to Win at College_ Surprising Secrets for Success from the Country's Top Students (175)/How to Win at College_ Surprising Secrets - Newport, Cal.epub",
+        "timestamp": "2022-05-12T18:45:55.916Z",
+        "title": "How to Win at College: Surprising Secrets for Success from the Country's Top Students"
+      },
+      {
+        "authors": [
+          "Newport, Cal"
+        ],
+        "key": "/home/pontus/Downloads/How to Win at College Surprising Secrets for Success from the Countrys Top Students (Cal Newport) (z-lib.org).epub",
+        "pathtoebook": "/home/pontus/Downloads/How to Win at College Surprising Secrets for Success from the Countrys Top Students (Cal Newport) (z-lib.org).epub",
+        "timestamp": "2022-05-12T18:44:48.632Z",
+        "title": "How to Win at College: Surprising Secrets for Success from the Country's Top Students"
+      },
+      {
+        "authors": [
+          "George Orwell"
+        ],
+        "key": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/George Orwell/Nineteen Eighty-Four (72)/Nineteen Eighty-Four - George Orwell.epub",
+        "pathtoebook": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books/George Orwell/Nineteen Eighty-Four (72)/Nineteen Eighty-Four - George Orwell.epub",
+        "timestamp": "2022-03-19T11:13:09.776Z",
+        "title": "1984 Nineteen Eighty-Four (Collins Classics)"
+      },
+      {
+        "authors": [
+          "calibre"
+        ],
+        "key": "/home/pontus/Calibre Library/calibre/Aftonbladet [tis, 04 jan 2022] (152)/Aftonbladet [tis, 04 jan 2022] - calibre.epub",
+        "pathtoebook": "/home/pontus/Calibre Library/calibre/Aftonbladet [tis, 04 jan 2022] (152)/Aftonbladet [tis, 04 jan 2022] - calibre.epub",
+        "timestamp": "2022-01-04T08:40:57.496Z",
+        "title": "Aftonbladet [tis, 04 jan 2022]"
+      },
+      {
+        "authors": [
+          "calibre"
+        ],
+        "key": "/home/pontus/Calibre Library/calibre/Aftonbladet [man, 03 jan 2022] (151)/Aftonbladet [man, 03 jan 2022] - calibre.epub",
+        "pathtoebook": "/home/pontus/Calibre Library/calibre/Aftonbladet [man, 03 jan 2022] (151)/Aftonbladet [man, 03 jan 2022] - calibre.epub",
+        "timestamp": "2022-01-03T13:37:38.770Z",
+        "title": "Aftonbladet [mån, 03 jan 2022]"
+      },
+      {
+        "authors": [
+          "Jeff Lindsay"
+        ],
+        "key": "/home/pontus/Hämtningar/Dexters Final Cut by Jeff Lindsay (z-lib.org).epub",
+        "pathtoebook": "/home/pontus/Hämtningar/Dexters Final Cut by Jeff Lindsay (z-lib.org).epub",
+        "timestamp": "2022-01-03T11:28:34.931Z",
+        "title": "Dexter's Final Cut"
+      },
+      {
+        "authors": [
+          "Jeff Lindsay"
+        ],
+        "key": "/home/pontus/Hämtningar/Dexters Final Cut A Novel by Jeff Lindsay (z-lib.org).epub",
+        "pathtoebook": "/home/pontus/Hämtningar/Dexters Final Cut A Novel by Jeff Lindsay (z-lib.org).epub",
+        "timestamp": "2022-01-03T11:28:08.497Z",
+        "title": "Dexter's Final Cut"
+      },
+      {
+        "authors": [
+          "Lewis, C.S."
+        ],
+        "key": "/home/pontus/Calibre Library/Lewis, C.S_/Narnia 1 - The Lion, The Witch and The Wardrobe (126)/Narnia 1 - The Lion, The Witch and The War - Lewis, C.S_.epub",
+        "pathtoebook": "/home/pontus/Calibre Library/Lewis, C.S_/Narnia 1 - The Lion, The Witch and The Wardrobe (126)/Narnia 1 - The Lion, The Witch and The War - Lewis, C.S_.epub",
+        "timestamp": "2022-01-01T21:53:23.975Z",
+        "title": "Narnia 1 - The Lion, The Witch and The Wardrobe"
+      },
+      {
+        "authors": [
+          "C. S. Lewis"
+        ],
+        "key": "/home/pontus/Hämtningar/The Chronicles of Narnia Box Set (Books 1 to 7) by C. S. Lewis (z-lib.org).epub",
+        "pathtoebook": "/home/pontus/Hämtningar/The Chronicles of Narnia Box Set (Books 1 to 7) by C. S. Lewis (z-lib.org).epub",
+        "timestamp": "2022-01-01T21:42:57.229Z",
+        "title": "The Chronicles of Narnia Complete 7-Book Collection with Bonus Book"
+      },
+      {
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "key": "/home/pontus/Calibre Library/J.K. Rowling/Harry Potter and the Prisoner of Azkaban (114)/Harry Potter and the Prisoner of Azkaban - J.K. Rowling.epub",
+        "pathtoebook": "/home/pontus/Calibre Library/J.K. Rowling/Harry Potter and the Prisoner of Azkaban (114)/Harry Potter and the Prisoner of Azkaban - J.K. Rowling.epub",
+        "timestamp": "2022-01-01T21:20:27.360Z",
+        "title": "Harry Potter and the Prisoner of Azkaban"
+      },
+      {
+        "authors": [
+          "Frank Herbert"
+        ],
+        "key": "/home/pontus/Hämtningar/7_Dune_-_Frank_Herbert.epub",
+        "pathtoebook": "/home/pontus/Hämtningar/7_Dune_-_Frank_Herbert.epub",
+        "timestamp": "2021-12-31T13:20:58.050Z",
+        "title": "Dune"
+      },
+      {
+        "authors": [
+          "Daniel James Hollins"
+        ],
+        "key": "/home/pontus/Calibre Library/Daniel James Hollins/Dark Psychology Secret_ The Essential Guide to Persuasion, Emotional Manipulation, Deception, M (113)/Dark Psychology Secret_ The Essential Guid - Daniel James Hollins.epub",
+        "pathtoebook": "/home/pontus/Calibre Library/Daniel James Hollins/Dark Psychology Secret_ The Essential Guide to Persuasion, Emotional Manipulation, Deception, M (113)/Dark Psychology Secret_ The Essential Guid - Daniel James Hollins.epub",
+        "timestamp": "2021-12-31T12:26:36.900Z",
+        "title": "Dark Psychology Secret: The Essential Guide to Persuasion, Emotional Manipulation, Deception, Mind Control, Human Behavior, NLP and Hypnosis, How To Stop Being Manipulated And Defend Your Mind"
+      },
+      {
+        "authors": [
+          "J. R. R. Tolkien"
+        ],
+        "key": "/home/pontus/Calibre Library/J. R. R. Tolkien/Lord of the Rings - 01 - The Fellowship of the Ring (110)/Lord of the Rings - 01 - The Fellowship of - J. R. R. Tolkien.epub",
+        "pathtoebook": "/home/pontus/Calibre Library/J. R. R. Tolkien/Lord of the Rings - 01 - The Fellowship of the Ring (110)/Lord of the Rings - 01 - The Fellowship of - J. R. R. Tolkien.epub",
+        "timestamp": "2021-12-30T17:04:10.998Z",
+        "title": "Lord of the Rings - 01 - The Fellowship of the Ring"
+      },
+      {
+        "authors": [
+          "Frank Herbert"
+        ],
+        "key": "/home/pontus/Hämtningar/Frank Herbert, Dune.mobi",
+        "pathtoebook": "/home/pontus/Hämtningar/Frank Herbert, Dune.mobi",
+        "timestamp": "2021-12-29T21:20:05.645Z",
+        "title": "Dune"
+      },
+      {
+        "authors": [
+          "Ian Siegel"
+        ],
+        "key": "/home/pontus/Calibre Library/Ian Siegel/Get Hired Now! (47)/Get Hired Now! - Ian Siegel.epub",
+        "pathtoebook": "/home/pontus/Calibre Library/Ian Siegel/Get Hired Now! (47)/Get Hired Now! - Ian Siegel.epub",
+        "timestamp": "2021-12-29T19:07:19.132Z",
+        "title": "Get Hired Now!"
+      }
+    ]
+  }
+}

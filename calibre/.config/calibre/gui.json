@@ -1,0 +1,444 @@
+{
+  "Annotations plugin:import annotations dialog": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAjYAAABngAADZMAAAKSAAAI2AAAAZ4AAA2TAAACkgAAAAAAAAAAB4AAAAjYAAABngAADZMAAAKS"
+  },
+  "Keyboard shortcut dialog": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAFgAAAA7AAAA8sAAAIoAAABYAAAAOwAAAPLAAACKAAAAAAAAAAABQAAAAFgAAAA7AAAA8sAAAIo"
+  },
+  "Plugin Updater plugin:plugin updater dialog": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAIXAAAAcAAABnYAAALLAAACFwAAAJQAAAZ2AAACywAAAAEAAAAAB4AAAAIXAAAAlAAABnYAAALL"
+  },
+  "Prefs Viewer dialog": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAApdAAABngAADA4AAAKSAAAKXQAAAZ4AAAwOAAACkgAAAAAAAAAAB4AAAApdAAABngAADA4AAAKS"
+  },
+  "action-layout-toolbar": [
+    "Add Books",
+    "Edit Metadata",
+    "Annotations",
+    null,
+    "Convert Books",
+    "Choose Library",
+    "Preferences",
+    null,
+    "Remove Books",
+    "Save To Disk",
+    "Tweak ePub"
+  ],
+  "action-layout-toolbar-device": [
+    "Add Books",
+    "Edit Metadata",
+    "Annotations",
+    null,
+    "Convert Books",
+    "View",
+    "Preferences",
+    "Send To Device",
+    null,
+    "Location Manager",
+    null,
+    "Remove Books",
+    null
+  ],
+  "advanced search dialog current tab": 0,
+  "annotations plugin:custom column wizard": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAApwAAABvQAAC5sAAAJHAAAKcAAAAb0AAAubAAACRwAAAAAAAAAAB4AAAApwAAABvQAAC5sAAAJH"
+  },
+  "annotations_preview_dialog": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAjHAAAAeQAADGkAAALAAAAIxwAAAJ0AAAxpAAACwAAAAAAAAAAAB4AAAAjHAAAAnQAADGkAAALA"
+  },
+  "appearance_dialog": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAmgAAAAzQAADU4AAAOmAAAJoAAAAPEAAA1OAAADpgAAAAAAAAAAB4AAAAmgAAAA8QAADU4AAAOm"
+  },
+  "ask_to_manage_device": [
+    "2094AB0191D0260E272BF128CFF11153"
+  ],
+  "basic_metadata_widget_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAADAAABCgAAAWoAAAEZAf////8BAAAAAQA="
+  },
+  "book-details-popup-conf-geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAlpAAAA2gAAC7YAAALxAAAJaQAAAP4AAAu2AAAC8QAAAAAAAAAAB4AAAAlpAAAA/gAAC7YAAALx"
+  },
+  "book_details_splitter_horizontal_state": [
+    true,
+    254
+  ],
+  "book_info_dialog_fit_cover": true,
+  "book_info_dialog_layout": [
+    {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAjTAAAAJAAADGAAAAP3AAAI0wAAAEgAAAxgAAAD9wAAAAAAAAAAB4AAAAjTAAAASAAADGAAAAP3"
+    },
+    {
+      "__class__": "bytearray",
+      "__value__": "AAAA/wAAAAEAAAACAAABXgAAAV4B/////wEAAAABAA=="
+    }
+  ],
+  "book_list_pin_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAEYA/////wEAAAABAA=="
+  },
+  "bulk-mde-casing-algorithm": "title_case",
+  "bulk_metadata_window_geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAk2AAAAmgAADPAAAAOhAAAJNgAAAL4AAAzwAAADoQAAAAAAAAAAB4AAAAk2AAAAvgAADPAAAAOh"
+  },
+  "bulk_metadata_window_tab": 0,
+  "card_a_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 101,
+      "collections": 104,
+      "inlibrary": 102,
+      "size": 81,
+      "timestamp": 88,
+      "title": 61
+    },
+    "hidden_columns": [],
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "card_b_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 101,
+      "collections": 104,
+      "inlibrary": 102,
+      "size": 81,
+      "timestamp": 88,
+      "title": 61
+    },
+    "hidden_columns": [],
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "choose-merge-dialog-geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAFUAAAAzAAAA9gAAAIjAAABVAAAAPEAAAPYAAACIwAAAAAAAAAABQAAAAFUAAAA8QAAA9gAAAIj"
+  },
+  "choose-merge-dialog-splitter-state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABbwAAAQAA/////wEAAAABAA=="
+  },
+  "config_widget_dialog_geometry_Sharing_Metadata download": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAm1AAAA2wAADKIAAAMAAAAJtQAAANsAAAyiAAADAAAAAAAAAAAAB4AAAAm1AAAA2wAADKIAAAMA"
+  },
+  "convert_bulk_dialog_geom": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAABmAAAAMQAABN8AAALxAAAAZgAAAFYAAATfAAAC8QAAAAAAAAAABQAAAABmAAAAVgAABN8AAALx"
+  },
+  "convert_single_dialog_geom": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAk2AAAAkwAADTUAAANzAAAJNgAAALgAAA01AAADcwAAAAAAAAAAB4AAAAk2AAAAuAAADTUAAANz"
+  },
+  "cover_browser_splitter_vertical_state": [
+    false,
+    300
+  ],
+  "custcol-prefs-table-geometry": [
+    86,
+    127,
+    135,
+    430,
+    114,
+    75
+  ],
+  "custom_colors_for_color_dialog": [
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ]
+  ],
+  "diff_dialog_geom": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAACoAAAAQwAABG0AAAMCAAAAqAAAAGcAAARtAAADAgAAAAAAAAAABQAAAACoAAAAZwAABG0AAAMC"
+  },
+  "diff_widget_show_comments_controls": false,
+  "duplicates-question-dialog-geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAomAAABDAAADDEAAAKrAAAKJgAAATEAAAwxAAACqwAAAAAAAAAAB4AAAAomAAABMQAADDEAAAKr"
+  },
+  "exim-calibre-geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAEGAAAAXgAABCUAAAK1AAABBgAAAF4AAAQlAAACtQAAAAAAAAAABQAAAAEGAAAAXgAABCUAAAK1"
+  },
+  "gpm_template_editor_font": "Fira Sans Compressed Book",
+  "gpm_template_editor_word_wrap_mode": true,
+  "grid view visible": false,
+  "jobs view column layout3": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkIAAAAFAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAAFAAAAsgAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAAAA"
+  },
+  "jobs_dialog_geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAnCAAAA7wAADDoAAAMxAAAJwgAAARQAAAw6AAADMQAAAAAAAAAAB4AAAAnCAAABFAAADDoAAAMx"
+  },
+  "kobo utilities plugin:series dialog": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAEVAAAAewAABBcAAAJzAAABFQAAAKAAAAQXAAACcwAAAAAAAAAABQAAAAEVAAAAoAAABBcAAAJz"
+  },
+  "library_usage_stats": {
+    "/home/pontus/Nextcloud/Documents/E-books/Calibre Kurslitteratur": 244,
+    "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books": 145
+  },
+  "memory_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 101,
+      "collections": 104,
+      "inlibrary": 102,
+      "size": 81,
+      "timestamp": 100,
+      "title": 200
+    },
+    "hidden_columns": [],
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "metadata-download-identify-widget-splitter-state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAACAAAAAQAA/////wEAAAABAA=="
+  },
+  "metadata_single_gui_geom": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAjyAAABCwAADEMAAAOGAAAI8gAAAS8AAAxDAAADhgAAAAAAAAAAB4AAAAjyAAABLwAADEMAAAOG"
+  },
+  "metasingle_window_geometry3": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAf0AAAAcQAADPMAAANkAAAH9AAAAJUAAAzzAAADZAAAAAAAAAAAB4AAAAf0AAAAlQAADPMAAANk"
+  },
+  "plugin config dialog:Användargränssnittsåtgärd:Annotations": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAPyAAAA8AAABXAAAALUAAAD8gAAARQAAAVwAAAC1AAAAAEAAAAAB4AAAAPyAAABFAAABXAAAALU"
+  },
+  "plugin config dialog:Användargränssnittsåtgärd:Kobo Utilities": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAgDAAAAqwAACqgAAANgAAAIAwAAAM8AAAqoAAADYAAAAAAAAAAAB4AAAAgDAAAAzwAACqgAAANg"
+  },
+  "plugin config dialog:Enhetsgränssnitt:KoboTouch": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAGTAAAAhQAAA5kAAAKOAAABkwAAAIUAAAOZAAACjgAAAAAAAAAABQAAAAGTAAAAhQAAA5kAAAKO"
+  },
+  "plugin config dialog:Enhetsgränssnitt:KoboTouchExtended": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAPqAAAAewAABkUAAAKoAAAD6gAAAJ8AAAZFAAACqAAAAAIAAAAAB4AAAAPqAAAAnwAABkUAAAKo"
+  },
+  "preferences dialog geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAHvAAAAkAAABZAAAAODAAAB7wAAALQAAAWQAAADgwAAAAEAAAAAB4AAAAHvAAAAtAAABZAAAAOD"
+  },
+  "previous_sort_order_BooksView": {
+    "#mycollections": true,
+    "authors": false,
+    "ondevice": true,
+    "series": true,
+    "timestamp": false,
+    "title": true
+  },
+  "previous_sort_order_DeviceBooksView": {
+    "inlibrary": true
+  },
+  "quick_start_guide_added": true,
+  "quickview visible": false,
+  "recently_used_languages": [
+    "Engelska",
+    "Spanska",
+    "Svenska"
+  ],
+  "replace_scene_breaks_history": [
+    "",
+    "<hr />",
+    "∗ ∗ ∗",
+    "• • •",
+    "♦ ♦ ♦",
+    "† †",
+    "‡ ‡ ‡",
+    "∞ ∞ ∞",
+    "¤ ¤ ¤"
+  ],
+  "scheduler_dialog_geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAEGAAAASQAABCUAAAKCAAABBgAAAG4AAAQlAAACggAAAAAAAAAABQAAAAEGAAAAbgAABCUAAAKC"
+  },
+  "search bar visible": true,
+  "server3_warning_done": true,
+  "single-cover-fetch-dialog-geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAjBAAAAqQAADBIAAAMAAAAIwQAAAKkAAAwSAAADAAAAAAAAAAAAB4AAAAjBAAAAqQAADBIAAAMA"
+  },
+  "tag browser search box visible": false,
+  "tag_browser_splitter_horizontal_state": [
+    true,
+    200
+  ],
+  "tag_editor_geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAFTAAAAIAAAA9IAAALeAAABUwAAAEUAAAPSAAAC3gAAAAAAAAAABQAAAAFTAAAARQAAA9IAAALe"
+  },
+  "tag_editor_last_filter": "add_tag_input",
+  "tag_list_editor_dialog_geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAACYAAAAaQAABJQAAAKFAAAAmAAAAI4AAASUAAAChQAAAAAAAAAABQAAAACYAAAAjgAABJQAAAKF"
+  },
+  "tag_list_editor_table_widths": [
+    294,
+    294,
+    294
+  ],
+  "view-log-dialog": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAEYAAAAkgAAA9MAAAKFAAABGAAAAJIAAAPTAAAChQAAAAAAAAAABQAAAAEYAAAAkgAAA9MAAAKF"
+  }
+}

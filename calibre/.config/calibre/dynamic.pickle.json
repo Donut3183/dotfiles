@@ -1,0 +1,49 @@
+{
+  "Select Device Folder": "/media/pontus/KOBOeReader",
+  "add a plugin dialog": "/home/pontus/Downloads",
+  "add books dialog dir": "/home/pontus/Downloads",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "catalogs_to_be_synced": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "change cover dialog": "/home/pontus/Hämtningar",
+  "choose library location": "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books",
+  "choose_library_icon": "/home/pontus/Nextcloud/Pictures/Wallapaper",
+  "library_delete_books_again": true,
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "5.37",
+      "5.39",
+      "5.38",
+      "5.40",
+      "5.36",
+      "5.41",
+      "5.35"
+    ]
+  },
+  "recursive book import root dir dialog": "/home/pontus/Nextcloud/Documents/E-books",
+  "s_r_search_mode": 0,
+  "save to disk dialog": "/media/pontus/KOBOeReader",
+  "sort_history": [
+    [
+      "ondevice",
+      true
+    ],
+    [
+      "series",
+      true
+    ],
+    [
+      "title",
+      true
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_device": "kobo",
+  "welcome_wizard_was_run": true
+}

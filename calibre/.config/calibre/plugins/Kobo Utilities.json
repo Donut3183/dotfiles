@@ -1,0 +1,20 @@
+{
+  "Devices": {},
+  "backupOptionsStore": {
+    "backupCopiesToKeepSpin": 5,
+    "backupDestDirectory": "",
+    "backupEachCOnnection": false,
+    "backupZipDatabase": true,
+    "doDailyBackp": false
+  },
+  "commonOptionsStore": {
+    "buttonActionDevice": "Backup device database",
+    "buttonActionLibrary": "About KoboUtilities",
+    "individualDeviceOptions": false
+  },
+  "updateOptionsStore": {
+    "doEarlyFirmwareUpdate": false,
+    "doFirmwareUpdateCheck": false,
+    "firmwareUpdateCheckLastTime": 0
+  }
+}

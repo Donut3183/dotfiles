@@ -1,0 +1,93 @@
+{
+  "choose-open-with-program-dialog-geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAnNAAAA9gAADIoAAALpAAAJzQAAAPYAAAyKAAAC6QAAAAAAAAAAB4AAAAnNAAAA9gAADIoAAALp"
+  },
+  "entries": {
+    "djvu": [
+      {
+        "Categories": "Qt;KDE;Graphics;Viewer;",
+        "Comment": "Generell dokumentvisare",
+        "Exec": [
+          "okular",
+          "%U"
+        ],
+        "GenericName": "Dokumentvisare",
+        "Icon": "/usr/share/icons/hicolor/128x128/apps/okular.png",
+        "InitialPreference": "7",
+        "MimeType": [
+          "",
+          "image/vnd.djvu"
+        ],
+        "Name": "Okular",
+        "NoDisplay": "true",
+        "Terminal": "false",
+        "Type": "Application",
+        "X-KDE-Keywords": {
+          "": "djvu",
+          "ar": "djvu",
+          "az": "djvu",
+          "bg": "djvu",
+          "bs": "djvu",
+          "ca": "djvu",
+          "ca@valencia": "djvu",
+          "cs": "djvu",
+          "da": "djvu",
+          "de": "djvu",
+          "el": "djvu",
+          "en_GB": "djvu",
+          "eo": "djvu",
+          "es": "djvu",
+          "et": "djvu",
+          "eu": "djvu",
+          "fi": "djvu",
+          "fr": "djvu",
+          "ga": "djvu",
+          "gl": "djvu",
+          "hu": "djvu",
+          "ia": "djvu",
+          "is": "djvu",
+          "it": "djvu",
+          "ja": "djvu",
+          "kk": "djvu",
+          "km": "djvu",
+          "ko": "djvu",
+          "lt": "djvu",
+          "lv": "djvu",
+          "mr": "djvu",
+          "nb": "djvu",
+          "nds": "DjVu",
+          "nl": "djvu",
+          "nn": "djvu",
+          "pa": "djvu",
+          "pl": "djvu",
+          "pt": "djvu",
+          "pt_BR": "djvu",
+          "ro": "djvu",
+          "ru": "djvu",
+          "sk": "djvu",
+          "sl": "djvu",
+          "sr": "djvu,ДјВу",
+          "sr@ijekavian": "djvu,ДјВу",
+          "sr@ijekavianlatin": "djvu,DjVu",
+          "sr@latin": "djvu,DjVu",
+          "sv": "djvu",
+          "ta": "djvu",
+          "tr": "djvu",
+          "ug": "djvu",
+          "uk": "djvu",
+          "vi": "djvu",
+          "x-test": "xxdjvuxx",
+          "zh_CN": "djvu",
+          "zh_TW": "djvu"
+        },
+        "desktop_file_path": "/usr/share/applications/okularApplication_djvu.desktop",
+        "icon_data": {
+          "__class__": "bytearray",
+          "__value__": "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"
+        },
+        "uuid": "87383805-2b06-450f-a096-534a728f2171"
+      }
+    ]
+  }
+}
