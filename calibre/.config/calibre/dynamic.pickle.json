@@ -14,13 +14,13 @@
   "notified-version-updates": {
     "__class__": "set",
     "__value__": [
-      "5.41",
-      "5.38",
-      "5.36",
       "5.40",
-      "5.37",
       "5.39",
-      "5.35"
+      "5.36",
+      "5.37",
+      "5.41",
+      "5.35",
+      "5.38"
     ]
   },
   "recursive book import root dir dialog": "/home/pontus/Nextcloud/Documents/E-books",
