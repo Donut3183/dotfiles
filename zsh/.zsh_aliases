@@ -1,0 +1,4 @@
+alias pacin="sudo pacman -S"
+alias pacun="sudo pacman -R"
+alias pacupg="paru -Syu"
+alias cat="bat --color always"

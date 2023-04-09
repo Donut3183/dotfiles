@@ -1,129 +1,21 @@
-###
-# If you come from bash you might have to change your $PATH.
-export JAVA_HOME=/usr/lib/jvm/java-19-openjdk/
-export PATH=$HOME/bin:/usr/local/bin:$JAVA_HOME/bin:$PATH
+### EXPORT ###
+export EDITOR='nano'
+export VISUAL='nano'
+export HISTCONTROL=ignoreboth:erasedups
+export PAGER='most'
 
-# Path to your oh-my-zsh installation.
-#installation via script from github
-#export ZSH="/home/$USER/.oh-my-zsh"
-#installation via paru -S oh-my-zsh-git
-export ZSH=/usr/share/oh-my-zsh/
+#Ibus settings if you need them
+#type ibus-setup in terminal to change settings and start the daemon
+#delete the hashtags of the next lines and restart
+#export GTK_IM_MODULE=ibus
+#export XMODIFIERS=@im=dbus
+#export QT_IM_MODULE=ibus
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# if you installed the package oh-my-zsh-powerline-theme-git then you type here "powerline" as zsh theme
-ZSH_THEME="clean"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-# ZSH_THEME_RANDOM_IGNORED=(pygmalion tjkirch_mod)
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-DISABLE_MAGIC_FUNCTIONS=true
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
-if [ -f $ZSH/oh-my-zsh.sh ]; then
-  source $ZSH/oh-my-zsh.sh
-fi
-
-# User configuration
-
-export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='nvim'
-else
-   export EDITOR='nvim'
-fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-
-####   ARCOLINUX SETTINGS   ####
-export PAGER='bat --color always --style=plain'
-
-if [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
-  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
-
-setopt GLOB_DOTS
-#share commands between terminal instances or not
-unsetopt SHARE_HISTORY
-#setopt SHARE_HISTORY
+PS1='[\u@\h \W]\$ '
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export HISTCONTROL=ignoreboth:erasedups
-
-# Make nano the default editor
-
-export EDITOR='nvim'
-export VISUAL='nvim'
-
-#PS1='[\u@\h \W]\$ '
 
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
@@ -133,10 +25,12 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
+#ignore upper and lowercase when TAB completion
+bind "set completion-ignore-case on"
+
 ### ALIASES ###
 
 #list
-alias vim='nvim'
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -alFh'
@@ -165,10 +59,6 @@ alias df='df -h'
 alias give-me-azerty-be="sudo localectl set-x11-keymap be"
 alias give-me-qwerty-us="sudo localectl set-x11-keymap us"
 
-#setlocale
-alias setlocale="sudo localectl set-locale LANG=en_US.UTF-8"
-alias setlocales="sudo localectl set-x11-keymap be && sudo localectl set-locale LANG=en_US.UTF-8"
-
 #pacman unlock
 alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
@@ -186,15 +76,15 @@ alias free="free -mt"
 alias wget="wget -c"
 
 #userlist
-alias userlist="cut -d: -f1 /etc/passwd | sort"
+alias userlist="cut -d: -f1 /etc/passwd"
 
 #merge new settings
 alias merge="xrdb -merge ~/.Xresources"
 
 # Aliases for software managment
-# pacman
-alias pacman="sudo pacman --color auto"
-alias update="sudo pacman -Syyu"
+# pacman or pm
+alias pacman='sudo pacman --color auto'
+alias update='sudo pacman -Syyu'
 
 # paru as aur helper - updates everything
 alias pksyua="paru -Syu --noconfirm"
@@ -206,21 +96,18 @@ alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 
 #grub update
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-#grub issue 08/2022
-alias install-grub-efi="sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi"
 
 #add new fonts
 alias update-fc='sudo fc-cache -fv'
 
 #copy/paste all content of /etc/skel over to home folder - backup of config created - beware
-#skel alias has been replaced with a script at /usr/local/bin/skel
-
+alias skel='[ -d ~/.config ] || mkdir ~/.config && cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* ~'
 #backup contents of /etc/skel to hidden backup folder in home/user
 alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
 
 #copy shell configs
-alias cb='cp /etc/skel/.bashrc ~/.bashrc && echo "Copied."'
-alias cz='cp /etc/skel/.zshrc ~/.zshrc && exec zsh'
+alias cb='cp /etc/skel/.bashrc ~/.bashrc && exec bash'
+alias cz='cp /etc/skel/.zshrc ~/.zshrc && echo "Copied."'
 alias cf='cp /etc/skel/.config/fish/config.fish ~/.config/fish/config.fish && echo "Copied."'
 
 #switch between bash and zsh
@@ -246,9 +133,6 @@ alias kpi='killall picom'
 #hardware info --short
 alias hw="hwinfo --short"
 
-#audio check pulseaudio or pipewire
-alias audio="pactl info | grep 'Server Name'"
-
 #skip integrity check
 alias paruskip='paru -S --mflags --skipinteg'
 alias yayskip='yay -S --mflags --skipinteg'
@@ -265,8 +149,9 @@ alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pac
 #our experimental - best option for the moment
 alias mirrorx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
 alias mirrorxx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
-alias ram='rate-mirrors --allow-root --disable-comments arch | sudo tee /etc/pacman.d/mirrorlist'
-alias rams='rate-mirrors --allow-root --disable-comments --protocol https arch  | sudo tee /etc/pacman.d/mirrorlist'
+alias ram='rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist'
+alias rams='rate-mirrors --allow-root --protocol https arch  | sudo tee /etc/pacman.d/mirrorlist'
+
 
 #mounting the folder Public for exchange between host and guest on virtualbox
 alias vbm="sudo /usr/local/bin/arcolinux-vbox-share"
@@ -277,12 +162,12 @@ alias vmware-start="sudo systemctl enable --now vmtoolsd.service"
 alias sv="sudo systemctl enable --now vmtoolsd.service"
 
 #shopt
-#shopt -s autocd # change to named directory
-#shopt -s cdspell # autocorrects cd misspellings
-#shopt -s cmdhist # save multi-line commands in history as single line
-#shopt -s dotglob
-#shopt -s histappend # do not overwrite history
-#shopt -s expand_aliases # expand aliases
+shopt -s autocd # change to named directory
+shopt -s cdspell # autocorrects cd misspellings
+shopt -s cmdhist # save multi-line commands in history as single line
+shopt -s dotglob
+shopt -s histappend # do not overwrite history
+shopt -s expand_aliases # expand aliases
 
 #youtube download
 alias yta-aac="yt-dlp --extract-audio --audio-format aac "
@@ -297,7 +182,6 @@ alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | n
 
 #iso and version used to install ArcoLinux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
-alias isoo="cat /etc/dev-rel"
 
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
@@ -320,25 +204,17 @@ alias ngrub="sudo $EDITOR /etc/default/grub"
 alias nconfgrub="sudo $EDITOR /boot/grub/grub.cfg"
 alias nmkinitcpio="sudo $EDITOR /etc/mkinitcpio.conf"
 alias nmirrorlist="sudo $EDITOR /etc/pacman.d/mirrorlist"
-alias narcomirrorlist="sudo $EDITOR /etc/pacman.d/arcolinux-mirrorlist"
+alias narcomirrorlist='sudo nano /etc/pacman.d/arcolinux-mirrorlist'
 alias nsddm="sudo $EDITOR /etc/sddm.conf"
 alias nsddmk="sudo $EDITOR /etc/sddm.conf.d/kde_settings.conf"
 alias nfstab="sudo $EDITOR /etc/fstab"
 alias nnsswitch="sudo $EDITOR /etc/nsswitch.conf"
 alias nsamba="sudo $EDITOR /etc/samba/smb.conf"
-alias ngnupgconf="sudo $EDITOR /etc/pacman.d/gnupg/gpg.conf"
+alias ngnupgconf="sudo nano /etc/pacman.d/gnupg/gpg.conf"
 alias nhosts="sudo $EDITOR /etc/hosts"
-alias nhostname="sudo $EDITOR /etc/hostname"
 alias nb="$EDITOR ~/.bashrc"
 alias nz="$EDITOR ~/.zshrc"
-alias nf="$EDITOR ~/.config/fish/config.fish"
-alias nneofetch="$EDITOR ~/.config/neofetch/config.conf"
-
-#reading logs with bat
-alias lcalamares="bat /var/log/Calamares.log"
-alias lpacman="bat /var/log/pacman.log"
-alias lxorg="bat /var/log/Xorg.0.log"
-alias lxorgo="bat /var/log/Xorg.0.log.old"
+alias nf="EDITOR ~/.config/fish/config.fish"
 
 #gpg
 #verify signature for isos
@@ -358,8 +234,7 @@ alias fixkey="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
 alias fixkeys="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
 alias fix-key="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
 alias fix-keys="/usr/local/bin/arcolinux-fix-pacman-databases-and-keys"
-#fix-sddm-config is no longer an alias but an application - part of ATT
-#alias fix-sddm-config="/usr/local/bin/arcolinux-fix-sddm-config"
+alias fix-sddm-config="/usr/local/bin/arcolinux-fix-sddm-config"
 alias fix-pacman-conf="/usr/local/bin/arcolinux-fix-pacman-conf"
 alias fix-pacman-keyserver="/usr/local/bin/arcolinux-fix-pacman-gpg-conf"
 
@@ -384,7 +259,6 @@ alias bls="betterlockscreen -u /usr/share/backgrounds/arcolinux/"
 
 #give the list of all installed desktops - xsessions desktops
 alias xd="ls /usr/share/xsessions"
-alias xdw="ls /usr/share/wayland-sessions"
 
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
@@ -412,9 +286,6 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-source ~/.zsh_aliases
-#wayland aliases
-alias wsimplescreenrecorder="wf-recorder -a"
 
 #btrfs aliases
 alias btrfsfs="sudo btrfs filesystem df /"
@@ -435,8 +306,7 @@ alias ltupd="leftwm-theme update"
 alias ltupg="leftwm-theme upgrade"
 
 #arcolinux applications
-#att is a symbolic link now
-#alias att="archlinux-tweak-tool"
+alias att="archlinux-tweak-tool"
 alias adt="arcolinux-desktop-trasher"
 alias abl="arcolinux-betterlockscreen"
 alias agm="arcolinux-get-mirrors"
@@ -453,13 +323,13 @@ alias rmgitcache="rm -r ~/.cache/git"
 #moving your personal files and folders from /personal to ~
 alias personal='cp -Rf /personal/* ~'
 
-#create a file called .zshrc-personal and put all your personal aliases
+#create a file called .bashrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
 
-[[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
+[[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
 # reporting tools - install when not installed
-#neofetch
+neofetch
 #screenfetch
 #alsi
 #paleofetch
@@ -473,5 +343,5 @@ alias personal='cp -Rf /personal/* ~'
 #sysinfo-retro
 #cpufetch
 #colorscript random
-source ~/perl5/perlbrew/etc/bashrc
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

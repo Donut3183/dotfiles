@@ -28,3 +28,4 @@
 [2023-04-09 11:13:59.355][warning] Failed to update device info: 14 UNAVAILABLE: Cannot reach the API
 [2023-04-09 12:13:57.465][verbose] GRPC Channel connectivity state changed to 2
 [2023-04-09 13:13:57.468][verbose] GRPC Channel connectivity state changed to 2
+[2023-04-09 14:13:57.478][verbose] GRPC Channel connectivity state changed to 2
