@@ -2,11 +2,11 @@
   "highlight_export_format": "md",
   "main_window_geometry": {
     "__class__": "bytearray",
-    "__value__": "AdnQywADAAAAAAeyAAAAVgAAC4UAAANJAAAHsgAAAHoAAAuFAAADSQAAAAAAAAAAB4AAAAeyAAAAegAAC4UAAANJ"
+    "__value__": "AdnQywADAAAAAAeFAAAAHwAACz8AAAQyAAAHiAAAACIAAAs8AAAELwAAAAAAAAAAB4AAAAeIAAAAIgAACzwAAAQv"
   },
   "main_window_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAHIA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAfQD///8AAAABAAABZwAAAtD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACGAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAANoA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAFQD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawEAAAAAAAAC0AAAALsA////AAACZwAAAtAAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIcA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAlQD///8AAAABAAABZwAABA78AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAAB9AP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAOcA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAEwD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawEAAAAAAAAEDgAAAMkA////AAACSAAABA4AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
   },
   "old_prefs_migrated": true,
   "session_data": {
@@ -24,6 +24,15 @@
       "singleinstance": false
     },
     "standalone_recently_opened": [
+      {
+        "authors": [
+          "Tom Michael Mitchell"
+        ],
+        "key": "/home/pontus/Nextcloud/Documents/E-books/Calibre Kurslitteratur/Tom Michael Mitchell/Machine Learning (79)/Machine Learning - Tom Michael Mitchell.epub",
+        "pathtoebook": "/home/pontus/Nextcloud/Documents/E-books/Calibre Kurslitteratur/Tom Michael Mitchell/Machine Learning (79)/Machine Learning - Tom Michael Mitchell.epub",
+        "timestamp": "2022-10-29T17:51:13.117Z",
+        "title": "Machine Learning"
+      },
       {
         "authors": [
           "Sönke Ahrens"
@@ -240,15 +249,6 @@
         "pathtoebook": "/home/pontus/Hämtningar/Frank Herbert, Dune.mobi",
         "timestamp": "2021-12-29T21:20:05.645Z",
         "title": "Dune"
-      },
-      {
-        "authors": [
-          "Ian Siegel"
-        ],
-        "key": "/home/pontus/Calibre Library/Ian Siegel/Get Hired Now! (47)/Get Hired Now! - Ian Siegel.epub",
-        "pathtoebook": "/home/pontus/Calibre Library/Ian Siegel/Get Hired Now! (47)/Get Hired Now! - Ian Siegel.epub",
-        "timestamp": "2021-12-29T19:07:19.132Z",
-        "title": "Get Hired Now!"
       }
     ]
   }

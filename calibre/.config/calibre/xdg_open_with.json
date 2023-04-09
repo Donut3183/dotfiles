@@ -1,7 +1,7 @@
 {
   "choose-open-with-program-dialog-geometry": {
     "__class__": "bytearray",
-    "__value__": "AdnQywADAAAAAAnNAAAA9gAADIoAAALpAAAJzQAAAPYAAAyKAAAC6QAAAAAAAAAAB4AAAAnNAAAA9gAADIoAAALp"
+    "__value__": "AdnQywADAAAAAARCAAAA9gAABwMAAALtAAAERAAAAPgAAAcBAAAC6wAAAAAAAAAABwAAAAREAAAA+AAABwEAAALr"
   },
   "entries": {
     "djvu": [
@@ -87,6 +87,93 @@
           "__value__": "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"
         },
         "uuid": "87383805-2b06-450f-a096-534a728f2171"
+      }
+    ],
+    "pdf": [
+      {
+        "Categories": "Qt;KDE;Graphics;Viewer;",
+        "Comment": "Generell dokumentvisare",
+        "Exec": [
+          "okular",
+          "%U"
+        ],
+        "GenericName": "Dokumentvisare",
+        "Icon": "/usr/share/icons/Sardi-Flat/scalable/apps/okular.svg",
+        "InitialPreference": "8",
+        "MimeType": [
+          "application/x-wwf",
+          "",
+          "application/x-gzpdf",
+          "application/x-bzpdf",
+          "application/pdf"
+        ],
+        "Name": "Okular",
+        "NoDisplay": "true",
+        "Terminal": "false",
+        "Type": "Application",
+        "X-KDE-AliasFor": "org.kde.okular.desktop",
+        "X-KDE-Keywords": {
+          "": "PDF, Portable Document Format",
+          "ar": "PDF, Portable Document Format",
+          "az": "PDF, Portable Document Format",
+          "bg": "PDF, Portable Document Format",
+          "bs": "PDF, Portable Document Format",
+          "ca": "PDF, Format de document portable",
+          "ca@valencia": "PDF, Format de document portable",
+          "cs": "PDF, Portable Document Format",
+          "da": "PDF,Portable Document Format",
+          "de": "PDF, Portable Document Format",
+          "el": "PDF, Portable Document Format",
+          "en_GB": "PDF, Portable Document Format",
+          "es": "PDF, Formato de Documento Portable",
+          "et": "PDF, Portable Document Format",
+          "eu": "PDF, Portable Document Format (Dokumentu Formatu Eramangarria)",
+          "fi": "PDF, Portable Document Format",
+          "fr": "PDF, Portable Document Format",
+          "ga": "PDF, Portable Document Format",
+          "gl": "PDF, Formato portátil de documentos",
+          "hu": "PDF, Portable Document Format",
+          "ia": "PDF, Formato de Documento Portabile",
+          "is": "PDF, Portable Document Format",
+          "it": "PDF, Portable Document Format, formato per documenti portabile",
+          "ja": "PDF",
+          "kk": "PDF, Portable Document Format",
+          "km": "PDF, Portable Document Format",
+          "ko": "PDF, Portable Document Format",
+          "lt": "PDF, Portable Document Format, Portable Document formatas, PDF formatas",
+          "lv": "PDF, Portable Document formāts",
+          "mr": "PDF, Portable Document Format",
+          "nb": "PDF, Portabelt Dokument Format",
+          "nds": "PDF, Porteerbor Dokmentformaat",
+          "nl": "PDF, Portable Document Format",
+          "nn": "PDF, Portabelt dokumentformat",
+          "pa": "PDF, ਪੋਰਟੇਬਲ ਡੌਕੂਮੈਂਟ ਫਾਰਮੈਟ",
+          "pl": "PDF, Przenośny Format Dokumentu",
+          "pt": "PDF, Formato de Documento Portável",
+          "pt_BR": "PDF, Formato de documento portável",
+          "ro": "PDF, Portable Document Format",
+          "ru": "PDF, Portable Document Format",
+          "sk": "PDF, Portable Document Format",
+          "sl": "PDF, Portable Document Format",
+          "sr": "PDF, Portable Document Format,ПДФ",
+          "sr@ijekavian": "PDF, Portable Document Format,ПДФ",
+          "sr@ijekavianlatin": "PDF, Portable Document Format,PDF",
+          "sr@latin": "PDF, Portable Document Format,PDF",
+          "sv": "PDF, Portabelt dokumentformat",
+          "ta": "PDF, Portable Document Format, பிடிஎஃப், பீடீஎஃப்",
+          "tr": "PDF, Taşınabilir Belge Biçimi",
+          "uk": "PDF,Portable Document Format,пдф",
+          "vi": "PDF, Định dạng tài liệu linh động",
+          "x-test": "xxPDFxx,xx Portable Document Formatxx",
+          "zh_CN": "PDF, Portable Document Format,开放文档格式",
+          "zh_TW": "PDF, Portable Document Format"
+        },
+        "desktop_file_path": "/usr/share/applications/okularApplication_pdf.desktop",
+        "icon_data": {
+          "__class__": "bytearray",
+          "__value__": "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"
+        },
+        "uuid": "f83c30a3-5bf3-437b-a6d1-165300adf7d8"
       }
     ]
   }
