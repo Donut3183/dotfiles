@@ -1,31 +1,5 @@
-[2023-04-08 11:13:42.008][verbose] Chromium sandbox is enabled
-[2023-04-08 11:13:42.009][info] Running version 2023.3
-[2023-04-08 11:13:44.734][info] Detected locale: en-US
-[2023-04-08 11:13:44.787][info] Connected to the daemon
-[2023-04-08 11:13:44.927][info] Autoconnect the tunnel
-[2023-04-08 12:13:44.795][verbose] GRPC Channel connectivity state changed to 2
-[2023-04-08 13:13:44.796][verbose] GRPC Channel connectivity state changed to 2
-[2023-04-08 14:13:44.804][verbose] GRPC Channel connectivity state changed to 2
-[2023-04-08 14:28:16.379][info] Suspend event received, disconnecting from daemon
-[2023-04-08 14:28:16.380][verbose] GRPC Channel connectivity state changed to 4
-[2023-04-08 14:28:16.382][info] Disconnected from the daemon
-[2023-04-08 19:14:57.654][info] Resume event received, connecting to daemon
-[2023-04-08 19:14:57.762][info] Connected to the daemon
-[2023-04-08 19:14:57.764][info] Connected to the daemon
-[2023-04-08 19:15:01.834][warning] Failed to update device info: 14 UNAVAILABLE: Cannot reach the API
-[2023-04-08 19:15:01.834][warning] Failed to fetch account data. Retrying in 8000 ms
-[2023-04-08 20:14:57.771][verbose] GRPC Channel connectivity state changed to 2
-[2023-04-08 21:14:57.774][verbose] GRPC Channel connectivity state changed to 2
-[2023-04-08 22:14:57.783][verbose] GRPC Channel connectivity state changed to 2
-[2023-04-08 23:13:32.601][info] Suspend event received, disconnecting from daemon
-[2023-04-08 23:13:32.602][verbose] GRPC Channel connectivity state changed to 4
-[2023-04-08 23:13:32.604][info] Disconnected from the daemon
-[2023-04-09 11:13:57.642][info] Resume event received, connecting to daemon
-[2023-04-09 11:13:57.643][info] Connected to the daemon
-[2023-04-09 11:13:57.644][info] Connected to the daemon
-[2023-04-09 11:13:57.644][info] Connected to the daemon
-[2023-04-09 11:13:59.354][warning] Failed to fetch account data. Retrying in 8000 ms
-[2023-04-09 11:13:59.355][warning] Failed to update device info: 14 UNAVAILABLE: Cannot reach the API
-[2023-04-09 12:13:57.465][verbose] GRPC Channel connectivity state changed to 2
-[2023-04-09 13:13:57.468][verbose] GRPC Channel connectivity state changed to 2
-[2023-04-09 14:13:57.478][verbose] GRPC Channel connectivity state changed to 2
+[2023-04-09 14:42:02.738][verbose] Chromium sandbox is enabled
+[2023-04-09 14:42:02.739][info] Running version 2023.3
+[2023-04-09 14:42:05.409][info] Detected locale: en-US
+[2023-04-09 14:42:05.463][info] Connected to the daemon
+[2023-04-09 14:42:05.588][info] Autoconnect the tunnel

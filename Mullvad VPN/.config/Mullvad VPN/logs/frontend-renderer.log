@@ -1,27 +1,2 @@
-[2023-04-08 11:13:45.311][verbose] Tunnel state: connected
-[2023-04-08 11:13:45.312][verbose] Initial: Wrong content height: 593, expected 568
-[2023-04-08 12:59:38.005][verbose] Tunnel state: connecting
-[2023-04-08 12:59:38.397][verbose] Tunnel state: connecting
-[2023-04-08 12:59:38.586][verbose] Tunnel state: connected
-[2023-04-08 19:14:59.670][verbose] Tunnel state: error
-[2023-04-08 19:14:59.690][verbose] Tunnel state: error
-[2023-04-08 19:15:02.425][verbose] Tunnel state: connecting
-[2023-04-08 19:15:02.433][verbose] Tunnel state: connecting
-[2023-04-08 19:15:02.629][verbose] Tunnel state: connected
-[2023-04-08 19:15:02.639][verbose] Tunnel state: connected
-[2023-04-08 19:16:10.152][verbose] Tunnel state: connecting
-[2023-04-08 19:16:10.540][verbose] Tunnel state: connecting
-[2023-04-08 19:16:10.544][verbose] Tunnel state: connecting
-[2023-04-08 19:16:10.760][verbose] Tunnel state: connected
-[2023-04-08 19:16:10.772][verbose] Tunnel state: connected
-[2023-04-08 19:16:51.396][verbose] Tunnel state: disconnecting
-[2023-04-08 19:16:51.486][verbose] Tunnel state: disconnecting
-[2023-04-08 19:16:51.489][verbose] Tunnel state: disconnecting
-[2023-04-08 19:16:51.766][verbose] Tunnel state: disconnected
-[2023-04-08 19:16:51.776][verbose] Tunnel state: disconnected
-[2023-04-09 11:13:58.341][verbose] Tunnel state: disconnected
-[2023-04-09 11:13:58.377][verbose] Tunnel state: disconnected
-[2023-04-09 11:13:58.429][verbose] Tunnel state: disconnected
-[2023-04-09 11:13:59.347][error] Failed to update the location: 5 NOT_FOUND: no location was found
-[2023-04-09 11:13:59.348][error] Failed to update the location: 5 NOT_FOUND: no location was found
-[2023-04-09 11:13:59.361][error] Failed to update the location: 5 NOT_FOUND: no location was found
+[2023-04-09 14:42:05.996][verbose] Tunnel state: connected
+[2023-04-09 14:42:05.998][verbose] Initial: Wrong content height: 593, expected 568
