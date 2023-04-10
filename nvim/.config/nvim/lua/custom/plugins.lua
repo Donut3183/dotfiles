@@ -4,6 +4,10 @@ local overrides = require("custom.configs.overrides")
 local plugins = {
 
   -- Override plugin definition options
+  {
+    "lambdalisue/suda.vim",
+    lazy = false,
+  },
 
   {
     "neovim/nvim-lspconfig",
