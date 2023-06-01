@@ -2,6 +2,7 @@
 
 #autorandr --match-edid && autorandr --change & 
 #vibrantcli.sh > /dev/null 2>&1 &
+echo "autostart.sh sourced"
 function run {
  if ! pgrep $1 ;
   then
@@ -11,17 +12,16 @@ function run {
 
 run "nm-applet"
 run "pamac-tray"
-run "variety"
 run "xfce4-power-manager"
 run "blueberry-tray"
 run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
 run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-picom -b  --config ~/.config/arco-dwm/picom.conf &
+picom -b  --config ~/.config/dwm/picom.conf &
 run "numlockx on"
 run "pasystray"
 run slstatus &
 #dwm_bar &
-sxhkd -c ~/.config/arco-dwm/sxhkd/sxhkdrc &
+sxhkd -c ~/.config/dwm/sxhkd/sxhkdrc &
 
 #run applications from startup
 protonmail-bridge --no-window &
