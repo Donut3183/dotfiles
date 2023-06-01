@@ -1,0 +1,8 @@
+<application>
+  <component name="CPPToolchains" version="8">
+    <toolchains detectedVersion="5">
+      <toolchain name="Default" toolSetKind="SYSTEM_UNIX_TOOLSET" debuggerKind="BUNDLED_GDB" />
+      <toolchain name="Remote Host" toolSetKind="REMOTE" customCMakePath="/usr/bin/cmake" hostId="6a96c744-be27-4003-bdf0-51f0c7a8ef21" sshConfigName="debian@192.168.7.2:22 password" debuggerKind="CUSTOM_GDB" customGDBPath="/usr/bin/gdb" />
+    </toolchains>
+  </component>
+</application>

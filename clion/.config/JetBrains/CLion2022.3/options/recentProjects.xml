@@ -1,0 +1,35 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/EMG4/data_collection">
+          <value>
+            <RecentProjectMetaInfo frameTitle="dataSampling" projectWorkspaceId="2P74QE6liQjqiEmO9zr1txP17lO">
+              <option name="activationTimestamp" value="1685642825873" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-223.8214.51" />
+              <option name="buildTimestamp" value="1671535291307" />
+              <frame x="5" y="45" width="2544" height="1544" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1685642616420" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA218/Lab 3/Lab_3b">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Lab_3b – server.c" opened="true" projectWorkspaceId="2KDuyPC9FnF8ImhzOf15M5OsAq9">
+              <option name="activationTimestamp" value="1685642973562" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="CL-223.8214.51" />
+              <option name="buildTimestamp" value="1671535291307" />
+              <frame x="5" y="45" width="2544" height="1544" />
+              <option name="productionCode" value="CL" />
+              <option name="projectOpenTimestamp" value="1685642826640" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA218/Lab 3/Lab_3b" />
+  </component>
+</application>

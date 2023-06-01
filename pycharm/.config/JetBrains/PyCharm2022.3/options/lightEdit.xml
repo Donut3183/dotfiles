@@ -1,0 +1,16 @@
+<application>
+  <component name="LightEdit">
+    <option name="sessionFiles">
+      <list>
+        <option value="file://$USER_HOME$/PycharmProjects/DVA493_Lab1/ann_2.py" />
+        <option value="file://$USER_HOME$/Downloads/tsp-1.py" />
+        <option value="file://$USER_HOME$/Nextcloud/Universitet/Kurser/DVA493/Assignments/Lab2/tsp-1.py" />
+        <option value="file://$USER_HOME$/marlin/platformio.ini" />
+        <option value="file://$USER_HOME$/Downloads/rfc768-UDP.txt" />
+      </list>
+    </option>
+    <option name="frameInfo">
+      <frame x="0" y="26" width="1914" height="1048" />
+    </option>
+  </component>
+</application>

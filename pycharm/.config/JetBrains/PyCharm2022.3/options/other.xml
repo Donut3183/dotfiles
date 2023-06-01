@@ -1,0 +1,147 @@
+<application>
+  <component name="AppInspectionProfilesVisibleTreeState">
+    <entry key="Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyUnresolvedReferencesInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="DynamicPluginEnabler">
+    <trackers>
+      <map>
+        <entry key="2HHLJDwW8ttqutImJbQG1p4pFbB">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="2HMfG88W7hTofpRHa0SJqgCyutD">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="2HpET63FehMC4K8xMYqEQxMTgws">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="2Hv79rySzeGo1rBjZG4YZFsJMm3">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="2I5WoCGX2AEN1qGuYx51WcKrIIF">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="2IJNqOhPdKo2nDYT0qoOEUOcvkg">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="2ISVrVZilyFbmF6B2WzWUPTcAAp">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Hack" />
+    <option name="fontScale" value="2.0" />
+    <option name="fontSize" value="32.0" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "CWM_LOGGING_VERSION": "1",
+    "DocumentationAutoUpdateEnabled": "true",
+    "ExpandBeforeRunStepsPanel": "true",
+    "FindSplitterProportion": "0.5643204",
+    "KEYMAP": "comment\ninsert copy\ncopyri\nstep in",
+    "MarketplacePluginsSearchHistory": "/tag:Keymap",
+    "NextRunPlatformUpdateBuild": "PY-223.8836.43",
+    "NextRunPlatformUpdateVersion": "2022.3.3",
+    "NonModalCommitCustomization.IsApplied": "true",
+    "PyCharm.InitialConfiguration": "true",
+    "PyCharm.InitialConfiguration.V2": "true",
+    "PyCharm.InitialConfiguration.V3": "true",
+    "PyCharm.InitialConfiguration.V4": "true",
+    "PyCharm.InitialConfiguration.V5": "true",
+    "PyCharm.InitialConfiguration.V6": "true",
+    "PyCharm.InitialConfiguration.V7": "true",
+    "PyCharm.InitialConfiguration.V8": "true",
+    "RunOnceActivity.se.text.search": "true",
+    "SettingsSearchHistory": "interpreter\nssh\nChange font size\nplugins\ninterprete",
+    "ShowDocumentationInToolWindow": "true",
+    "appcds.runOnSecondStart": "PY-223.8836.34-559611523a22ec525d9865e1e48f2dab18e9d7603ab3385695f488c48b0d35eb",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "bundled.plugins.list.saved.version": "PY-223.8836.34",
+    "debugger.smart.chooser.counter": "2",
+    "evlsprt3.222": "24",
+    "evlsprt3.223": "26",
+    "experimentalFeature.terminal.shell.command.handling": "false",
+    "file.gist.reindex.count": "27",
+    "fileTypeChangedCounter": "4",
+    "fontSizeToResetConsole": "12.0",
+    "fontSizeToResetEditor": "12.0",
+    "got.it.tooltip.python.console.command.queue.show": "1",
+    "got.it.tooltip.reader.mode.got.it": "1",
+    "gotit.previous.run": "PY-222.4345.23",
+    "ide.memory.adjusted": "true",
+    "ideavim.statistics.timestamp": "1684927159771",
+    "input.method.disabler.muted": "true",
+    "last_opened_file_path": "/home/pontus/EMG4/data_collection/python",
+    "previousColorScheme": "_@user_Darcula",
+    "quick.doc.font.size.v3": "X_SMALL",
+    "registry.to.advanced.settings.migration.build": "PY-223.8836.34",
+    "selected.color.option.type": "PY.KEYWORD",
+    "tasks.pass.word.conversion.enforced": "true",
+    "ts.lib.d.ts.version": "4.8.4"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/pontus/EMG4/data_collection/python/receive_voltage_from_beaglebone.py",
+      "/home/pontus/EMG4/emg_processing/src/main_computer.py",
+      "/home/pontus/EMG4/emg_processing",
+      "/home/pontus/EMG4/data_collection/python",
+      "/home/pontus/EMG4",
+      "/home/pontus/EMG4/data_collection",
+      "/home/pontus/Nextcloud/Universitet/Kurser/DVA493/Assignments/Lab5",
+      "/home/pontus/Nextcloud/Universitet/Kurser/DVA493/Assignments/Lab4",
+      "/home/pontus/Nextcloud/Universitet/Kurser/DVA493/Assignments/Lab3",
+      "/home/pontus/Nextcloud/Universitet/Kurser/DVA493/Assignments/Lab2",
+      "/home/pontus/genetic_algorithm_tsp",
+      "/home/pontus/Nextcloud/Universitet/Kurser/DVA493/Assignments/Lab1",
+      "/home/pontus/Nextcloud/Universitet/Kurser/DVA493/Lab Assignments/Lab 2",
+      "/home/pontus/Nextcloud/Universitet/Kurser/DVA493/Lab Assignments/Lab 1",
+      "/home/pontus/PycharmProjects/DVA493_Lab1",
+      "/home/pontus/Nextcloud"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+  <component name="TerminalCommandHistoryManager">
+    <command-history-files>
+      <command-history-file filename="emg_processing-history" project-path="$USER_HOME$/EMG4/emg_processing" last-access-time="1684927846797" />
+    </command-history-files>
+  </component>
+</application>

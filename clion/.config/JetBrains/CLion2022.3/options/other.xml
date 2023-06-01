@@ -1,0 +1,85 @@
+<application>
+  <component name="CppNewDialogSettings">
+    <option name="addNewFilesToProject" value="false" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontScale" value="2.0" />
+    <option name="fontSize" value="29.0" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "CWM_LOGGING_VERSION": "1",
+    "ExpandBeforeRunStepsPanel": "true",
+    "FontPreviewText": "CLion is an <bold>Integrated \nDevelopment Environment (IDE)</bold> designed\nto maximize productivity. It provides\n<bold>clever code completion, static code\nanalysis, and refactorings,</bold> and lets\nyou focus on the bright side of\nsoftware development making\nit an enjoyable experience.\n\nDefault:\nabcdefghijklmnopqrstuvwxyz\nABCDEFGHIJKLMNOPQRSTUVWXYZ\n 0123456789 (){}[]\n +-*/= .,;:!? #&$%@|^\n\n<bold>Bold:\nabcdefghijklmnopqrstuvwxyz\nABCDEFGHIJKLMNOPQRSTUVWXYZ\n 0123456789 (){}[]\n +-*/= .,;:!? #&$%@|^</bold>\n\n<!-- -- != := === >= >- >=> |-> -> <$>\n</> #[ |||> |= ~@\nfor (int = i\n",
+    "InstalledPluginsSearchHistory": "reformat\nreforma\nreform\nrefor\nrefo",
+    "LayoutCode.optimizeImports": "false",
+    "LayoutCode.rearrangeEntriesC/C++": "false",
+    "MarketplacePluginsSearchHistory": "/tag:Keymap",
+    "NextRunPlatformUpdateBuild": "CL-223.8836.42",
+    "NextRunPlatformUpdateVersion": "2022.3.3",
+    "NonModalCommitCustomization.IsApplied": "true",
+    "PluginConfigurable.selectionTab": "1",
+    "ProjectStructure.SecondLevelElements": "0.26875854",
+    "RunOnceActivity.cidr.test.framework.showIndexingAsTask": "true",
+    "RunOnceActivity.se.text.search": "true",
+    "SettingsSearchHistory": "reformat\nplugins\nvim\nChange font size\nfont size",
+    "appcds.runOnSecondStart": "CL-223.8214.51-993c4f8e7bd41208682b5da8bc199c5ae10fdbf858e85164a033b8a11ba1e483",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "bundled.plugins.list.saved.version": "CL-223.8214.51",
+    "clion.initialConfigPerformed": "true",
+    "debugger.speed.search.tree.option.hint.counter": "1",
+    "evlsprt3.223": "23",
+    "file.gist.reindex.count": "238",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "42.0",
+    "fontSizeToResetEditor": "42.0",
+    "got.it.tooltip.reader.mode.got.it": "1",
+    "gotit.previous.run": "CL-223.8214.51",
+    "ideavim.statistics.timestamp": "1685642619516",
+    "input.method.disabler.muted": "true",
+    "last_opened_file_path": "/home/pontus/EMG4/data_collection/C/adc_sampling_uart.c",
+    "previousColorScheme": "_@user_New Dark",
+    "registry.to.advanced.settings.migration.build": "CL-223.8214.51",
+    "tasks.pass.word.conversion.enforced": "true",
+    "ts.lib.d.ts.version": "4.8.4"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/pontus/EMG4/data_collection/C/adc_sampling_uart.c",
+      "/home/pontus/EMG4/data_collection/C/adc_sample.c",
+      "/home/pontus/EMG4/data_collection/CMakeLists.txt",
+      "/home/pontus/EMG4/data_collection",
+      "/home/pontus/Nextcloud/Universitet/Kurser/DVA218/Lab 3/Lab_3b/server.c",
+      "/home/pontus/Nextcloud/Universitet/Kurser/DVA218/Lab 3/Lab_3b/client.c",
+      "/home/pontus/Nextcloud/Universitet/Kurser/DVA218/Lab 3/Lab_3b"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "com.jetbrains.cidr.lang.OCHeaderFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+  <component name="ShownTips">{
+  &quot;shownTips&quot;: {
+    &quot;SpeedSearch&quot;: 1681631474145,
+    &quot;CtrlW&quot;: 1675500133066,
+    &quot;Rename&quot;: 1681055481242,
+    &quot;SearchEverywhere&quot;: 1679757348161,
+    &quot;FindReplaceToggle&quot;: 1679787914363,
+    &quot;ShowUsages&quot;: 1679668771059,
+    &quot;FindInPath&quot;: 1673628185300
+  }
+}</component>
+  <component name="TerminalCommandHistoryManager">
+    <command-history-files>
+      <command-history-file filename="dataSampling-history" project-path="$USER_HOME$/EMG4/data_collection" last-access-time="1683919836904" />
+    </command-history-files>
+  </component>
+</application>

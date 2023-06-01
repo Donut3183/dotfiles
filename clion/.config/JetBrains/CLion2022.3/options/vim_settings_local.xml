@@ -1,0 +1,242 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search>
+        <entry encoding="base64">YXR0cg==</entry>
+        <entry encoding="base64">c2VydmVyX2FkZHI=</entry>
+        <entry encoding="base64">ZnAy</entry>
+        <entry encoding="base64">bXNn</entry>
+        <entry encoding="base64">bXE=</entry>
+        <entry encoding="base64">bXNnX2Zvcl93cml0ZUZpbGUua2V5</entry>
+        <entry encoding="base64">dHR5</entry>
+      </history-search>
+      <history-cmd>
+        <entry encoding="base64" />
+        <entry encoding="base64">dyc=</entry>
+        <entry encoding="base64">Vw==</entry>
+        <entry encoding="base64">MjIyLDIyNXMvbXNnL21zZ19mb3JfZmlsZVdyaXRl</entry>
+        <entry encoding="base64">MjQxLDI0NnMvYXR0ci9tZXNzYWdlX3F1ZXVlX2F0dHI=</entry>
+        <entry encoding="base64">MTk4LDIwMnMvc2VydmVyX2FkZHIvc2VydmVyX2FkZHJlc3M=</entry>
+        <entry encoding="base64">MTQ2LDE3MnMvZnAyL2ZpbGVfcG9pbnRlcl90b19kYXRhc2V0</entry>
+        <entry encoding="base64">MTIxLDEyNHMvbXNnL21zZ19mb3Jfd3JpdGVGaWxl</entry>
+        <entry encoding="base64">MjM4LHMvbXEvbWVzc2FnZV9xdWV1ZQ==</entry>
+        <entry encoding="base64">MjM4LDI2NXMvbXEvbWVzc2FnZV9xdWV1ZQ==</entry>
+        <entry encoding="base64">JzwsJz53</entry>
+        <entry encoding="base64">MjQsNDRzL3R0eS90aW8=</entry>
+        <entry encoding="base64">dw==</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <filemarks>
+      <file name="/GDB" timestamp="1684135274357">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/writeToFile.c" timestamp="1683907788596">
+        <mark key="'" line="55" column="0" />
+        <mark key="[" line="12" column="0" />
+        <mark key="]" line="12" column="30" />
+        <mark key="^" line="3" column="18" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/Sampling/src/adc_sampling_uart.c_CLION_FRAGMENT_SEPARATOR_fragment.c" timestamp="1684135280608">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/Sampling/src/adc_sampling_uart.c" timestamp="1684138353097">
+        <mark key="'" line="88" column="15" />
+        <mark key="[" line="106" column="18" />
+        <mark key="]" line="106" column="18" />
+        <mark key="." line="106" column="18" />
+        <mark key="^" line="106" column="18" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/Sampling code/src/adc_sampling_uart.c" timestamp="1683920353512">
+        <mark key="[" line="7" column="0" />
+        <mark key="]" line="7" column="19" />
+        <mark key="^" line="89" column="15" />
+        <mark key="." line="89" column="14" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/beaglebone_sampling_header.h" timestamp="1683907814373">
+        <mark key="[" line="36" column="0" />
+        <mark key="]" line="36" column="0" />
+        <mark key="." line="36" column="0" />
+        <mark key="^" line="34" column="29" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/Sampling/src/receiveFromUDP.c" timestamp="1685642794166" />
+      <file name="$USER_HOME$/EMG4/data_collection/C/Sampling/headers/beaglebone_sampling_header.h" timestamp="1683923848148">
+        <mark key="[" line="39" column="2" />
+        <mark key="]" line="39" column="5" />
+        <mark key="." line="39" column="4" />
+        <mark key="^" line="39" column="5" />
+      </file>
+      <file name="/" timestamp="1685642652639">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/adc_sampling_uart.c" timestamp="1683919526125">
+        <mark key="'" line="85" column="6" />
+        <mark key="[" line="6" column="10" />
+        <mark key="]" line="6" column="21" />
+        <mark key="." line="6" column="20" />
+        <mark key="^" line="6" column="21" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/keyboardThread.c" timestamp="1683907802791">
+        <mark key="'" line="86" column="0" />
+        <mark key="[" line="7" column="0" />
+        <mark key="]" line="7" column="30" />
+        <mark key="." line="6" column="0" />
+        <mark key="^" line="3" column="39" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/Sampling code/headers/beaglebone_sampling_header.h" timestamp="1683919395384">
+        <mark key="[" line="26" column="29" />
+        <mark key="]" line="26" column="29" />
+        <mark key="." line="26" column="30" />
+        <mark key="^" line="39" column="6" />
+      </file>
+      <file name="/oc-debug-editor-when-no-source-position-available.txt" timestamp="1684135274618">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/receiveFromUDP.c" timestamp="1683908208906">
+        <mark key="'" line="67" column="0" />
+        <mark key="[" line="34" column="30" />
+        <mark key="]" line="35" column="2" />
+        <mark key="^" line="35" column="2" />
+        <mark key="." line="35" column="1" />
+      </file>
+      <file name="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA218/Lab 3/Lab_3b/src/server.c" timestamp="1685643009552">
+        <mark key="'" line="184" column="2" />
+        <mark key="[" line="74" column="47" />
+        <mark key="]" line="75" column="0" />
+        <mark key="^" line="75" column="0" />
+        <mark key="." line="75" column="0" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/CMakeLists.txt" timestamp="1683922635063">
+        <mark key="[" line="4" column="47" />
+        <mark key="]" line="4" column="47" />
+        <mark key="." line="4" column="47" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/Sampling code/src/keyboardThread.c" timestamp="1683920359013">
+        <mark key="[" line="9" column="0" />
+        <mark key="]" line="9" column="0" />
+        <mark key="^" line="8" column="18" />
+        <mark key="." line="9" column="0" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/Sampling code/src/receiveFromUDP.c" timestamp="1683912746351">
+        <mark key="[" line="31" column="2" />
+        <mark key="]" line="33" column="59" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/computerCode.c" timestamp="1683908112735">
+        <mark key="'" line="69" column="0" />
+        <mark key="[" line="17" column="0" />
+        <mark key="]" line="17" column="0" />
+        <mark key="^" line="38" column="0" />
+        <mark key="." line="17" column="0" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/C/adc_sampling_uart.c_CLION_FRAGMENT_SEPARATOR_fragment.c" timestamp="1683919287132">
+        <mark key="[" line="0" column="0" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="47" column="15" filename="$USER_HOME$/EMG4/data_collection/C/adc_sample.c" />
+      <jump line="37" column="6" filename="$USER_HOME$/EMG4/data_collection/C/adc_memory_mapping.c" />
+      <jump line="56" column="44" filename="$USER_HOME$/EMG4/data_collection/C/adc_sample.c" />
+      <jump line="86" column="54" filename="$USER_HOME$/EMG4/data_collection/C/adc_sample.c" />
+      <jump line="27" column="0" filename="$USER_HOME$/EMG4/data_collection/C/timer_interrupt.c" />
+      <jump line="125" column="9" filename="$USER_HOME$/EMG4/data_collection/C/timer_interrupt.c" />
+      <jump line="60" column="9" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="271" column="0" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="277" column="0" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="221" column="17" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="238" column="32" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="187" column="0" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="201" column="4" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="145" column="32" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="119" column="34" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="250" column="22" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="237" column="4" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="38" column="5" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="263" column="30" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="49" column="0" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="282" column="0" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="81" column="1" filename="$USER_HOME$/EMG4/data_collection/C/keyboardThread.c" />
+      <jump line="82" column="0" filename="$USER_HOME$/EMG4/data_collection/C/keyboardThread.c" />
+      <jump line="53" column="1" filename="$USER_HOME$/EMG4/data_collection/C/readFromSocket.c" />
+      <jump line="130" column="0" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="45" column="1" filename="$USER_HOME$/EMG4/data_collection/C/writeToFile.c" />
+      <jump line="46" column="0" filename="$USER_HOME$/EMG4/data_collection/C/writeToFile.c" />
+      <jump line="50" column="0" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="141" column="0" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="55" column="1" filename="$USER_HOME$/EMG4/data_collection/C/receiveFromUDP.c" />
+      <jump line="56" column="0" filename="$USER_HOME$/EMG4/data_collection/C/receiveFromUDP.c" />
+      <jump line="78" column="0" filename="$USER_HOME$/EMG4/data_collection/C/computerCode.c" />
+      <jump line="39" column="37" filename="$USER_HOME$/EMG4/data_collection/C/receiveFromUDP.c" />
+      <jump line="75" column="0" filename="$USER_HOME$/EMG4/data_collection/C/receiveFromUDP.c" />
+      <jump line="43" column="1" filename="$USER_HOME$/EMG4/data_collection/C/adc_sampling_uart.c" />
+      <jump line="83" column="6" filename="$USER_HOME$/EMG4/data_collection/C/adc_sampling_uart.c" />
+      <jump line="88" column="15" filename="$USER_HOME$/EMG4/data_collection/C/Sampling/src/adc_sampling_uart.c" />
+      <jump line="183" column="2" filename="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA218/Lab 3/Lab_3b/src/server.c" />
+    </jumps>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="&quot;" type="4">
+        <text encoding="base64">LA==</text>
+      </register>
+      <register name="-" type="4">
+        <text encoding="base64">LA==</text>
+      </register>
+      <register name="." type="4">
+        <text encoding="base64" />
+      </register>
+      <register name="/" type="4">
+        <text encoding="base64">dHR5</text>
+      </register>
+      <register name="0" type="2">
+        <text encoding="base64">ICAgICAgbWVtc2V0KG1lc3NhZ2Vfdm9sdGFnZV9idWZmZXIsIDAsIHNpemVvZiAqbWVzc2FnZV92b2x0YWdlX2J1ZmZlcik7Cg==</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgIGZyZWUobWVzc2FnZV92b2x0YWdlX2J1ZmZlcik7Cg==</text>
+      </register>
+      <register name="q" type="4">
+        <text encoding="base64" />
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgIG1lc3NhZ2Vfdm9sdGFnZV9idWZmZXIgPSBtYWxsb2Moc2l6ZW9mKG1lc3NhZ2VfdCkgKiAxKTsK</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICBtZXNzYWdlX3ZvbHRhZ2VfYnVmZmVyID0gbWFsbG9jKHNpemVvZihtZXNzYWdlX3QpICogMSk7Cg==</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICBmcmVlKG1lc3NhZ2Vfdm9sdGFnZV9idWZmZXIpOwo=</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgbWVtc2V0KG1lc3NhZ2Vfdm9sdGFnZV9idWZmZXIsIDAsIHNpemVvZiAqbWVzc2FnZV92b2x0YWdlX2J1ZmZlcik7Cg==</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgYmFkX3JlY2VpdmUgPSAwOwo=</text>
+      </register>
+      <register name="8" type="4">
+        <text encoding="base64">cmVjZWl2ZWRfdmFsdWVfZnJvbV9zdHJ0b2wgPQogICAgICAgICAgc3RydG9sKGJ1ZiwgJmVuZFB0cl9mb3Jfc3RydG9sLCBiYXNlX3RvX2NvbnZlcnRfdG8pOwogICAgICBpZiAoYnVmID09IGVuZFB0cl9mb3Jfc3RydG9sKSB7CiAgICAgICAgcHJpbnRmKCJGYWlsZWQgdG8gY29udmVydCB0byBhbiBpbnRlZ2VyLlxuIik7CiAgICAgIH0KCiAgICAgIG1lc3NhZ2Vfdm9sdGFnZV9idWZmZXItPnZvbHRhZ2VbbnVtYmVyX29mX3NhbXBsZXNfY291bnRlcl0gPQogICAgICAgICAgcmVjZWl2ZWRfdmFsdWVfZnJvbV9zdHJ0b2w7CiAgICAgIHByaW50ZigiJWRcbiIsCiAgICAgICAgICAgICBtZXNzYWdlX3ZvbHRhZ2VfYnVmZmVyLT52b2x0YWdlW251bWJlcl9vZl9zYW1wbGVzX2NvdW50ZXJdKTsKICAgICAgbnVtYmVyX29mX3NhbXBsZXNfY291bnRlcisrOwogICAgICBtZW1zZXQoYnVmLCAwLCBzaXplb2YgYnVmKTsKCiAgICAgIGlmIChudW1iZXJfb2Zfc2FtcGxlc19jb3VudGVyID09IEJVRkZFUl9TQU1QTElOR19TSVpFKSB7CiAgICAgICAgd3JpdGUoVURQX3NvY2tldF9kZXNjcmlwdG9yLCAmYnVmLCBzaXplb2YoYnVmKSk7CiAgICAgICAgbnVtYmVyX29mX3NhbXBsZXNfY291bnRlciA9IDA7CiAgICAgICAgbWVtc2V0KG1lc3NhZ2Vfdm9sdGFnZV9idWZmZXIsIDAsIHNpemVvZiAqbWVzc2FnZV92b2x0YWdlX2J1ZmZlcik7CiAgICAgIH0=</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgICBicmVhazsK</text>
+      </register>
+      <register name=":" type="4">
+        <text encoding="base64">dw==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-search encoding="base64">bXNnX2Zvcl93cml0ZUZpbGUua2V5</last-search>
+      <last-substitute encoding="base64">dHR5</last-substitute>
+      <last-replace encoding="base64">dGlv</last-replace>
+      <last-pattern encoding="base64">dHR5</last-pattern>
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+</application>

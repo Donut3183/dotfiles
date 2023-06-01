@@ -1,0 +1,30 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/EMG4" value="true" />
+        <entry key="$USER_HOME$/EMG4/data_collection" value="true" />
+        <entry key="$USER_HOME$/EMG4/data_collection/python" value="true" />
+        <entry key="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA493/Assignments/Lab1" value="true" />
+        <entry key="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA493/Assignments/Lab2" value="true" />
+        <entry key="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA493/Assignments/Lab3" value="true" />
+        <entry key="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA493/Assignments/Lab4" value="true" />
+        <entry key="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA493/Assignments/Lab5" value="true" />
+        <entry key="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA493/Lab Assignments/Lab 1" value="true" />
+        <entry key="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA493/Lab Assignments/Lab 2" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/DVA493_Lab1" value="true" />
+        <entry key="$USER_HOME$/PycharmProjects/pythonProject" value="true" />
+        <entry key="$USER_HOME$/genetic_algorithm_tsp" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/PycharmProjects" />
+        <option value="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA493/Lab Assignments" />
+        <option value="$USER_HOME$/Nextcloud/Universitet/Kurser/DVA493/Assignments" />
+      </list>
+    </option>
+  </component>
+</application>

@@ -1,0 +1,8 @@
+<application>
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="192.168.7.2" id="ff808dd0-0fdf-464a-909c-4dda8048702f" port="22" nameFormat="DESCRIPTIVE" username="debian" useOpenSSHConfig="true" />
+      <sshConfig authType="OPEN_SSH" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="192.168.1.5" id="798d6cf2-4c81-4a7a-9f34-8bb851b7f197" port="22" nameFormat="DESCRIPTIVE" username="root" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</application>

@@ -1,0 +1,87 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search />
+      <history-cmd>
+        <entry encoding="base64">dw==</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/EMG4/emg_processing/src/main_computer.py" timestamp="1684928594985">
+        <mark key="[" line="102" column="51" />
+        <mark key="]" line="102" column="52" />
+        <mark key="." line="102" column="51" />
+        <mark key="^" line="102" column="52" />
+      </file>
+      <file name="/Dummy.txt" timestamp="1684927721588">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/EMG4/emg_processing/src/main_board.py" timestamp="1684483744086">
+        <mark key="[" line="54" column="44" />
+        <mark key="]" line="54" column="45" />
+        <mark key="^" line="54" column="45" />
+        <mark key="." line="54" column="44" />
+      </file>
+      <file name="/Python Console" timestamp="1684927648471">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/fragment.py" timestamp="1684927651026">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/a.py" timestamp="1684927648474">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/python/uart_logger.py" timestamp="1684140748200">
+        <mark key="[" line="6" column="0" />
+        <mark key="]" line="6" column="0" />
+        <mark key="." line="6" column="0" />
+      </file>
+      <file name="$USER_HOME$/EMG4/data_collection/dataset/filter_dataset.py" timestamp="1684153652487">
+        <mark key="'" line="16" column="0" />
+        <mark key="[" line="3" column="58" />
+        <mark key="]" line="3" column="67" />
+        <mark key="^" line="3" column="67" />
+        <mark key="." line="3" column="66" />
+      </file>
+      <file name="/" timestamp="1684927297957">
+        <mark key="[" line="0" column="0" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="16" column="0" filename="$USER_HOME$/EMG4/data_collection/dataset/filter_dataset.py" />
+    </jumps>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="1" type="2">
+        <text encoding="base64">bG9nX2ZpbGUgPSBvcGVuKCd1YXJ0X2xvZy50eHQnLCAndycpCg==</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text encoding="base64">IA==</text>
+      </register>
+      <register name="2" type="4">
+        <text encoding="base64">ICMgQ2hlY2sgaWYgYSBrZXkgaXMgcHJlc3NlZAogICAgaWYgbXN2Y3J0LmtiaGl0KCk6CiAgICAgICAga2V5ID0gbXN2Y3J0LmdldGNoKCkuZGVjb2RlKCd1dGYtOCcpCiAgICAgICAgbG9nX2ZpbGUud3JpdGUoJ3t9XHR7fVxuJy5mb3JtYXQobGluZSwga2V5KSkKICAgIGVsc2U6CiAgICAgICAgbG9nX2ZpbGUud3JpdGUoJ3t9XG4nLmZvcm1hdChsaW5lKSkKCiAgICAjIEZsdXNoIHRoZSBvdXRwdXQgdG8gdGhlIGxvZyBmaWxlCiAgICBsb2dfZmlsZS5mbHVzaCgpCg==</text>
+      </register>
+      <register name=":" type="4">
+        <text encoding="base64">dw==</text>
+      </register>
+      <register name="-" type="4">
+        <text encoding="base64">IA==</text>
+      </register>
+      <register name="." type="4">
+        <text encoding="base64">Jw==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+</application>

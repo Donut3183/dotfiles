@@ -1,0 +1,10 @@
+<application>
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="192.168.7.2" id="a733b6b0-45e5-4e16-8dbf-e92dcb97362f" port="22" nameFormat="DESCRIPTIVE" username="debian" useOpenSSHConfig="true" />
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" id="4a21fedc-ce46-4e22-9e03-adef6e4f7909" customName="Remote Host (6a96c744-be27-4003-bdf0-51f0c7a8ef21)" nameFormat="CUSTOM" useOpenSSHConfig="true">
+        <option name="customName" value="Remote Host (6a96c744-be27-4003-bdf0-51f0c7a8ef21)" />
+      </sshConfig>
+    </configs>
+  </component>
+</application>

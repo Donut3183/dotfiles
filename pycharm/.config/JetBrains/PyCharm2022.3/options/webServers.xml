@@ -1,0 +1,19 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e205f885-9b56-4c2f-a8a0-38d7319998ea" name="debian@192.168.7.2:22 password">
+        <fileTransfer rootFolder="/home/debian" accessType="SFTP" host="192.168.7.2" port="22" sshConfigId="ff808dd0-0fdf-464a-909c-4dda8048702f" sshConfig="debian@192.168.7.2:22 password">
+          <advancedOptions>
+            <advancedOptions isUseRsync="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="ae79ce02-021b-4390-abd6-2870aaa3268f" name="debian@192.168.7.2:22 password (2)">
+        <fileTransfer accessType="SFTP" host="192.168.7.2" port="22" sshConfigId="ff808dd0-0fdf-464a-909c-4dda8048702f" sshConfig="debian@192.168.7.2:22 password" />
+      </webServer>
+      <webServer id="8b9f9a72-140c-41ad-b76e-c4d17e783dfc" name="root@192.168.1.5:22 agent">
+        <fileTransfer accessType="SFTP" host="192.168.1.5" port="22" sshConfigId="798d6cf2-4c81-4a7a-9f34-8bb851b7f197" sshConfig="root@192.168.1.5:22 agent" authAgent="true" />
+      </webServer>
+    </option>
+  </component>
+</application>

@@ -1,0 +1,36 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6a96c744-be27-4003-bdf0-51f0c7a8ef21" name="Remote Host (6a96c744-be27-4003-bdf0-51f0c7a8ef21)" url="http:///">
+        <fileTransfer accessType="SFTP" host="192.168.7.2" port="22" sshConfigId="a733b6b0-45e5-4e16-8dbf-e92dcb97362f" sshConfig="debian@192.168.7.2:22 password">
+          <advancedOptions>
+            <advancedOptions isUseRsync="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="6a96c744-be27-4003-bdf0-51f0c7a8ef21" name="Remote Host (6a96c744-be27-4003-bdf0-51f0c7a8ef21)" url="http:///">
+        <fileTransfer rootFolder="/webdav" accessType="SFTP" sshConfigId="4a21fedc-ce46-4e22-9e03-adef6e4f7909" sshConfig="Remote Host (6a96c744-be27-4003-bdf0-51f0c7a8ef21)">
+          <advancedOptions>
+            <advancedOptions isUseRsync="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+    <groups>
+      <group>
+        <name>Remote Development</name>
+        <mayChangeLevel>false</mayChangeLevel>
+        <servers>
+          <name value="Remote Host (6a96c744-be27-4003-bdf0-51f0c7a8ef21)" />
+        </servers>
+      </group>
+      <group>
+        <name>Remote Development</name>
+        <mayChangeLevel>false</mayChangeLevel>
+        <servers>
+          <name value="Remote Host (6a96c744-be27-4003-bdf0-51f0c7a8ef21)" />
+        </servers>
+      </group>
+    </groups>
+  </component>
+</application>

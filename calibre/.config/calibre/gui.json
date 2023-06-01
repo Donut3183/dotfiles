@@ -453,35 +453,35 @@
   },
   "geometry-of-calibre_main_window_geometry": {
     "frame_geometry": {
-      "height": 774,
-      "width": 1280,
+      "height": 792,
+      "width": 1301,
       "x": 0,
-      "y": 26
+      "y": 21
     },
     "full_screened": false,
     "geometry": {
-      "height": 768,
-      "width": 1274,
-      "x": 3,
-      "y": 29
+      "height": 790,
+      "width": 1299,
+      "x": 1,
+      "y": 22
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 768,
-      "width": 1274,
-      "x": 3,
-      "y": 29
+      "height": 790,
+      "width": 1299,
+      "x": 1,
+      "y": 22
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAGgAABP8AAAMfAAAAAwAAAB0AAAT8AAADHAAAAAAAAAAABQAAAAADAAAAHQAABPwAAAMc"
+      "__value__": "AdnQywADAAAAAAAAAAAAFQAABRQAAAMsAAAAAQAAABYAAAUTAAADKwAAAAAAAAAABRQAAAABAAAAFgAABRMAAAMr"
     },
     "screen": {
       "depth": 24,
-      "device_pixel_ratio": 1.0,
+      "device_pixel_ratio": 1.96875,
       "geometry_in_logical_pixels": {
-        "height": 800,
-        "width": 1280,
+        "height": 813,
+        "width": 1300,
         "x": 0,
         "y": 0
       },
@@ -491,12 +491,63 @@
       "name": "eDP",
       "serial": "",
       "size_in_logical_pixels": {
-        "height": 800,
-        "width": 1280
+        "height": 813,
+        "width": 1300
       },
       "virtual_geometry": {
-        "height": 800,
-        "width": 1280,
+        "height": 813,
+        "width": 1300,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-choose-merge-dialog-geometry": {
+    "frame_geometry": {
+      "height": 313,
+      "width": 651,
+      "x": 3195,
+      "y": 241
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 307,
+      "width": 645,
+      "x": 3198,
+      "y": 244
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 307,
+      "width": 645,
+      "x": 3198,
+      "y": 244
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAx7AAAA8QAADwUAAAIpAAAMfgAAAPQAAA8CAAACJgAAAAIAAAAAB4AAAAx+AAAA9AAADwIAAAIm"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 1920,
+        "y": 0
+      },
+      "index_in_screens_list": 2,
+      "manufacturer": "Acer Technologies",
+      "model": "ED270R-",
+      "name": "DisplayPort-3",
+      "serial": "TJMEE0013W01-",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 5120,
         "x": 0,
         "y": 0
       }
@@ -506,26 +557,26 @@
     "frame_geometry": {
       "height": 606,
       "width": 856,
-      "x": 1070,
-      "y": 255
+      "x": 2990,
+      "y": 203
     },
     "full_screened": false,
     "geometry": {
       "height": 600,
       "width": 850,
-      "x": 1073,
-      "y": 258
+      "x": 2993,
+      "y": 206
     },
     "maximized": false,
     "normal_geometry": {
       "height": 600,
       "width": 850,
-      "x": 1073,
-      "y": 258
+      "x": 2993,
+      "y": 206
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAQuAAAA/wAAB4UAAANcAAAEMQAAAQIAAAeCAAADWQAAAAEAAAAAB4AAAAQxAAABAgAAB4IAAANZ"
+      "__value__": "AdnQywADAAAAAAuuAAAAywAADwUAAAMoAAALsQAAAM4AAA8CAAADJQAAAAIAAAAAB4AAAAuxAAAAzgAADwIAAAMl"
     },
     "screen": {
       "depth": 24,
@@ -533,13 +584,13 @@
       "geometry_in_logical_pixels": {
         "height": 1080,
         "width": 1920,
-        "x": 0,
+        "x": 1920,
         "y": 0
       },
-      "index_in_screens_list": 1,
+      "index_in_screens_list": 2,
       "manufacturer": "Acer Technologies",
       "model": "ED270R-",
-      "name": "DisplayPort-2",
+      "name": "DisplayPort-3",
       "serial": "TJMEE0013W01-",
       "size_in_logical_pixels": {
         "height": 1080,
@@ -557,26 +608,26 @@
     "frame_geometry": {
       "height": 726,
       "width": 1286,
-      "x": 640,
-      "y": 204
+      "x": 2560,
+      "y": 83
     },
     "full_screened": false,
     "geometry": {
       "height": 720,
       "width": 1280,
-      "x": 643,
-      "y": 207
+      "x": 2563,
+      "y": 86
     },
     "maximized": false,
     "normal_geometry": {
       "height": 720,
       "width": 1280,
-      "x": 643,
-      "y": 207
+      "x": 2563,
+      "y": 86
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAKAAAAAzAAAB4UAAAOhAAACgwAAAM8AAAeCAAADngAAAAEAAAAAB4AAAAKDAAAAzwAAB4IAAAOe"
+      "__value__": "AdnQywADAAAAAAoAAAAAUwAADwUAAAMoAAAKAwAAAFYAAA8CAAADJQAAAAIAAAAAB4AAAAoDAAAAVgAADwIAAAMl"
     },
     "screen": {
       "depth": 24,
@@ -584,13 +635,13 @@
       "geometry_in_logical_pixels": {
         "height": 1080,
         "width": 1920,
-        "x": 0,
+        "x": 1920,
         "y": 0
       },
-      "index_in_screens_list": 1,
+      "index_in_screens_list": 2,
       "manufacturer": "Acer Technologies",
       "model": "ED270R-",
-      "name": "DisplayPort-2",
+      "name": "DisplayPort-3",
       "serial": "TJMEE0013W01-",
       "size_in_logical_pixels": {
         "height": 1080,
@@ -773,7 +824,7 @@
     "__value__": "AdnQywADAAAAAAEVAAAAewAABBcAAAJzAAABFQAAAKAAAAQXAAACcwAAAAAAAAAABQAAAAEVAAAAoAAABBcAAAJz"
   },
   "library_usage_stats": {
-    "/home/pontus/Nextcloud/Documents/E-books/Calibre Kurslitteratur": 433,
+    "/home/pontus/Nextcloud/Documents/E-books/Calibre Kurslitteratur": 449,
     "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books": 149
   },
   "memory_view books view state": {

@@ -20,6 +20,9 @@ local sources = {
 
   -- Latex
   b.formatting.latexindent.with {filetypes = { "tex" }, command = "latexindent", formatOnSave = true, },
+  
+  --python
+  b.formatting.autopep8.with {filetypes = {"python"}, formatOnSave = true}
 }
 
 null_ls.setup {
