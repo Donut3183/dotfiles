@@ -4,8 +4,8 @@
 ! ------------------------------------------------------------------------------
 
 ! Xorg issue nov 2021 - use and change if needed
-!Xft.dpi:  189 
-Xft.dpi:  92
+Xft.dpi:  189 
+!Xft.dpi:  92
 ! xrdb -merge ~/.Xresources
 
 ! general settings

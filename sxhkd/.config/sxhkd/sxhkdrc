@@ -109,14 +109,6 @@ super + shift + s
 # CONTROL + ALT KEYS
 #################################################################
 
-#arcolinux-welcome-app
-ctrl + alt + w
-     arcolinux-welcome-app
-
-#archlinux-tweak-tool
-ctrl + alt + e
-    archlinux-tweak-tool
-
 #conky-rotate
 ctrl + alt + Next
      conky-rotate -n
