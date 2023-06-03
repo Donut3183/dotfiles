@@ -14,10 +14,6 @@ super + F6
 super + F7
     virtualbox
 
-#Thunar
-super + F8
-    thunar
-
 #Evolution
 super + F9
     thunderbird
@@ -40,7 +36,7 @@ super + F12
 
 #Atom
 super + e
-    obsidian
+    atom
 
 #Conky-toggle
 super + c
@@ -58,17 +54,9 @@ super + x
 super + r
     rofi-theme-selector
 
-#Urxvt
-#super + t
-#    urxvt
-
 #Pavucontrol
 super + v
     pavucontrol
-
-#Pragha
-#super + m
-#    pragha
 
 #alacritty
 super + shift + t
@@ -81,7 +69,7 @@ super + Escape
 #Keyboard dependent
 #alacritty
 super + KP_Enter
-	alacritty
+	  alacritty
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -89,12 +77,12 @@ super + KP_Enter
 
 #File-Manager
 super + shift + Return
-	thunar
+	  thunar
 
 #Keyboard dependent
 #File-Manager
 super + shift + KP_Enter
-	thunar
+	  thunar
 
 #dmenu
 #super + shift + d
@@ -270,30 +258,9 @@ ctrl + shift + Escape
 #     SCREENSHOTS
 #################################################################
 
-#Scrot
-Print
-    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
-
-#screeenshooter
-ctrl + Print
-     xfce4-screenshooter
-
-#Gnome-Screenshot
-ctrl + shift + Print
-     gnome-screenshot -i
-
 #flameshot
 shift + super + v
      flameshot gui
-
-#################################################################
-#     FUNCTION KEYS
-#################################################################
-
-#xfce4-terminal dropdown
-F12
-    xfce4-terminal --drop-down
-
 
 #################################################################
 #     MULTIMEDIA KEYS
@@ -343,18 +310,3 @@ XF86MonBrightnessUp
 #Brightness down
 XF86MonBrightnessDown
     light -U 5 
-
-
-#################################################################
-#################################################################
-##################   DESKTOP SPECIFIC    ########################
-#################################################################
-#################################################################
-
-#################################################################
-# CTRL + ALT KEYS
-#################################################################
-
-#Picom Toggle
-ctrl + alt + o
-    ~/.config/arco-dwm/scripts/picom-toggle.sh
