@@ -154,14 +154,11 @@ shift + super + v
 #     MULTIMEDIA KEYS
 #################################################################
 
-#Raises volume
 XF86AudioRaiseVolume
-    amixer set Master 10%+
+    amixer set Master 1%+ && dunstctl close && dunstctl set-paused false && dunstctl close && dunstify -a "Volume" "$(amixer get Master | grep -oE '[[:digit:]]+%' | head -n 1)"
 
-#Lowers volume
 XF86AudioLowerVolume
-    amixer set Master 10%-
-
+    amixer set Master 1%- && dunstctl close && dunstctl set-paused false && dunstctl close && dunstify -a "Volume" "$(amixer get Master | grep -oE '[[:digit:]]+%' | head -n 1)"
 #Mute
 XF86AudioMute
     amixer -D pulse set Master 1+ toggle
