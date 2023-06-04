@@ -193,8 +193,8 @@ XF86AudioStop
 
 #Brightness up
 XF86MonBrightnessUp
-    light -A 5 
+    xbacklight -inc 5 
 
 #Brightness down
 XF86MonBrightnessDown
-    light -U 5 
+    xbacklight -dec 5 

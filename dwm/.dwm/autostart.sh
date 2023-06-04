@@ -18,9 +18,9 @@ blueberry-tray &
 pasystray &
 protonmail-bridge --no-window &
 nextcloud &
-# thunderbird &
+thunderbird &
 mullvad-vpn &
-# signal-desktop --start-in-tray &
+signal-desktop --start-in-tray &
 # solaar --window=hide &
 #
 # sleep 1
