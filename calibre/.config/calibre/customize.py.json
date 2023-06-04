@@ -8,9 +8,9 @@
   "enabled_plugins": {
     "__class__": "set",
     "__value__": [
-      "Google Images",
+      "Edelweiss",
       "Big Book Search",
-      "Edelweiss"
+      "Google Images"
     ]
   },
   "filetype_mapping": {},

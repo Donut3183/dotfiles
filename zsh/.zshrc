@@ -7,8 +7,10 @@ fi
 
 ###
 # If you come from bash you might have to change your $PATH.
-export JAVA_HOME=/usr/lib/jvm/java-19-openjdk/
-export PATH=$HOME/bin:/usr/local/bin:$JAVA_HOME/bin:$PATH
+# export JAVA_HOME=/usr/lib/jvm/java-20-openjdk/
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+export _JAVA_OPTIONS="-Dsun.java2d.uiScale=200% -jar clion.jar"
+# export PATH=$HOME/bin:/usr/local/bin:$JAVA_HOME/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 #installation via script from github

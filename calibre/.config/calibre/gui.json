@@ -351,50 +351,50 @@
   },
   "geometry-of-Plugin Updater plugin:plugin updater dialog": {
     "frame_geometry": {
-      "height": 574,
-      "width": 1126,
-      "x": 538,
-      "y": 151
+      "height": 572,
+      "width": 1123,
+      "x": 85,
+      "y": 117
     },
     "full_screened": false,
     "geometry": {
       "height": 568,
-      "width": 1120,
-      "x": 541,
-      "y": 154
+      "width": 1119,
+      "x": 87,
+      "y": 119
     },
     "maximized": false,
     "normal_geometry": {
       "height": 568,
-      "width": 1120,
-      "x": 541,
-      "y": 154
+      "width": 1119,
+      "x": 87,
+      "y": 119
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAIaAAAAlwAABn8AAALUAAACHQAAAJoAAAZ8AAAC0QAAAAEAAAAAB4AAAAIdAAAAmgAABnwAAALR"
+      "__value__": "AdnQywADAAAAAABVAAAAdQAABLcAAAKwAAAAVwAAAHcAAAS1AAACrgAAAAAAAAAABRQAAABXAAAAdwAABLUAAAKu"
     },
     "screen": {
       "depth": 24,
-      "device_pixel_ratio": 1.0,
+      "device_pixel_ratio": 1.96875,
       "geometry_in_logical_pixels": {
-        "height": 1080,
-        "width": 1920,
+        "height": 813,
+        "width": 1300,
         "x": 0,
         "y": 0
       },
-      "index_in_screens_list": 1,
-      "manufacturer": "Acer Technologies",
-      "model": "ED270R-",
-      "name": "DisplayPort-2",
-      "serial": "TJMEE0013W01-",
+      "index_in_screens_list": 0,
+      "manufacturer": "California Institute of Technology",
+      "model": "",
+      "name": "eDP",
+      "serial": "",
       "size_in_logical_pixels": {
-        "height": 1080,
-        "width": 1920
+        "height": 813,
+        "width": 1300
       },
       "virtual_geometry": {
-        "height": 1080,
-        "width": 5120,
+        "height": 813,
+        "width": 1300,
         "x": 0,
         "y": 0
       }
@@ -453,28 +453,28 @@
   },
   "geometry-of-calibre_main_window_geometry": {
     "frame_geometry": {
-      "height": 792,
-      "width": 1301,
+      "height": 772,
+      "width": 1300,
       "x": 0,
-      "y": 21
+      "y": 20
     },
     "full_screened": false,
     "geometry": {
-      "height": 790,
-      "width": 1299,
-      "x": 1,
-      "y": 22
+      "height": 772,
+      "width": 1300,
+      "x": 0,
+      "y": 20
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 790,
-      "width": 1299,
-      "x": 1,
-      "y": 22
+      "height": 772,
+      "width": 1300,
+      "x": 0,
+      "y": 20
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAFQAABRQAAAMsAAAAAQAAABYAAAUTAAADKwAAAAAAAAAABRQAAAABAAAAFgAABRMAAAMr"
+      "__value__": "AdnQywADAAAAAAAAAAAAFAAABRMAAAMXAAAAAAAAABQAAAUTAAADFwAAAAAAAAAABRQAAAAAAAAAFAAABRMAAAMX"
     },
     "screen": {
       "depth": 24,
@@ -824,7 +824,7 @@
     "__value__": "AdnQywADAAAAAAEVAAAAewAABBcAAAJzAAABFQAAAKAAAAQXAAACcwAAAAAAAAAABQAAAAEVAAAAoAAABBcAAAJz"
   },
   "library_usage_stats": {
-    "/home/pontus/Nextcloud/Documents/E-books/Calibre Kurslitteratur": 449,
+    "/home/pontus/Nextcloud/Documents/E-books/Calibre Kurslitteratur": 453,
     "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books": 149
   },
   "memory_view books view state": {
