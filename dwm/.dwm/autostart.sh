@@ -3,11 +3,12 @@
 #autorandr --match-edid && autorandr --change & 
 #vibrantcli.sh > /dev/null 2>&1 &
 picom -b  --config ~/.config/picom/picom.conf &
-slstatus &
+#slstatus &
 # firefox &
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
-
+dwm-bar &
 nm-applet &
+/usr/bin/dunst &
 #run "pamac-tray"
 #run "xfce4-power-manager"
 blueberry-tray &

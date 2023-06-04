@@ -96,7 +96,8 @@ super + shift + s
 #################################################################
 # CONTROL + ALT KEYS
 #################################################################
-
+alt + l
+    betterlockscreen -l dim
 #conky-rotate
 ctrl + alt + Next
      conky-rotate -n
