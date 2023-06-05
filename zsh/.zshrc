@@ -8,21 +8,12 @@ fi
 ###
 # If you come from bash you might have to change your $PATH.
 # export JAVA_HOME=/usr/lib/jvm/java-20-openjdk/
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
-export _JAVA_OPTIONS="-Dsun.java2d.uiScale=200% -jar clion.jar"
+# export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+# export _JAVA_OPTIONS="-Dsun.java2d.uiScale=200% -jar clion.jar"
 # export PATH=$HOME/bin:/usr/local/bin:$JAVA_HOME/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-#installation via script from github
-#export ZSH="/home/$USER/.oh-my-zsh"
-#installation via paru -S oh-my-zsh-git
 export ZSH=/usr/share/oh-my-zsh/
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# if you installed the package oh-my-zsh-powerline-theme-git then you type here "powerline" as zsh theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random

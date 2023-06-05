@@ -16,4 +16,7 @@ signal-desktop --start-in-tray &
 # sleep 1
 feh --bg-fill /home/pontus/Nextcloud/Pictures/Wallapaper/gruvbox_Fnatic_Elements_Earth_Wallpaper_2560x1440.jpg &
 sleep 5
-dwm-bar &
+if pgrep -x "dwm-bar" > /dev/null; then
+else
+    dwm-bar &
+fi
