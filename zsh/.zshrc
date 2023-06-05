@@ -12,7 +12,15 @@ fi
 # export _JAVA_OPTIONS="-Dsun.java2d.uiScale=200% -jar clion.jar"
 # export PATH=$HOME/bin:/usr/local/bin:$JAVA_HOME/bin:$PATH
 
+<<<<<<< HEAD
 export ZSH=/usr/share/oh-my-zsh/
+=======
+# Path to your oh-my-zsh installation.
+#installation via script from github
+#export ZSH="/home/$USER/.oh-my-zsh"
+#installation via paru -S oh-my-zsh-git
+export ZSH=/usr/share/oh-my-zsh
+>>>>>>> 12de3f6 (Removed / in ZSH variable)
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
