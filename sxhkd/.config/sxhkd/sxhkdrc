@@ -1,35 +1,3 @@
-#m################################################################
-# KEYBOARD BINDINGS FOR ANY TWM
-#################################################################
-
-#################################################################
-# SUPER + FUNCTION KEYS
-#################################################################
-
-#Vlc
-super + F6
-    vlc --video-on-top
-
-#Virtualbox
-super + F7
-    virtualbox
-
-#Evolution
-super + F9
-    thunderbird
-
-#Spotify
-super + F10
-    spotify
-
-#Rofi Fullscreen
-super + F11
-    rofi -theme-str 'window \{width: 100%;height: 100%;\}' -show drun
-
-#Rofi
-super + F12
-    rofi -show drun
-
 #################################################################
 # SUPER + ... KEYS
 #################################################################
@@ -38,21 +6,9 @@ super + F12
 super + e
     atom
 
-#Conky-toggle
-super + c
-    conky-toggle
-
 #Htop
 super + shift + h
     alacritty -e htop 
-
-#archlinux-logout
-super + x
-    archlinux-logout
-
-#Rofi theme selector
-super + r
-    rofi-theme-selector
 
 #Pavucontrol
 super + v
@@ -84,10 +40,6 @@ super + shift + Return
 super + shift + KP_Enter
 	  thunar
 
-#dmenu
-#super + shift + d
-# dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
-
 #reload sxhkd:
 super + shift + s
 	pkill -USR1 -x sxhkd
@@ -96,51 +48,9 @@ super + shift + s
 #################################################################
 # CONTROL + ALT KEYS
 #################################################################
-alt + l
-    betterlockscreen -l dim
-#conky-rotate
-ctrl + alt + Next
-     conky-rotate -n
-
-#conky-rotate
-ctrl + alt + Prior
-    conky-rotate -p
-
-#File-Manager
-ctrl + alt + b
-     thunar
-
-#Catfish
-ctrl + alt + c
-     catfish
-
-#Chromium
-ctrl + alt + g
-    chromium -no-default-browser-check
-
 #Firefox
 ctrl + alt + f
      firefox
-
-#Nitrogen
-ctrl + alt + i
-     nitrogen
-
-#archlinux-logout
-ctrl + alt + k
-     archlinux-logout
-
-#archlinux-logout
-#ctrl + alt + l
-#    archlinux-logout
-#
-#Pulse Audio Control
-ctrl + alt + u
-     pavucontrol
-
-#Spotify
-ctrl + alt + s
-   spotify
 
 #alacritty
 ctrl + alt + t
@@ -150,6 +60,17 @@ ctrl + alt + t
 shift + super + v
      flameshot gui
 
+
+#################################################################
+# CONTROL + ALT KEYS
+#################################################################
+
+#betterlockscreen
+alt + l
+    betterlockscreen -l dim
+#win10 gaming virt-manager
+alt + g
+    alacritty -e $HOME/Dokument/scripts/win10-launcher.sh
 #################################################################
 #     MULTIMEDIA KEYS
 #################################################################
@@ -162,15 +83,6 @@ XF86AudioLowerVolume
 #Mute
 XF86AudioMute
     amixer -D pulse set Master 1+ toggle
-
-#Playerctl works for Pragha, Spotify and others
-#Delete the line for playerctl if you want to use mpc
-#and replace it with the corresponding code
-#mpc works for e.g.ncmpcpp
-#mpc toggle
-#mpc next
-#mpc prev
-#mpc stop
 
 #PLAY
 XF86AudioPlay
