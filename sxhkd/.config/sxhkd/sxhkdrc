@@ -70,7 +70,7 @@ alt + l
     betterlockscreen -l dim
 #win10 gaming virt-manager
 alt + g
-    alacritty -e $HOME/Dokument/scripts/win10-launcher.sh
+    alacritty -e $HOME/scripts/win10-launcher.sh
 #################################################################
 #     MULTIMEDIA KEYS
 #################################################################
