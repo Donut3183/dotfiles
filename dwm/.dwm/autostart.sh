@@ -8,6 +8,8 @@ blueberry-tray &
 pasystray &
 protonmail-bridge --no-window &
 nextcloud &
+firefox &
+spotify &
 thunderbird &
 mullvad-vpn &
 signal-desktop --start-in-tray &

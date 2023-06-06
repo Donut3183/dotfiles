@@ -13,10 +13,10 @@ static const int showbar            = 1;        /* 0 means no standard bar */
 static const int topbar             = 1;        /* 0 means standard bar at bottom */
 static const int extrabar           = 1;        /* 0 means no extra bar */
 static const char statussep         = ';';      /* separator between statuses */
-static const char *fonts[]          = { "Hack Nerd Font:size=12" };
+static const char *fonts[]          = { "Hack Nerd Font:size=16" };
 // static const char *fonts[]          = { "Font Awesome 5 Free:size=32" };
 // static const char *fonts[] = {"-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1" ","};  /* For Iconic Glyphs */
-static const char dmenufont[]       = "Hack Nerd Font:size=12";
+static const char dmenufont[]       = "Hack Nerd Font:size=16";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -90,7 +90,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ MODKEY|ShiftMask,             XK_b,      toggleextrabar, {0} },
+	{ MODKEY,                       XK_b,      toggleextrabar, {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
