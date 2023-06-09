@@ -25,8 +25,8 @@ export SEP2="|"
 #. "$DIR/bar-functions/dwm_alarm.sh"
 #. "$DIR/bar-functions/dwm_alsa.sh"
 . "$DIR/bar-functions/dwm_packages.sh"
-. "$DIR/bar-functions/dwm_backlight.sh"
-. "$DIR/bar-functions/dwm_battery.sh"
+# . "$DIR/bar-functions/dwm_backlight.sh"
+# . "$DIR/bar-functions/dwm_battery.sh"
 #. "$DIR/bar-functions/dwm_ccurse.sh"
 #. "$DIR/bar-functions/dwm_cmus.sh"
 #. "$DIR/bar-functions/dwm_connman.sh"
@@ -37,25 +37,32 @@ export SEP2="|"
 #. "$DIR/bar-functions/dwm_loadavg.sh"
 # . "$DIR/bar-functions/dwm_mail.sh"
 # . "$DIR/bar-functions/dwm_mpc.sh"
-. "$DIR/bar-functions/dwm_networkmanager.sh"
+# . "$DIR/bar-functions/dwm_networkmanager.sh"
 #. "$DIR/bar-functions/dwm_pulse.sh"
 . "$DIR/bar-functions/dwm_resources.sh"
-. "$DIR/bar-functions/dwm_spotify.sh"
+# . "$DIR/bar-functions/dwm_spotify.sh"
 #. "$DIR/bar-functions/dwm_transmission.sh"
 . "$DIR/bar-functions/dwm_vpn.sh"
 . "$DIR/bar-functions/dwm_weather.sh"
 . "$DIR/bar-functions/dwm_network_speed.sh"
 
-parallelize() {
+parallelize2() {
     while true
     do
-        printf "Running parallel processes\n"
-        dwm_networkmanager &
-        dwm_weather &
-        sleep 5
+        dwm_packages &
+        sleep 15m
     done
 }
 
+parallelize() {
+    while true
+    do
+        dwm_weather &
+        sleep 5m
+    done
+}
+
+parallelize2 &
 parallelize &
 
 # Update dwm status bar every second
@@ -63,18 +70,18 @@ while true
 do
     # Append results of each func one by one to the upperbar string
     upperbar=""
-    upperbar="$upperbar$(dwm_backlight)"
-    upperbar="$upperbar$(dwm_battery)"
+    # upperbar="$upperbar$(dwm_backlight)"
+    # upperbar="$upperbar$(dwm_battery)"
     upperbar="$upperbar$(dwm_date)"
   
     # Append results of each func one by one to the lowerbar string
     lowerbar=""
     lowerbar="$lowerbar$(dwm_resources)"
-    lowerbar="$lowerbar${__DWM_BAR_NETWORKMANAGER__}"
+    # lowerbar="$lowerbar${__DWM_BAR_NETWORKMANAGER__}"
     lowerbar="$lowerbar$(dwm_vpn)"
     lowerbar="$lowerbar$(dwm_network_speed)"; #dwm_network_speed_record
     lowerbar="$lowerbar${__DWM_BAR_WEATHER__}"
-    lowerbar="$lowerbar$(dwm_packages)"
+    lowerbar="$lowerbar${__DWM_BAR_PACKAGES__}"
 
     # Uncomment the line below to enable the lowerbar 
     xsetroot -name "$upperbar;$lowerbar"

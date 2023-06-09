@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # A dwm_bar function to print the weather from wttr.in
 # Joe Standring <git@joestandring.com>
@@ -11,8 +11,9 @@ dwm_weather() {
     LOCATION=Västerås
 
     if [ "$IDENTIFIER" = "unicode" ]; then
-        DATA=$(curl -s wttr.in/$LOCATION?format=%t)
+        DATA=$(curl -s wttr.in/$LOCATION?format=3)
         export __DWM_BAR_WEATHER__="${SEP1} ${DATA} ${SEP2}" 
+        # echo ${__DWM_BAR_WEATHER__}
         # printf "%s %s %s""${SEP1}""${DATA}""${SEP2}"
     else
         DATA=$(curl -s wttr.in/$LOCATION?format=1 | grep -o ".[0-9].*")
