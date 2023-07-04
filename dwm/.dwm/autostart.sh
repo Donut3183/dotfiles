@@ -9,11 +9,11 @@ pasystray &
 protonmail-bridge --no-window &
 nextcloud &
 firefox &
-spotify &
+spotify-launcher &
 thunderbird &
 mullvad-vpn &
 signal-desktop --start-in-tray &
-# solaar --window=hide &
+solaar --window=hide &
 
 # sleep 1
 feh --bg-fill /home/pontus/Nextcloud/Pictures/Wallapaper/gruvbox_Fnatic_Elements_Earth_Wallpaper_2560x1440.jpg &
@@ -22,3 +22,4 @@ if pgrep -x "dwm-bar" > /dev/null; then
 else
     dwm-bar &
 fi
+connect-xm3 & > /dev/null 2>&1
