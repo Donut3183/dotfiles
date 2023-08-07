@@ -50,7 +50,7 @@ parallelize2() {
     while true
     do
         dwm_packages &
-        sleep 15m
+        sleep 30m
     done
 }
 
@@ -62,8 +62,8 @@ parallelize() {
     done
 }
 
-parallelize2 &
 parallelize &
+parallelize2 &
 
 # Update dwm status bar every second
 while true
