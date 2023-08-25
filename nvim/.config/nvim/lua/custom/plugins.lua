@@ -25,6 +25,7 @@ local plugins = {
 			require("custom.configs.lspconfig")
 		end, -- Override to setup mason-lspconfig
 	},
+<<<<<<< HEAD
 	{
 		"iamcco/markdown-preview.nvim",
 		config = function()
@@ -34,6 +35,8 @@ local plugins = {
 		lazy = false,
 		ft = "md",
 	},
+=======
+>>>>>>> 80b1a8c7 (some updates)
 
 	-- override plugin configs
 	{

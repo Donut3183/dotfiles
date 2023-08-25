@@ -50,7 +50,11 @@ parallelize2() {
     while true
     do
         dwm_packages &
+<<<<<<< HEAD
         sleep 30m
+=======
+        sleep 60m
+>>>>>>> 80b1a8c7 (some updates)
     done
 }
 
