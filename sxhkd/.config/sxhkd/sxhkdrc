@@ -10,10 +10,10 @@ super + e
 super + shift + h
     alacritty -e htop 
 
-#Pavucontrol
-super + v
-    pavucontrol
-
+# #Pavucontrol
+# super + v
+#     pavucontrol
+#
 #alacritty
 super + shift + t
     alacritty
@@ -24,8 +24,8 @@ super + Escape
 
 #Keyboard dependent
 #alacritty
-super + KP_Enter
-	  alacritty
+# super + KP_Enter
+# 	  alacritty
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -55,6 +55,18 @@ ctrl + alt + f
 #alacritty
 ctrl + alt + t
     alacritty
+
+ctrl + alt + l
+    betterlockscreen -l
+
+ctrl + alt + s
+    systemctl suspend
+
+ctrl + alt + o
+    systemctl poweroff
+
+ctrl + alt + r
+    systemctl reboot
 
 #flameshot
 shift + super + v
@@ -102,8 +114,8 @@ XF86AudioStop
 
 #Brightness up
 XF86MonBrightnessUp
-    xbacklight -inc 1 
+    xbacklight -inc 10 
 
 #Brightness down
 XF86MonBrightnessDown
-    xbacklight -dec 1 
+    xbacklight -dec 10 

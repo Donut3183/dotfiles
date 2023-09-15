@@ -4,9 +4,10 @@
 ! ------------------------------------------------------------------------------
 
 ! Xorg issue nov 2021 - use and change if needed
-Xft.dpi:  189 
+Xft.dpi:  192 
 !Xft.dpi:  92
 ! xrdb -merge ~/.Xresources
+Xcursor.size: 80 
 
 ! general settings
 URxvt.saveLines:        50000

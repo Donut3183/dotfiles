@@ -26,7 +26,7 @@ export SEP2="|"
 #. "$DIR/bar-functions/dwm_alsa.sh"
 . "$DIR/bar-functions/dwm_packages.sh"
 # . "$DIR/bar-functions/dwm_backlight.sh"
-# . "$DIR/bar-functions/dwm_battery.sh"
+. "$DIR/bar-functions/dwm_battery.sh"
 #. "$DIR/bar-functions/dwm_ccurse.sh"
 #. "$DIR/bar-functions/dwm_cmus.sh"
 #. "$DIR/bar-functions/dwm_connman.sh"
@@ -44,7 +44,7 @@ export SEP2="|"
 #. "$DIR/bar-functions/dwm_transmission.sh"
 . "$DIR/bar-functions/dwm_vpn.sh"
 . "$DIR/bar-functions/dwm_weather.sh"
-. "$DIR/bar-functions/dwm_network_speed.sh"
+# . "$DIR/bar-functions/dwm_network_speed.sh"
 
 parallelize2() {
     while true
@@ -71,7 +71,7 @@ do
     # Append results of each func one by one to the upperbar string
     upperbar=""
     # upperbar="$upperbar$(dwm_backlight)"
-    # upperbar="$upperbar$(dwm_battery)"
+    upperbar="$upperbar$(dwm_battery)"
     upperbar="$upperbar$(dwm_date)"
   
     # Append results of each func one by one to the lowerbar string
@@ -79,7 +79,7 @@ do
     lowerbar="$lowerbar$(dwm_resources)"
     # lowerbar="$lowerbar${__DWM_BAR_NETWORKMANAGER__}"
     lowerbar="$lowerbar$(dwm_vpn)"
-    lowerbar="$lowerbar$(dwm_network_speed)"; #dwm_network_speed_record
+    # lowerbar="$lowerbar$(dwm_network_speed)"; #dwm_network_speed_record
     lowerbar="$lowerbar${__DWM_BAR_WEATHER__}"
     lowerbar="$lowerbar${__DWM_BAR_PACKAGES__}"
 

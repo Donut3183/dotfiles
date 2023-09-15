@@ -11,6 +11,7 @@ fi
 # export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 # export _JAVA_OPTIONS="-Dsun.java2d.uiScale=200% -jar clion.jar"
 # export PATH=$HOME/bin:/usr/local/bin:$JAVA_HOME/bin:$PATH
+# export PATH=$HOME/embedded/arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-eabi/bin
 
 # Path to your oh-my-zsh installation.
 #installation via script from github
@@ -133,9 +134,15 @@ if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
 fi
 
+if [ -d "$HOME/embedded/arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-eabi/bin" ] ;
+  then PATH="$HOME/embedded/arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-eabi/bin:$PATH"
+fi
+
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
+### QT
+export QT_QPA_PLATFORMTHEME=qt6ct
 
 ### ALIASES ###
 

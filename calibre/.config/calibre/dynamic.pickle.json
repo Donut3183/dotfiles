@@ -1,7 +1,7 @@
 {
   "Select Device Folder": "/media/pontus/KOBOeReader",
   "add a plugin dialog": "/home/pontus/Downloads",
-  "add books dialog dir": "/home/pontus/Downloads",
+  "add books dialog dir": "/home/pontus/DVA454/Datasheets",
   "add books dialog dir-last-used-filter-spec-all-files": false,
   "catalogs_to_be_synced": {
     "__class__": "set",
@@ -14,20 +14,21 @@
   "notified-version-updates": {
     "__class__": "set",
     "__value__": [
-      "5.40",
-      "5.37",
-      "6.11",
-      "5.36",
       "5.35",
-      "5.39",
-      "6.13",
-      "6.12",
       "6.19",
+      "6.8",
       "5.38",
-      "6.24",
-      "5.41",
+      "6.12",
+      "5.37",
+      "5.40",
+      "5.36",
       "6.9",
-      "6.8"
+      "6.24",
+      "6.13",
+      "6.11",
+      "6.26",
+      "5.41",
+      "5.39"
     ]
   },
   "recursive book import root dir dialog": "/home/pontus/Nextcloud/Documents/E-books",
@@ -35,15 +36,15 @@
   "save to disk dialog": "/media/pontus/KOBOeReader",
   "sort_history": [
     [
-      "ondevice",
-      true
-    ],
-    [
-      "series",
-      true
-    ],
-    [
       "title",
+      true
+    ],
+    [
+      "#mycollections",
+      true
+    ],
+    [
+      "ondevice",
       true
     ],
     [
