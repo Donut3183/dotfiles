@@ -14,10 +14,10 @@ super + shift + h
 # super + v
 #     pavucontrol
 #
-#alacritty
-super + shift + t
-    alacritty
-
+# #alacritty
+# super + shift + t
+#     alacritty
+#
 #Xkill
 super + Escape
     xkill

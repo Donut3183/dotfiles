@@ -1,8 +1,8 @@
 local M = {}
 
 M.markdownpreview = { -- Place your markdown-preview.nvim settings here
-	auto_start = 0,
-	auto_close = 1,
+	auto_start = 1,
+	auto_close = 0,
 	refresh_slow = 0,
 	command_for_global = 0,
 	open_to_the_world = 0,

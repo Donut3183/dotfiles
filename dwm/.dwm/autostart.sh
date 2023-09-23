@@ -16,6 +16,7 @@ thunderbird &
 mullvad-vpn &
 signal-desktop --start-in-tray &
 spotify-launcher &
+discord &
 # solaar --window=hide &
 
 sleep 1

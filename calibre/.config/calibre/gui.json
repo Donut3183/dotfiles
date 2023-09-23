@@ -454,28 +454,28 @@
   },
   "geometry-of-calibre_main_window_geometry": {
     "frame_geometry": {
-      "height": 760,
-      "width": 1280,
-      "x": 0,
-      "y": 20
+      "height": 755,
+      "width": 1049,
+      "x": 1,
+      "y": 21
     },
     "full_screened": false,
     "geometry": {
-      "height": 760,
-      "width": 1280,
-      "x": 0,
-      "y": 20
+      "height": 751,
+      "width": 1045,
+      "x": 3,
+      "y": 23
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 760,
-      "width": 1280,
-      "x": 0,
-      "y": 20
+      "height": 751,
+      "width": 1045,
+      "x": 3,
+      "y": 23
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAFAAABP8AAAMLAAAAAAAAABQAAAT/AAADCwAAAAAAAAAABQAAAAAAAAAAFAAABP8AAAML"
+      "__value__": "AdnQywADAAAAAAABAAAAFQAABBkAAAMHAAAAAwAAABcAAAQXAAADBQAAAAAAAAAABQAAAAADAAAAFwAABBcAAAMF"
     },
     "screen": {
       "depth": 24,
@@ -927,7 +927,7 @@
     "__value__": "AdnQywADAAAAAAEVAAAAewAABBcAAAJzAAABFQAAAKAAAAQXAAACcwAAAAAAAAAABQAAAAEVAAAAoAAABBcAAAJz"
   },
   "library_usage_stats": {
-    "/home/pontus/Nextcloud/Documents/E-books/Calibre Kurslitteratur": 481,
+    "/home/pontus/Nextcloud/Documents/E-books/Calibre Kurslitteratur": 485,
     "/home/pontus/Nextcloud/Documents/E-books/KOBO E-books": 151
   },
   "memory_view books view state": {
