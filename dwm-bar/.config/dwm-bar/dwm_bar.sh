@@ -50,11 +50,7 @@ parallelize2() {
     while true
     do
         dwm_packages &
-<<<<<<< HEAD
-        sleep 30m
-=======
         sleep 60m
->>>>>>> 80b1a8c7 (some updates)
     done
 }
 
@@ -75,9 +71,12 @@ do
     # Append results of each func one by one to the upperbar string
     upperbar=""
     # upperbar="$upperbar$(dwm_backlight)"
-    upperbar="$upperbar$(dwm_battery)"
+    if [ -d "/sys/class/power_supply/BAT0" ]; then
+        upperbar="$upperbar$(dwm_battery)"
+    fi
+
     upperbar="$upperbar$(dwm_date)"
-  
+
     # Append results of each func one by one to the lowerbar string
     lowerbar=""
     lowerbar="$lowerbar$(dwm_resources)"
@@ -87,7 +86,7 @@ do
     lowerbar="$lowerbar${__DWM_BAR_WEATHER__}"
     lowerbar="$lowerbar${__DWM_BAR_PACKAGES__}"
 
-    # Uncomment the line below to enable the lowerbar 
+    # Uncomment the line below to enable the lowerbar
     xsetroot -name "$upperbar;$lowerbar"
     sleep 1
 done

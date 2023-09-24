@@ -5,6 +5,7 @@ if not present then
 end
 
 local b = null_ls.builtins
+local c = null_ls.builtins.code_actions
 
 local sources = {
 
@@ -14,6 +15,12 @@ local sources = {
 
 	-- Lua
 	b.formatting.stylua,
+
+	-- Sh
+	b.formatting.beautysh,
+	c.shellcheck,
+	-- git
+	c.gitsigns,
 
 	-- cpp
 	b.formatting.clang_format,
