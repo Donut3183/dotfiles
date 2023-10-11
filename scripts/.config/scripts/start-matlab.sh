@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/local/MATLAB/R2023a/bin/matlab -desktop -r "edit('$1')"
+/usr/local/MATLAB/R2023b/bin/matlab -desktop -r "edit('$1')"
