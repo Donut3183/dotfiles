@@ -5,3 +5,4 @@ calibre/.config/calibre/dynamic.pickle.json
 calibre/.config/calibre/gui.json
 calibre/.config/calibre/fonts/scanner_cache.json
 qpdfview/.config/qpdfview/qpdfview.conf
+thunar/*
