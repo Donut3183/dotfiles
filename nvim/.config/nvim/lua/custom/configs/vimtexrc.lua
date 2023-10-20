@@ -1,0 +1,5 @@
+-- vim.g.vimtex_view_method = ""
+vim.g.vimtex_view_general = "qpdfview"
+-- vim.g.vimtex_compiler_method = "latexmk"
+-- vim.g.vimtex_compiler_method = "latexrun"
+vim.g.maplocalleader = " "

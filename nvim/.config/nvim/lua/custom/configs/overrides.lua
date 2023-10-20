@@ -82,7 +82,7 @@ M.nvimtree = {
 		adaptive_size = false,
 		side = "left",
 		width = 40,
-		hide_root_folder = false,
+		-- hide_root_folder = false,
 		preserve_window_proportions = true,
 	},
 	renderer = {

@@ -67,7 +67,7 @@ local plugins = {
 	{
 		"lervag/vimtex",
 		config = function()
-			require("custom.configs.vimtex-rc")
+			require("custom.configs.vimtexrc")
 		end,
 		ft = "tex",
 	},

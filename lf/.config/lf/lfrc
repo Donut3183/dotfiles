@@ -90,20 +90,6 @@ cmd delete ${{
 
 # use '<delete>' key for either 'trash' or 'delete' command
 
-map . set hidden!
-map DD delete
-map p paste
-map x cut
-map y copy
-map <enter> open
-map R reload
-map mf mkfile
-map md mkdir
-map C clear
-
-map gc cd ~/.config/
-map gd cd ~/Downloads/
-
 # extract the current file with the right command
 # (xkcd link: https://xkcd.com/1168/)
 cmd extract ${{
@@ -135,3 +121,24 @@ cmd zip ${{
     zip -r $1.zip $1
     rm -rf $1
 }}
+map . set hidden!
+map DD delete
+map p paste
+map x cut
+map y copy
+map <enter> open
+map R reload
+map mf mkfile
+map md mkdir
+map C clear
+
+map gu cd ~/Nextcloud/Universitet/Kurser/ 
+map gel cd ~/Nextcloud/Universitet/Kurser/ELA410/
+map gma cd ~/Nextcloud/Universitet/Kurser/MAA152/
+map gpe cd ~/Nextcloud/Universitet/Kurser/DVA454/
+map gec cd ~/embedded/
+
+map gc cd ~/.config/
+map gd cd ~/Downloads/
+map glf !nvim ~/.config/lf/lfrc
+
