@@ -37,6 +37,12 @@ if [ -n "$FIFO_UEBERZUG" ]; then
       ffmpegthumbnailer -i "$file" -o "$cache" -s 0
       draw "$cache" "$@"
       ;;
+    text/*)
+    bat --color=always "$file"
+    ;;
+    application/pdf)
+    pdftotext -l 1 "$file" - | head -n 30  # Preview only the first page and limit to 30 lines
+    ;;
   esac
 fi
 

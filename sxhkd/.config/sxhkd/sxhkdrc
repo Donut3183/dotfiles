@@ -33,7 +33,7 @@ super + Escape
 
 #File-Manager
 super + shift + Return
-  alacritty -e lf-uber
+  alacritty -e lf
 	  # thunar
 
 #Keyboard dependent
