@@ -1,3 +1,3 @@
 #!/bin/bash
-GDK_SCALE=2 /usr/bin/steam "$@"
+GDK_SCALE=1 /usr/bin/steam "$@"
 

@@ -1,15 +1,14 @@
-map g3 cd ~/Nextcloud/Documents/3D-printing/
 # ctpv
-#set previewer ctpv
-#set cleaner ctpvclear
-#&ctpv -s $id
-#&ctpvquit $id
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
 
 #stpv
-set previewer stpv
-set cleaner stpvimgclr
-&stpvimg --listen $id
-cmd on-quit $stpvimg --end $id
+#set previewer stpv
+#set cleaner stpvimgclr
+#&stpvimg --listen $id
+#cmd on-quit $stpvimg --end $id
 
 # interpreter for shell commands
 set shell sh
@@ -30,7 +29,7 @@ set shellopts '-eu'
 # commands accordingly.
 
 set ifs "\n"
-set hidden true
+set hidden false
 set ignorecase true
 set icons true
 set drawbox true
@@ -76,6 +75,9 @@ cmd open &{{
         *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
 }}
+
+# Mark several files and move to directory
+cmd move ${{ mv $fx $PWD }}
 
 # mkdir command. See wiki if you want it to select created dir
 map a :push %mkdir<space>
@@ -133,6 +135,8 @@ cmd zip ${{
     zip -r $1.zip $1
     rm -rf $1
 }}
+
+# Custom mappings
 map . set hidden!
 map DD delete
 map p paste
@@ -140,8 +144,10 @@ map x cut
 map y copy
 map <enter> open
 map R reload
+map m
 map mf mkfile
 map md mkdir
+map mv move
 map C clear
 
 map gu cd ~/Nextcloud/Universitet/Kurser/ 
@@ -153,4 +159,4 @@ map gec cd ~/embedded/
 map gc cd ~/.config/
 map gd cd ~/Downloads/
 map glf !nvim ~/.config/lf/lfrc
-
+map g3 cd ~/Nextcloud/Documents/3D-printing/

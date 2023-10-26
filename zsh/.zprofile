@@ -1,22 +1,22 @@
 ### EDITOR
 export EDITOR='nvim'
 export VISUAL='nvim'
-
+export LIBVIRT_DEFAULT_URI="qemu:///system"
 ### Stremio scaling
-export QT_AUTO_SCREEN_SCALE_FACTOR=1
+# export QT_AUTO_SCREEN_SCALE_FACTOR=1
 
 ### QT apps theming
-export QT_QPA_PLATFORMTHEME=qt6ct
+# export QT_QPA_PLATFORMTHEME=qt6ct
 
 ### Matlab
-export MATLAB_JAVA=/usr/lib/jvm/java-8-openjdk/jre
-export JAVA_HOME=/usr/lib/jvm/java-20-openjdk/
+# export MATLAB_JAVA=/usr/lib/jvm/java-8-openjdk/jre
+# export JAVA_HOME=/usr/lib/jvm/java-20-openjdk/
 ### Matlab prevent grey window
-export AWT_TOOLKIT=MToolkit
-export _JAVA_AWT_WM_NONREPARENTING=1
+# export AWT_TOOLKIT=MToolkit
+# export _JAVA_AWT_WM_NONREPARENTING=1
 
 ### sddm
 export LIBSEAT_BACKEND=logind
 
 ### Steam
-export STEAM_FORCE_DESKTOPUI_SCALING=2
+# export STEAM_FORCE_DESKTOPUI_SCALING=2
