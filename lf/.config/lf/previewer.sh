@@ -1,50 +1,42 @@
 #!/bin/sh
-draw() {
-  ~/.config/lf/draw_img.sh "$@"
-  exit 1
-}
+MIME_TYPE=$(file -Lb --mime-type -- "$1")
+FILE_EXT=${1##*.}
 
-hash() {
-  printf '%s/.cache/lf/%s' "$HOME" \
-    "$(stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' -- "$(readlink -f "$1")" | sha256sum | awk '{print $1}')"
-}
-
-cache() {
-  if [ -f "$1" ]; then
-    draw "$@"
-  fi
-}
-
-file="$1"
-shift
-
-if [ -n "$FIFO_UEBERZUG" ]; then
-  case "$(file -Lb --mime-type -- "$file")" in
-    image/*)
-      orientation="$(identify -format '%[EXIF:Orientation]\n' -- "$file")"
-      if [ -n "$orientation" ] && [ "$orientation" != 1 ]; then
-        cache="$(hash "$file").jpg"
-        cache "$cache" "$@"
-        convert -- "$file" -auto-orient "$cache"
-        draw "$cache" "$@"
-      else
-        draw "$file" "$@"
-      fi
-      ;;
-    video/*)
-      cache="$(hash "$file").jpg"
-      cache "$cache" "$@"
-      ffmpegthumbnailer -i "$file" -o "$cache" -s 0
-      draw "$cache" "$@"
-      ;;
-    text/*)
-    bat --color=always "$file"
-    ;;
-    application/pdf)
-    pdftotext -l 1 "$file" - | head -n 30  # Preview only the first page and limit to 30 lines
-    ;;
-  esac
+if [ "$FILE_EXT" = "stl" ] || [ "$FILE_EXT" = "STL" ]; then
+	TEMP=$(mktemp -d -t lf-stl-XXXXXX)
+	cp "$1" "$TEMP/source.stl"
+	echo "import(\"source.stl\", convexity=10);" >"$TEMP/thumbnail.scad"
+	openscad --imgsize "1000,1000" -o "$TEMP/thumbnail.png" "$TEMP/thumbnail.scad" 2>/dev/null
+	chafa -f sixel -s "$2x$3" --animate false "$TEMP/thumbnail.png"
+	rm -rf "$TEMP"
+else
+	case "$MIME_TYPE" in
+	image/*)
+		chafa -f sixel -s "$2x$3" --animate false "$1"
+		;;
+	application/pdf)
+		tmpfile=$(mktemp)
+		pdftoppm -f 1 -l 1 "$1" -png -rx 150 -ry 150 >"$tmpfile"
+		chafa -f sixel -s "$2x$3" --animate false "$tmpfile"
+		rm "$tmpfile"
+		;;
+	video/*)
+		tmpfile=$(mktemp)
+		ffmpegthumbnailer -i "$1" -o "$tmpfile" -s 0
+		chafa -f sixel -s "$2x$3" --animate false "$tmpfile"
+		rm "$tmpfile"
+		;;
+	application/zip | application/bzip2 | application/lzma | application/xz | application/zstd)
+		unzip -l "$1"
+		;;
+	application/tar | application/gzip)
+		tar -tvf "$1"
+		;;
+	text/*)
+		bat --color=always --style=plain "$1"
+		;;
+	*)
+		echo "No preview available"
+		;;
+	esac
 fi
-
-file -Lb -- "$1" | fold -s -w "$width"
-exit 0

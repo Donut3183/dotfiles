@@ -5,3 +5,36 @@ alias nano="nvim"
 alias vim="nvim"
 alias cat="bat --color always --style=plain"
 
+alias cd..='cd ..'
+alias pdw='pwd'
+alias udpate='sudo pacman -Syyu'
+alias upate='sudo pacman -Syyu'
+alias updte='sudo pacman -Syyu'
+alias updqte='sudo pacman -Syyu'
+
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+alias df='df -h'
+# Aliases for software managment
+# pacman
+alias pacman="sudo pacman --color auto"
+alias update="sudo pacman -Syyu"
+#grub update
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+#hardware info --short
+alias hw="hwinfo --short"
+
+#Cleanup orphaned packages
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+
+#clear
+alias clean="clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat"
+
+#get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+
+
+

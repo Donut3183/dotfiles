@@ -1,2 +1,2 @@
 #! /bin/bash
-GDK_SCALE=2 GDK_DPI_SCALE=0.5 /usr/bin/lutris_original
+GDK_BACKEND=wayland GDK_SCALE=1 GDK_DPI_SCALE=1 /usr/bin/lutris_original

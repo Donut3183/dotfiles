@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # wallpaper var
-EnableWallDcol=1
+EnableWallDcol=0
 ConfDir="$HOME/.config"
 CloneDir="/home/pontus/hyprdots"
 ThemeCtl="$ConfDir/swww/wall.ctl"

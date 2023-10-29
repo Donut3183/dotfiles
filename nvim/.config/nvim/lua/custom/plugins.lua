@@ -1,9 +1,18 @@
 local overrides = require("custom.configs.overrides")
-
 ---@type NvPluginSpec[]
 local plugins = {
-
-	-- Override plugin definition options
+	{
+		"jackmort/chatgpt.nvim",
+		event = "VeryLazy",
+		config = function()
+			require("chatgpt").setup(require("custom.configs.chatgpt").chatgpt_settings)
+		end,
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"nvim-lua/plenary.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
+	},
 	{
 		"lambdalisue/suda.vim",
 		lazy = false,
@@ -11,19 +20,10 @@ local plugins = {
 
 	{
 		"neovim/nvim-lspconfig",
-		dependencies = {
-			-- format & linting
-			{
-				"jose-elias-alvarez/null-ls.nvim",
-				config = function()
-					require("custom.configs.null-ls")
-				end,
-			},
-		},
+		dependencies = {},
 		config = function()
-			require("plugins.configs.lspconfig")
 			require("custom.configs.lspconfig")
-		end, -- Override to setup mason-lspconfig
+		end,
 	},
 	{
 		"iamcco/markdown-preview.nvim",
@@ -31,13 +31,24 @@ local plugins = {
 			vim.fn["mkdp#util#install"]()
 		end,
 		opts = overrides.markdown,
-		lazy = false,
+		lazy = true,
 		ft = "md",
 	},
 	-- override plugin configs
 	{
 		"williamboman/mason.nvim",
-		opts = overrides.mason,
+		dependencies = {
+			"williamboman/mason-lspconfig.nvim",
+			"WhoIsSethDaniel/mason-tool-installer.nvim",
+		},
+		config = function()
+			-- import mason
+			local M = require("custom.configs.mason_lspconfig")
+
+			require("mason").setup(M.mason)
+			require("mason-lspconfig").setup(M.mason_lspconfig)
+			require("mason-tool-installer").setup(M.mason_tool_installer)
+		end,
 	},
 
 	{
@@ -70,6 +81,34 @@ local plugins = {
 			require("custom.configs.vimtexrc")
 		end,
 		ft = "tex",
+	},
+	{
+		"stevearc/conform.nvim",
+		lazy = true,
+		event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
+		config = function()
+			local M = require("custom.configs.conform")
+			require("conform").setup(M.conform)
+		end,
+	},
+	{
+		"mfussenegger/nvim-lint",
+		lazy = true,
+		event = { "BufReadPre", "BufNewFile" },
+		config = function()
+			local lint = require("lint")
+			local custom_linters = require("custom.configs.linting")
+			lint.linters_by_ft = custom_linters.linters
+
+			local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
+
+			vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
+				group = lint_augroup,
+				callback = function()
+					lint.try_lint()
+				end,
+			})
+		end,
 	},
 }
 
