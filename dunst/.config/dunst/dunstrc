@@ -43,7 +43,7 @@
 
     ### Progress bar ###
 
-    # Turn on the progess bar. It appears when a progress hint is passed with
+    # Turn on the progress bar. It appears when a progress hint is passed with
     # for example dunstify -h int:value:12
     progress_bar = true
 
@@ -216,7 +216,7 @@
     # Scale larger icons down to this size, set to 0 to disable
     max_icon_size = 128
 
-    # Paths to default icons (only neccesary when not using recursive icon lookup)
+    # Paths to default icons (only necessary when not using recursive icon lookup)
     icon_path = /usr/share/icons/Tela-circle-dracula/16/actions:/usr/share/icons/Tela-circle-dracula/16/apps:/usr/share/icons/Tela-circle-dracula/16/devices:/usr/share/icons/Tela-circle-dracula/16/mimetypes:/usr/share/icons/Tela-circle-dracula/16/panel:/usr/share/icons/Tela-circle-dracula/16/places:/usr/share/icons/Tela-circle-dracula/16/status
 
     ### History ###
@@ -261,7 +261,7 @@
     ### Wayland ###
     # These settings are Wayland-specific. They have no effect when using X11
 
-    # Uncomment this if you want to let notications appear under fullscreen
+    # Uncomment this if you want to let notifications appear under fullscreen
     # applications (default: overlay)
     # layer = top
 
@@ -442,24 +442,24 @@
     format = "<span size="250%">%a</span>\n%b"
 
 [urgency_critical]
-    background = "#f5e0dc"
-    foreground = "#1e1e2e"
-    frame_color = "#f38ba8"
+    background = "#1a1b26"
+    foreground = "#a9b1d6"
+    frame_color = "#f7768e"
     icon = "~/.config/dunst/icons/critical.svg"
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_low]
-    background = "#3F5D79"
-    foreground = "#414868"
-    frame_color = "#414868"
+    background = "#1a1b26"
+    foreground = "#a9b1d6"
+    frame_color = "#7aa2f7"
     icon = "~/.config/dunst/icons/hyprdots.svg"
     timeout = 10
 
 [urgency_normal]
-    background = "#191A24"
-    foreground = "#98A4CE"
-    frame_color = "#98A4CE"
+    background = "#1a1b26"
+    foreground = "#a9b1d6"
+    frame_color = "#9ece6a"
     icon = "~/.config/dunst/icons/hyprdots.svg"
     timeout = 10
