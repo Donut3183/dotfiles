@@ -1,0 +1,242 @@
+[2023-10-29 12:56:17.966] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 12:56:17.966] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 12:56:17.972] [info] Hyprland IPC starting
+[2023-10-29 12:56:18.500] [warning] Requested height: 21 is less than the minimum height: 29 required by the modules
+[2023-10-29 12:56:18.500] [info] Bar configured (width: 1920, height: 29) for output: DP-3
+[2023-10-29 12:56:18.504] [warning] Requested height: 21 is less than the minimum height: 29 required by the modules
+[2023-10-29 12:56:18.504] [info] Bar configured (width: 1920, height: 29) for output: DP-2
+[2023-10-29 12:56:18.508] [warning] Requested height: 21 is less than the minimum height: 29 required by the modules
+[2023-10-29 12:56:18.508] [info] Bar configured (width: 1706, height: 29) for output: eDP-1
+[2023-10-29 12:56:18.522] [info] Bar configured (width: 1920, height: 29) for output: DP-3
+[2023-10-29 12:56:18.524] [info] Bar configured (width: 1920, height: 29) for output: DP-2
+[2023-10-29 12:56:43.369] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 12:56:43.369] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 12:56:43.376] [info] Hyprland IPC starting
+[2023-10-29 12:56:43.903] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 12:56:43.903] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 12:56:43.908] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 12:56:43.908] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 12:56:43.915] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 12:56:43.915] [info] Bar configured (width: 1706, height: 31) for output: eDP-1
+[2023-10-29 12:56:43.927] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 12:56:43.929] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 12:56:59.453] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 12:56:59.453] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 12:56:59.460] [info] Hyprland IPC starting
+[2023-10-29 12:56:59.975] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 12:56:59.975] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 12:56:59.976] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 12:56:59.976] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 12:56:59.977] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 12:56:59.977] [info] Bar configured (width: 1706, height: 33) for output: eDP-1
+[2023-10-29 12:56:59.998] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 12:56:59.999] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 12:57:13.251] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 12:57:13.251] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 12:57:13.257] [info] Hyprland IPC starting
+[2023-10-29 12:57:13.778] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 12:57:13.778] [info] Bar configured (width: 1920, height: 36) for output: DP-3
+[2023-10-29 12:57:13.779] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 12:57:13.779] [info] Bar configured (width: 1920, height: 36) for output: DP-2
+[2023-10-29 12:57:13.780] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 12:57:13.780] [info] Bar configured (width: 1706, height: 36) for output: eDP-1
+[2023-10-29 12:57:13.796] [info] Bar configured (width: 1920, height: 36) for output: DP-3
+[2023-10-29 12:57:13.797] [info] Bar configured (width: 1920, height: 36) for output: DP-2
+[2023-10-29 13:00:49.515] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:00:49.515] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:00:49.521] [info] Hyprland IPC starting
+[2023-10-29 13:00:50.087] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 13:00:50.087] [info] Bar configured (width: 1920, height: 36) for output: DP-3
+[2023-10-29 13:00:50.092] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 13:00:50.092] [info] Bar configured (width: 1920, height: 36) for output: DP-2
+[2023-10-29 13:00:50.098] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 13:00:50.098] [info] Bar configured (width: 1706, height: 36) for output: eDP-1
+[2023-10-29 13:00:50.112] [info] Bar configured (width: 1920, height: 36) for output: DP-3
+[2023-10-29 13:00:50.114] [info] Bar configured (width: 1920, height: 36) for output: DP-2
+[2023-10-29 13:05:00.047] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:05:00.047] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:05:00.054] [info] Hyprland IPC starting
+[2023-10-29 13:05:00.606] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 13:05:00.606] [info] Bar configured (width: 1920, height: 36) for output: DP-3
+[2023-10-29 13:05:00.607] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 13:05:00.607] [info] Bar configured (width: 1920, height: 36) for output: DP-2
+[2023-10-29 13:05:00.608] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 13:05:00.608] [info] Bar configured (width: 1706, height: 36) for output: eDP-1
+[2023-10-29 13:05:00.629] [info] Bar configured (width: 1920, height: 36) for output: DP-3
+[2023-10-29 13:05:00.630] [info] Bar configured (width: 1920, height: 36) for output: DP-2
+[2023-10-29 13:06:01.555] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:06:01.556] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:06:01.562] [info] Hyprland IPC starting
+[2023-10-29 13:06:02.124] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 13:06:02.124] [info] Bar configured (width: 1920, height: 36) for output: DP-3
+[2023-10-29 13:06:02.129] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 13:06:02.129] [info] Bar configured (width: 1920, height: 36) for output: DP-2
+[2023-10-29 13:06:02.132] [warning] Requested height: 21 is less than the minimum height: 36 required by the modules
+[2023-10-29 13:06:02.132] [info] Bar configured (width: 1706, height: 36) for output: eDP-1
+[2023-10-29 13:06:02.148] [info] Bar configured (width: 1920, height: 36) for output: DP-3
+[2023-10-29 13:06:02.149] [info] Bar configured (width: 1920, height: 36) for output: DP-2
+[2023-10-29 13:07:02.135] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:07:02.136] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:07:02.144] [info] Hyprland IPC starting
+[2023-10-29 13:07:02.730] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:07:02.730] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:07:02.734] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:07:02.734] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:07:02.737] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:07:02.737] [info] Bar configured (width: 1706, height: 33) for output: eDP-1
+[2023-10-29 13:07:02.751] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:07:02.752] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:09:56.308] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:09:56.308] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:09:56.315] [info] Hyprland IPC starting
+[2023-10-29 13:09:56.858] [warning] Requested height: 21 is less than the minimum height: 29 required by the modules
+[2023-10-29 13:09:56.858] [info] Bar configured (width: 1920, height: 29) for output: DP-3
+[2023-10-29 13:09:56.860] [warning] Requested height: 21 is less than the minimum height: 29 required by the modules
+[2023-10-29 13:09:56.861] [info] Bar configured (width: 1920, height: 29) for output: DP-2
+[2023-10-29 13:09:56.861] [warning] Requested height: 21 is less than the minimum height: 29 required by the modules
+[2023-10-29 13:09:56.861] [info] Bar configured (width: 1706, height: 29) for output: eDP-1
+[2023-10-29 13:09:56.880] [info] Bar configured (width: 1920, height: 29) for output: DP-3
+[2023-10-29 13:09:56.881] [info] Bar configured (width: 1920, height: 29) for output: DP-2
+[2023-10-29 13:10:16.723] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:10:16.723] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:10:16.730] [info] Hyprland IPC starting
+[2023-10-29 13:10:17.289] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:10:17.289] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 13:10:17.296] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:10:17.296] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 13:10:17.301] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:10:17.301] [info] Bar configured (width: 1706, height: 31) for output: eDP-1
+[2023-10-29 13:10:17.311] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 13:10:17.313] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 13:12:11.917] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:12:11.917] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:12:11.923] [info] Hyprland IPC starting
+[2023-10-29 13:12:12.492] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:12:12.492] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 13:12:12.494] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:12:12.494] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 13:12:12.494] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:12:12.494] [info] Bar configured (width: 1706, height: 31) for output: eDP-1
+[2023-10-29 13:12:12.511] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 13:12:12.512] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 13:12:23.224] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:12:23.224] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:12:23.232] [info] Hyprland IPC starting
+[2023-10-29 13:12:23.788] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:12:23.788] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 13:12:23.792] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:12:23.792] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 13:12:23.796] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:12:23.796] [info] Bar configured (width: 1706, height: 31) for output: eDP-1
+[2023-10-29 13:12:23.807] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 13:12:23.808] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 13:13:23.881] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:13:23.882] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:13:23.888] [info] Hyprland IPC starting
+[2023-10-29 13:13:24.430] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:13:24.430] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 13:13:24.431] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:13:24.431] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 13:13:24.432] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:13:24.432] [info] Bar configured (width: 1706, height: 31) for output: eDP-1
+[2023-10-29 13:13:24.451] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 13:13:24.453] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 13:13:35.612] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:13:35.613] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:13:35.619] [info] Hyprland IPC starting
+[2023-10-29 13:13:36.165] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:13:36.165] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 13:13:36.171] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:13:36.171] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 13:13:36.175] [warning] Requested height: 21 is less than the minimum height: 31 required by the modules
+[2023-10-29 13:13:36.175] [info] Bar configured (width: 1706, height: 31) for output: eDP-1
+[2023-10-29 13:13:36.189] [info] Bar configured (width: 1920, height: 31) for output: DP-3
+[2023-10-29 13:13:36.190] [info] Bar configured (width: 1920, height: 31) for output: DP-2
+[2023-10-29 13:14:39.144] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:14:39.144] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:14:39.151] [info] Hyprland IPC starting
+[2023-10-29 13:14:39.680] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:14:39.680] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:14:39.682] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:14:39.682] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:14:39.682] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:14:39.682] [info] Bar configured (width: 1706, height: 33) for output: eDP-1
+[2023-10-29 13:14:39.701] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:14:39.702] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:17:40.139] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:17:40.139] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:17:40.144] [info] Hyprland IPC starting
+[2023-10-29 13:17:40.694] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:17:40.694] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:17:40.695] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:17:40.695] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:17:40.696] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:17:40.696] [info] Bar configured (width: 1706, height: 33) for output: eDP-1
+[2023-10-29 13:17:40.713] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:17:40.715] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:17:56.356] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:17:56.357] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:17:56.362] [info] Hyprland IPC starting
+[2023-10-29 13:17:56.914] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:17:56.914] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:17:56.919] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:17:56.919] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:17:56.925] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:17:56.925] [info] Bar configured (width: 1706, height: 33) for output: eDP-1
+[2023-10-29 13:17:56.937] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:17:56.938] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:18:18.129] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:18:18.130] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:18:18.138] [info] Hyprland IPC starting
+[2023-10-29 13:18:18.695] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:18:18.695] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:18:18.700] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:18:18.700] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:18:18.707] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:18:18.707] [info] Bar configured (width: 1706, height: 33) for output: eDP-1
+[2023-10-29 13:18:18.724] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:18:18.726] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:18:40.848] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:18:40.848] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:18:40.855] [info] Hyprland IPC starting
+[2023-10-29 13:18:41.422] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:18:41.422] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:18:41.423] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:18:41.423] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:18:41.423] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:18:41.424] [info] Bar configured (width: 1706, height: 33) for output: eDP-1
+[2023-10-29 13:18:41.444] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:18:41.445] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:18:54.734] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:18:54.735] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:18:54.741] [info] Hyprland IPC starting
+[2023-10-29 13:18:55.296] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:18:55.296] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:18:55.297] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:18:55.297] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:18:55.298] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:18:55.298] [info] Bar configured (width: 1706, height: 33) for output: eDP-1
+[2023-10-29 13:18:55.314] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:18:55.316] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:19:40.353] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:19:40.353] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:19:40.359] [info] Hyprland IPC starting
+[2023-10-29 13:19:40.895] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:19:40.895] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:19:40.900] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:19:40.900] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:19:40.906] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:19:40.906] [info] Bar configured (width: 1706, height: 33) for output: eDP-1
+[2023-10-29 13:19:40.917] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:19:40.920] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:19:49.870] [info] Using configuration file /home/pontus/.config/waybar/config.jsonc
+[2023-10-29 13:19:49.871] [info] Using CSS file /home/pontus/.config/waybar/style.css
+[2023-10-29 13:19:49.876] [info] Hyprland IPC starting
+[2023-10-29 13:19:50.411] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:19:50.411] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:19:50.416] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:19:50.416] [info] Bar configured (width: 1920, height: 33) for output: DP-2
+[2023-10-29 13:19:50.422] [warning] Requested height: 21 is less than the minimum height: 33 required by the modules
+[2023-10-29 13:19:50.422] [info] Bar configured (width: 1706, height: 33) for output: eDP-1
+[2023-10-29 13:19:50.434] [info] Bar configured (width: 1920, height: 33) for output: DP-3
+[2023-10-29 13:19:50.436] [info] Bar configured (width: 1920, height: 33) for output: DP-2
