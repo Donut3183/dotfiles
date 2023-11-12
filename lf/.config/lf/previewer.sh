@@ -32,6 +32,18 @@ else
 	application/tar | application/gzip)
 		tar -tvf "$1"
 		;;
+	application/vnd.oasis.opendocument.text | application/vnd.oasis.opendocument.spreadsheet | application/vnd.oasis.opendocument.presentation)
+		TMP_DIR=$(mktemp -d -t lf-libreoffice-XXXXXX)
+		libreoffice --headless --convert-to pdf --outdir "$TMP_DIR" "$1" >/dev/null 2>&1
+
+		OUT_PDF="$TMP_DIR/$(basename "$1" ".$FILE_EXT").pdf"
+		OUT_PNG="$TMP_DIR/out.png"
+
+		pdftoppm -f 1 -l 1 -png -rx 150 -ry 150 "$OUT_PDF" >"$OUT_PNG"
+		chafa -f sixel -s "$2x$3" --animate false "$OUT_PNG"
+
+		rm -rf "$TMP_DIR"
+		;;
 	text/*)
 		bat --color=always --style=plain "$1"
 		;;
