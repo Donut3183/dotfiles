@@ -14,17 +14,17 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: Hack
+    family: HackNerdFont
     # The `style` can be specified to pick a specific face.
     style: Regular
   # Bold font face
   bold:
-    family: Hack
+    family: HackNerdFont
     # The `style` can be specified to pick a specific face.
     style: Bold
   # Italic font face
   italic:
-    family: Hack
+    family: HackNerdFont
     # The `style` can be specified to pick a specific face.
     style: Italic
   # Bold italic font face
@@ -33,7 +33,7 @@ font:
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
   # Point size
-  size: 14.0
+  size: 16.0
 colors:
   # Default colors
   primary:
