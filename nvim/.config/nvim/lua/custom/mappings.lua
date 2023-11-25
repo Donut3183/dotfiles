@@ -7,11 +7,6 @@ M.general = {
 		-- ["<C-b>"] = { "mpea**<Esc>bi**<Esc>`p<CR>", "Toggle markdown Bold" },
 	},
 }
-M.markdownpreview = {
-	n = {
-		["<leader>mp"] = { ":MarkdownPreviewToggle<CR>", "Toggle Markdown Preview" },
-	},
-}
 
 local customConform = require("custom.configs.conform") -- get your custom settings
 M.conform = {
@@ -35,7 +30,7 @@ M.conform = {
 local linters = require("custom.configs.linting")
 M.linting = {
 	n = {
-		["<leader>ll"] = {
+		["<leader>lp"] = {
 			function()
 				local lint = require("lint")
 				lint.linters_by_ft = linters.linters

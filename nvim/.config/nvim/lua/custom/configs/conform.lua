@@ -12,6 +12,8 @@ M.conform = {
 		jsonc = { "prettier" },
 		ctl = { "prettier" },
 		css = { "prettier" },
+		toml = { "taplo" },
+		tex = { "latexindent" },
 		["*"] = { "codespell" },
 		["_"] = { "trim_whitespace", "trim_newlines" },
 	},

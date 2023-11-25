@@ -1,7 +1,10 @@
-#!/bin/sh
-export DISPLAY=:0
-export XAUTHORITY=/home/pontus/.Xauthority
-xset s off
-xset -dpms
+#!/bin/bash
 
-xset q > /home/pontus/xset_output.txt
+# Read the current status of the AC adapter
+AC_STATUS=$(cat /sys/class/power_supply/ACAD/online)
+
+if [ "$AC_STATUS" -eq 1 ]; then
+	xset s off -dpms
+else
+	xset s on +dpms
+fi

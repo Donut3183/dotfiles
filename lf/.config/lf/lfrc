@@ -42,7 +42,12 @@ map O $mimeopen --ask $f
 # define a custom 'open' command
 cmd open &{{
     case $(file --mime-type -Lb $f) in
-        text/*) lf -remote "send $id \$$EDITOR \$fx";;
+        text/*)
+      case "$fx" in
+        *.m) /home/pontus/.config/scripts/start-matlab.sh "$fx";;
+        *.pdf) /usr/bin/qpdfview "$fx";;
+        *) lf -remote "send $id \$$EDITOR \$fx";;
+        esac;;
         "application/x-stl"|"model/stl"|"application/octet-stream")
           /usr/bin/prusa-slicer --single-instance "$fx" > /dev/null 2>&1 &
           ;;
@@ -51,15 +56,17 @@ cmd open &{{
 }}
 # Function to check whether it is file or directory
 cmd my_open &{{
-    if [ -f "$fx" ]; then
-        lf -remote "send $id open \"$fx\""
-    elif [ -d "$fx" ]; then
-        lf -remote "send $id cd \"$fx\""
+    if [ -f "$f" ]; then
+        lf -remote "send $id open \"$f\""
+    elif [ -d "$f" ]; then
+        lf -remote "send $id cd \"$f\""
     fi
 }}
 
 # Mark several files and move to directory
 cmd move ${{ mv $fx $PWD }}
+# You already have copy and paste
+# cmd copy ${{ cp -t "$PWD" -- "${fx[@]}" }}
 
 # mkdir command. See wiki if you want it to select created dir
 map a :push %mkdir<space>
@@ -110,6 +117,7 @@ cmd zip ${{
     rm -rf $1
 }}
 # Custom mappings
+map a mkfile
 map . set hidden!
 map DD delete
 map p paste
@@ -121,11 +129,13 @@ map m
 map mf mkfile
 map md mkdir
 map mv move
+map c
+# map cp copy
 map C clear
 map l my_open
 
 map gu cd ~/Nextcloud/Universitet/Kurser/
-map gel cd ~/Nextcloud/Universitet/Kurser/ELA410/
+map gel cd ~/Nextcloud/Universitet/Kurser/ELA411/
 map gma cd ~/Nextcloud/Universitet/Kurser/MAA152/
 map gpe cd ~/Nextcloud/Universitet/Kurser/DVA454/
 map gec cd ~/embedded/
