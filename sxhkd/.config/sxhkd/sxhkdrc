@@ -2,13 +2,13 @@
 # SUPER + ... KEYS
 #################################################################
 
-#Atom
+#lf
 super + e
-    atom
+    alacritty -e lf
 
 #Htop
 super + shift + h
-    alacritty -e htop 
+    alacritty -e htop
 
 # #Pavucontrol
 # super + v
@@ -74,7 +74,7 @@ shift + super + v
      flameshot gui
 # scrot
 shift + super + x
-  scrot -s -e 'xclip -selection clipboard -t image/png -i $f'  
+  scrot -s -e 'xclip -selection clipboard -t image/png -i $f'
 
 
 #################################################################
@@ -85,8 +85,8 @@ shift + super + x
 alt + l
     betterlockscreen -l dim
 #win10 gaming virt-manager
-alt + g
-    alacritty -e $HOME/scripts/win10-launcher.sh
+# alt + g
+#     alacritty -e $HOME/scripts/win10-launcher.sh
 #################################################################
 #     MULTIMEDIA KEYS
 #################################################################
@@ -118,8 +118,8 @@ XF86AudioStop
 
 #Brightness up
 XF86MonBrightnessUp
-    xbacklight -inc 10 
+    xbacklight -inc 10
 
 #Brightness down
 XF86MonBrightnessDown
-    xbacklight -dec 10 
+    xbacklight -dec 10
