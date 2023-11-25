@@ -442,24 +442,24 @@
     format = "<span size="250%">%a</span>\n%b"
 
 [urgency_critical]
-    background = "#f5e0dc"
-    foreground = "#1e1e2e"
-    frame_color = "#f38ba8"
+    background = "#000000"      # Black
+    foreground = "#FFFFFF"      # White for text
+    frame_color = "#FF4500"     # Bright orange for urgency
     icon = "~/.config/dunst/icons/critical.svg"
     timeout = 0
-    # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
 
+    # Icon for notifications with critical urgency, uncomment to enable
 [urgency_low]
-    background = "#3F5D79"
-    foreground = "#414868"
-    frame_color = "#414868"
+    background = "#333333"      # Dark gray
+    foreground = "#FFFFFF"      # White for text
+    frame_color = "#FFA500"     # Soft orange
     icon = "~/.config/dunst/icons/hyprdots.svg"
     timeout = 10
 
 [urgency_normal]
-    background = "#191A24"
-    foreground = "#98A4CE"
-    frame_color = "#98A4CE"
+    background = "#000000"      # Black
+    foreground = "#FFFFFF"      # White for text
+    frame_color = "#FF5700"     # Standard Fnatic orange
     icon = "~/.config/dunst/icons/hyprdots.svg"
     timeout = 10
