@@ -135,7 +135,7 @@ map C clear
 map l my_open
 
 map gu cd ~/Nextcloud/Universitet/Kurser/
-map gel cd ~/Nextcloud/Universitet/Kurser/ELA410/
+map gel cd ~/Nextcloud/Universitet/Kurser/ELA411/
 map gma cd ~/Nextcloud/Universitet/Kurser/MAA152/
 map gpe cd ~/Nextcloud/Universitet/Kurser/DVA454/
 map gec cd ~/embedded/
