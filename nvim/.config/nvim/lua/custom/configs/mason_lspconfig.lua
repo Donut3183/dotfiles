@@ -13,6 +13,16 @@ M.mason_lspconfig = {
 		"lua_ls",
 		"clangd",
 		"pyright",
+		"arduino_language_server",
+		"bashls",
+		"cmake",
+		"jsonls",
+		"ltex",
+		"matlab_ls",
+		"marksman",
+		"taplo",
+		"lemminx",
+		"hydra_lsp",
 	},
 }
 M.mason_tool_installer = {

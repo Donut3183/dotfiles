@@ -1,6 +1,83 @@
 ---@type MappingsTable
 local M = {}
 
+M.override = {
+	n = {
+		["<leader>nT"] = { "<cmd> set nu! <CR>", "Toggle line number" },
+	},
+}
+
+M.neorg = {
+	n = {
+		["<leader>nn"] = { "<cmd>Neorg keybind norg core.dirman.new.note<CR>", "New Note" },
+		["<leader>ni"] = { "<cmd>Neorg index<CR>", "Go to index" },
+		["<leader>nj"] = { "<cmd>Neorg keybind norg core.integrations.treesitter.next.heading<CR>", "Next Heading" },
+		["<leader>nk"] = {
+			"<cmd>Neorg keybind norg core.integrations.treesitter.previous.heading<CR>",
+			"Previous Heading",
+		},
+		["<leader>nh"] = { "<cmd>Neorg keybind norg core.integrations.treesitter.next.link<CR>", "Next Link" },
+		["<leader>nl"] = { "<cmd>Neorg keybind norg core.integrations.treesitter.previous.link<CR>", "Previous Link" },
+		["<leader>ng"] = { "<cmd>Neorg keybind norg core.esupports.hop.hop-link<CR>", "Hop Link" },
+		["<leader>nN"] = { "<cmd>Neorg keybind norg core.itero.next-iteration<CR>", "Itero next-iteration" },
+		["<leader>nL"] = { "<cmd>Neorg keybind norg core.itero.stop-iteration<CR>", "Itero stop-iteration" },
+		["<leader>nm"] = { "<cmd>Neorg keybind norg core.looking-glass.magnify-code-block<CR>", "Magnify Code Block" },
+		["<leader>nr"] = { "<cmd>Neorg keybind norg core.pivot.invert-list-type<CR>", "Invert list" },
+		["<leader>nt"] = { "<cmd>Neorg keybind norg core.pivot.toggle-list-type<CR>", "Toggle list" },
+		["<leader>npr"] = { "<cmd>Neorg keybind norg core.promo.promote_range<CR>", "Promote Range" },
+		["<leader>np"] = { "<cmd>Neorg keybind norg core.promo.promote<CR>", "Promote" },
+		["<leader>nd"] = { "<cmd>Neorg keybind norg core.promo.demote<CR>", "Demote" },
+		["<leader>ndr"] = { "<cmd>Neorg keybind norg core.promo.demote_range<CR>", "Demote Range" },
+		["<leader>nC"] = {
+			"<cmd>Neorg keybind norg core.qol.todo_items.todo.task_cycle_reverse<CR>",
+			"TODO Cycle Reverse",
+		},
+		["<leader>nc"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_cycle<CR>", "TODO Cycle" },
+		["<leader>nw"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_pending<CR>", "TODO Pending" },
+		["<leader>na"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_ambiguous<CR>", "TODO Ambiguous" },
+		["<leader>nu"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_undone<CR>", "TODO Undone" },
+		["<leader>nI"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_important<CR>", "TODO Important" },
+		["<leader>nR"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_recurring<CR>", "TODO Recurring" },
+		["<leader>nS"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_cancelled<CR>", "TODO Cancelled" },
+		["<leader>nP"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_on_hold<CR>", "TODO On Hold" },
+		["<leader>nD"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_done<CR>", "TODO Done" },
+	},
+	v = {
+		["<leader>nn"] = { "<cmd>Neorg keybind norg core.dirman.new.note<CR>", "New Note" },
+		["<leader>ni"] = { "<cmd>Neorg index<CR>", "Go to index" },
+		["<leader>nj"] = { "<cmd>Neorg keybind norg core.integrations.treesitter.next.heading<CR>", "Next Heading" },
+		["<leader>nk"] = {
+			"<cmd>Neorg keybind norg core.integrations.treesitter.previous.heading<CR>",
+			"Previous Heading",
+		},
+		["<leader>nh"] = { "<cmd>Neorg keybind norg core.integrations.treesitter.next.link<CR>", "Next Link" },
+		["<leader>nl"] = { "<cmd>Neorg keybind norg core.integrations.treesitter.previous.link<CR>", "Previous Link" },
+		["<leader>ng"] = { "<cmd>Neorg keybind norg core.esupports.hop.hop-link<CR>", "Hop Link" },
+		["<leader>nN"] = { "<cmd>Neorg keybind norg core.itero.next-iteration<CR>", "Itero next-iteration" },
+		["<leader>nL"] = { "<cmd>Neorg keybind norg core.itero.stop-iteration<CR>", "Itero stop-iteration" },
+		["<leader>nm"] = { "<cmd>Neorg keybind norg core.looking-glass.magnify-code-block<CR>", "Magnify Code Block" },
+		["<leader>nr"] = { "<cmd>Neorg keybind norg core.pivot.invert-list-type<CR>", "Invert list" },
+		["<leader>nt"] = { "<cmd>Neorg keybind norg core.pivot.toggle-list-type<CR>", "Toggle list" },
+		["<leader>npr"] = { "<cmd>Neorg keybind norg core.promo.promote_range<CR>", "Promote Range" },
+		["<leader>np"] = { "<cmd>Neorg keybind norg core.promo.promote<CR>", "Promote" },
+		["<leader>nd"] = { "<cmd>Neorg keybind norg core.promo.demote<CR>", "Demote" },
+		["<leader>ndr"] = { "<cmd>Neorg keybind norg core.promo.demote_range<CR>", "Demote Range" },
+		["<leader>nC"] = {
+			"<cmd>Neorg keybind norg core.qol.todo_items.todo.task_cycle_reverse<CR>",
+			"TODO Cycle Reverse",
+		},
+		["<leader>nc"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_cycle<CR>", "TODO Cycle" },
+		["<leader>nw"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_pending<CR>", "TODO Pending" },
+		["<leader>na"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_ambiguous<CR>", "TODO Ambiguous" },
+		["<leader>nu"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_undone<CR>", "TODO Undone" },
+		["<leader>nI"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_important<CR>", "TODO Important" },
+		["<leader>nR"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_recurring<CR>", "TODO Recurring" },
+		["<leader>nS"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_cancelled<CR>", "TODO Cancelled" },
+		["<leader>nP"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_on_hold<CR>", "TODO On Hold" },
+		["<leader>nD"] = { "<cmd>Neorg keybind norg core.qol.todo_items.todo.task_done<CR>", "TODO Done" },
+	},
+}
+
 M.general = {
 	n = {
 		[";"] = { ":", "enter command mode", opts = { nowait = true } },
