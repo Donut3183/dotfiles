@@ -54,7 +54,6 @@ return {
 			"neovim/nvim-lspconfig",
 			"williamboman/nvim-lsp-installer",
 		},
-		config = function() end,
 	},
 	{
 		"williamboman/mason.nvim",
@@ -72,6 +71,7 @@ return {
 					"clangd",
 					"cmake",
 					"jsonls",
+          "ltex",
 					"remark_ls",
 					"matlab_ls",
 					"pyright",
