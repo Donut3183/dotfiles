@@ -1,5 +1,11 @@
 local M = {}
-
+M.whichkey = {
+	n = {
+		["<leader>"] = {
+			n = { name = "+neorg" },
+		},
+	},
+}
 M.markdownpreview = { -- Place your markdown-preview.nvim settings here
 	auto_start = 1,
 	auto_close = 0,

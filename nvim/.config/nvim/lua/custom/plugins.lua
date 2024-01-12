@@ -1,6 +1,7 @@
 local overrides = require("custom.configs.overrides")
 ---@type NvPluginSpec[]
 local plugins = {
+  
 
 	{
 		"nvim-neorg/neorg",
