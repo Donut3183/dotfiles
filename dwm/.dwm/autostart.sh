@@ -24,7 +24,7 @@ ln -sf "$XAUTHORITY" /home/pontus/.Xauthority
 
 sleep 1
 feh --bg-fill /home/pontus/Nextcloud/Pictures/Wallapaper/gruvbox_Fnatic_Elements_Earth_Wallpaper_2560x1440.jpg &
-# sleep 5
+sleep 5
 if pgrep -x "dwm-bar" > /dev/null; then
   pkill dwm-bar && dwm-bar &
 else
