@@ -20,6 +20,10 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 export PATH="$HOME/.local/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 export PAGER='bat --color always --style=plain'
+export PICO_EXTRAS_PATH="$HOME/pico/pico-extras/"
+export PICO_SDK_PATH="$HOME/pico/pico-sdk/"
+export LD_LIBRARY_PATH="/usr/lib/libstdc++.so.6"
+export LD_PRELOAD="/usr/lib/libstdc++.so.6"
 
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nvim'
@@ -149,10 +153,10 @@ function in {
 # setopt GLOB_DOTS
 setopt SHARE_HISTORY
 
-alias  l='eza -l  --icons always' # long list
-alias ls='eza -1  --icons always' # short list
-alias ll='eza -la --icons always' # long list all
-alias ld='eza -lD --icons always' # long list dirs
+# alias  l='eza -l  --icons always' # long list
+# alias ls='eza -1  --icons always' # short list
+# alias ll='eza -la --icons always' # long list all
+# alias ld='eza -lD --icons always' # long list dirs
 alias un='sudo pacman -Rns' # uninstall package
 alias up='sudo pacman -Syu' # update system/package/aur
 alias pl='pacman -Qs' # list installed package
