@@ -71,7 +71,7 @@ return {
 					"clangd",
 					"cmake",
 					"jsonls",
-          "ltex",
+					"ltex",
 					"remark_ls",
 					"matlab_ls",
 					"pyright",
@@ -160,7 +160,7 @@ return {
 					)
 					vim.keymap.set(
 						"n",
-						"<leader>ga",
+						"<leader>gw",
 						vim.lsp.buf.add_workspace_folder,
 						{ desc = "add workspace folder", buffer = ev.buf }
 					)
@@ -170,7 +170,7 @@ return {
 						vim.lsp.buf.remove_workspace_folder,
 						{ desc = "remove workspace folder", buffer = ev.buf }
 					)
-					vim.keymap.set("n", "<leader>gl", function()
+					vim.keymap.set("n", "<leader>gL", function()
 						print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
 					end, { desc = "list workspace folders", buffer = ev.buf })
 					vim.keymap.set(
@@ -179,21 +179,46 @@ return {
 						vim.lsp.buf.type_definition,
 						{ desc = "type definition", buffer = ev.buf }
 					)
-					vim.keymap.set("n", "<leader>gr", vim.lsp.buf.rename, { desc = "rename buffer", buffer = ev.buf })
+					-- vim.keymap.set("n", "<leader>gr", vim.lsp.buf.rename, { desc = "rename buffer", buffer = ev.buf })
 					vim.keymap.set(
 						{ "n", "v" },
 						"<leader>ca",
 						vim.lsp.buf.code_action,
 						{ desc = "code action", buffer = ev.buf }
 					)
-					vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "references", buffer = ev.buf })
+					-- vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "references", buffer = ev.buf })
 
-					vim.keymap.set("n", "<leader>ga", function()
+					vim.keymap.set("n", "<leader>gW", function()
 						vim.diagnostic.setloclist()
 					end, { desc = "warning list", buffer = ev.buf })
-					vim.keymap.set("n", "<leader>ge", function()
+					vim.keymap.set("n", "<leader>xe", function()
 						vim.diagnostic.open_float()
 					end, { desc = "show warnings", buffer = ev.buf })
+
+					-- Lua
+					vim.keymap.set("n", "<leader>gx", function()
+						require("trouble").toggle()
+					end, { desc = "Toggle trouble", buffer = ev.buf })
+
+					vim.keymap.set("n", "<leader>ge", function()
+						require("trouble").toggle("workspace_diagnostics")
+					end, { desc = "workspace diagnostics", buffer = ev.buf })
+
+					vim.keymap.set("n", "<leader>ga", function()
+						require("trouble").toggle("document_diagnostics")
+					end, { desc = "document diagnostics", buffer = ev.buf })
+
+					vim.keymap.set("n", "<leader>gq", function()
+						require("trouble").toggle("quickfix")
+					end, { desc = "quickfix", buffer = ev.buf })
+
+					vim.keymap.set("n", "<leader>gl", function()
+						require("trouble").toggle("loclist")
+					end, { desc = "loclist", buffer = ev.buf })
+
+					vim.keymap.set("n", "gR", function()
+						require("trouble").toggle("lsp_references")
+					end, { desc = "lsp references", buffer = ev.buf })
 				end,
 			})
 		end,
