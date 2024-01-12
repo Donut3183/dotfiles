@@ -1,5 +1,11 @@
 local M = {}
-
+M.whichkey = {
+	n = {
+		["<leader>"] = {
+			n = { name = "+neorg" },
+		},
+	},
+}
 M.markdownpreview = { -- Place your markdown-preview.nvim settings here
 	auto_start = 1,
 	auto_close = 0,
@@ -32,26 +38,11 @@ M.markdownpreview = { -- Place your markdown-preview.nvim settings here
 	theme = "dark",
 }
 M.treesitter = {
-	ensure_installed = {
-		"vim",
-		"lua",
-		"html",
-		"css",
-		"javascript",
-		"typescript",
-		"tsx",
-		"c",
-		"markdown",
-		"markdown_inline",
-	},
+	auto_install = true,
 	indent = {
 		enable = true,
-		-- disable = {
-		--   "python"
-		-- },
 	},
 }
-
 
 -- git support in nvimtree
 M.nvimtree = {
@@ -59,7 +50,7 @@ M.nvimtree = {
 		enable = true,
 	},
 	view = {
-		adaptive_size = false,
+		adaptive_size = true,
 		side = "left",
 		width = 40,
 		-- hide_root_folder = false,

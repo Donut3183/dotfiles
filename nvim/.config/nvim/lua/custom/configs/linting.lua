@@ -2,12 +2,16 @@ local M = {}
 
 M.linters = {
 	linters_by_ft = {
-		python = { "pyflakes" },
+		python = { "pylint" },
 		c = { "cpplint" },
+		matlab = { "mlint" },
 		bash = { "shellcheck" },
-		latex = { "vale" },
+		latex = { "chktex" },
 		test = { "vale" },
+		xml = { "vale" },
+		markdown = { "vale" },
 		lua = { "selene" },
+		cmake = { "cmakelint" },
 	},
 }
 return M

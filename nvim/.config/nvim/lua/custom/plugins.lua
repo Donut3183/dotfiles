@@ -1,6 +1,29 @@
 local overrides = require("custom.configs.overrides")
 ---@type NvPluginSpec[]
 local plugins = {
+  
+
+	{
+		"nvim-neorg/neorg",
+		build = ":Neorg sync-parsers",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		ft = { "norg" },
+		config = function()
+			require("neorg").setup({
+				load = {
+					["core.defaults"] = {}, -- Loads default behaviour
+					["core.concealer"] = {}, -- Adds pretty icons to your documents
+					["core.dirman"] = { -- Manages Neorg workspaces
+						config = {
+							workspaces = {
+								notes = "~/notes",
+							},
+						},
+					},
+				},
+			})
+		end,
+	},
 	{
 		"L3MON4D3/LuaSnip",
 		-- follow latest release.
@@ -8,30 +31,6 @@ local plugins = {
 		-- install jsregexp (optional!).
 		build = "make install_jsregexp",
 	},
-	-- {
-	-- 	"folke/flash.nvim",
-	-- 	event = "VeryLazy",
-	-- 	---@type Flash.Config
-	-- 	opts = {},
-	--  -- stylua: ignore
-	--  keys = {
-	--    { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
-	--    { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
-	--    { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
-	--    { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
-	--    { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
-	--
-	--  },
-	-- 	ft = { "md" },
-	-- },
-	-- {
-	-- 	"tbabej/taskwiki",
-	-- 	event = "VeryLazy",
-	-- },
-	-- {
-	-- 	"vimwiki/vimwiki",
-	-- 	lazy = false,
-	-- },
 	{
 		"jackmort/chatgpt.nvim",
 		event = "VeryLazy",
@@ -44,18 +43,7 @@ local plugins = {
 			"nvim-telescope/telescope.nvim",
 		},
 	},
-	{
-		"lambdalisue/suda.vim",
-		lazy = false,
-	},
 
-	{
-		"neovim/nvim-lspconfig",
-		dependencies = {},
-		config = function()
-			require("custom.configs.lspconfig")
-		end,
-	},
 	{
 		"iamcco/markdown-preview.nvim",
 		config = function()
@@ -75,7 +63,6 @@ local plugins = {
 		config = function()
 			-- import mason
 			local M = require("custom.configs.mason_lspconfig")
-
 			require("mason").setup(M.mason)
 			require("mason-lspconfig").setup(M.mason_lspconfig)
 			require("mason-tool-installer").setup(M.mason_tool_installer)
@@ -92,7 +79,6 @@ local plugins = {
 		opts = overrides.nvimtree,
 	},
 
-	-- Install a plugin
 	{
 		"max397574/better-escape.nvim",
 		event = "InsertEnter",
@@ -101,11 +87,6 @@ local plugins = {
 		end,
 	},
 
-	-- To make a plugin not be loaded
-	-- {
-	--   "NvChad/nvim-colorizer.lua",
-	--   enabled = false
-	-- },
 	{
 		"lervag/vimtex",
 		config = function()

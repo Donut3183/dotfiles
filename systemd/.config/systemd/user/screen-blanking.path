@@ -1,0 +1,10 @@
+[Unit]
+Description=Watch for charger connection status
+
+[Path]
+PathExistsGlob=/tmp/charger_connected
+PathModified=/tmp/charger_connected
+Unit=screen-blanking.service
+
+[Install]
+WantedBy=default.target

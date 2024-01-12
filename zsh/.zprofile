@@ -1,4 +1,4 @@
-Export the following variables in standard English:
+# Export the following variables in standard English:
 
 export EDITOR='nvim'
 export VISUAL='nvim'
