@@ -1,0 +1,52 @@
+import = [ "~/.config/alacritty-colorscheme/themes/gruvbox_dark.yaml",]
+
+[window]
+opacity = 0.8
+
+[scrolling]
+history = 50000
+
+[font]
+size = 16.0
+
+[colors]
+transparent_background_colors = true
+
+[font.normal]
+family = "HackNerdFont"
+style = "Regular"
+
+[font.bold]
+family = "HackNerdFont"
+style = "Bold"
+
+[font.italic]
+family = "HackNerdFont"
+style = "Italic"
+
+[font.bold_italic]
+style = "Bold Italic"
+
+[colors.primary]
+background = "0x1a1b26"
+foreground = "0xc0caf5"
+
+[colors.normal]
+black = "#3f3f3f"
+red = "#cc0000"
+green = "#4e9a06"
+yellow = "#c4a000"
+blue = "#94bff3"
+magenta = "#85678f"
+cyan = "#06989a"
+white = "#dcdccc"
+
+[colors.bright]
+black = "#545454"
+red = "#fc5454"
+green = "#8ae234"
+yellow = "#fce94f"
+blue = "#94bff3"
+magenta = "#b294bb"
+cyan = "#93e0e3"
+white = "#ffffff"
