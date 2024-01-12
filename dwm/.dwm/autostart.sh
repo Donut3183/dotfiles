@@ -8,7 +8,6 @@ nm-applet &
 /usr/bin/dunst &
 blueman-applet &
 pasystray &
-protonmail-bridge --no-window &
 nextcloud &
 firefox &
 spotify-launcher &
@@ -17,6 +16,9 @@ mullvad-vpn &
 signal-desktop --start-in-tray &
 spotify-launcher &
 discord &
+teams-for-linux &
+protonmail-bridge &
+syncthing &
 
 export XAUTHORITY=$(find /tmp -name 'xauth_*' -user pontus 2>/dev/null)
 ln -sf "$XAUTHORITY" /home/pontus/.Xauthority
