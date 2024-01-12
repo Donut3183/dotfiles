@@ -2,7 +2,7 @@
 local function on_attach(client, bufnr)
 	-- Add your buffer-local key mappings, commands, etc. here
 	-- Example of setting up buffer-local key mappings:
-	local bufopts = { noremap = true, silent = true, buffer = bufnr }
+	-- local bufopts = { noremap = true, silent = true, buffer = bufnr }
 	-- vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
 	-- vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
 	-- ... more key mappings ...
