@@ -3,6 +3,7 @@ return {
 	config = function()
 		require("conform").setup({
 			formatters_by_ft = {
+
 				lua = { "stylua" },
 				-- Conform will run multiple formatters sequentially
 				python = { "isort", "black" },
@@ -10,8 +11,12 @@ return {
 				javascript = { { "prettierd", "prettier" } },
 				c = { "clang_format" },
 				tex = { "latexindent" },
+				xml = { "xmllint" },
+				toml = { "taplo" },
+				sh = { "shfmt" },
+
 				-- Use the "*" filetype to run formatters on all filetypes.
-				["*"] = { "codespell" },
+				-- ["*"] = { "codespell" },
 				-- Use the "_" filetype to run formatters on filetypes that don't
 				-- have other formatters configured.
 				["_"] = { "trim_whitespace" },

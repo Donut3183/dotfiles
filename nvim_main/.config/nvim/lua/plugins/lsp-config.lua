@@ -76,7 +76,7 @@ return {
 					"matlab_ls",
 					"pyright",
 					"taplo",
-					"lemminx",
+					-- "lemminx",
 					"hydra_lsp",
 				},
 			})

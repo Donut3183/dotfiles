@@ -7,6 +7,7 @@ return {
 		vim.o.timeoutlen = 100
 		wk.register({
 			["<leader>"] = {
+				b = { name = "+Buffer" },
 				g = { name = "+LSP stuff" },
 				c = { name = "+Code" },
 				f = { name = "+Find files" },
