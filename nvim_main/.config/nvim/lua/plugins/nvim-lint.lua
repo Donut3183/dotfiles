@@ -12,7 +12,7 @@ return {
 			latex = { "chktex" },
 			-- test = { "vale" },
 			-- xml = { "tidy" },
-			markdown = { "markdownlint" },
+			-- markdown = { "markdownlint" },
 			-- lua = { "selene" },
 			cmake = { "cmakelint" },
 		}

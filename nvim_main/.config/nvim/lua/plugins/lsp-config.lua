@@ -48,13 +48,13 @@ return {
 			})
 		end,
 	},
-	{
-		"brymer-meneses/grammar-guard.nvim",
-		dependencies = {
-			"neovim/nvim-lspconfig",
-			"williamboman/nvim-lsp-installer",
-		},
-	},
+	-- {
+	-- 	"brymer-meneses/grammar-guard.nvim",
+	-- 	dependencies = {
+	-- 		"neovim/nvim-lspconfig",
+	-- 		"williamboman/nvim-lsp-installer",
+	-- 	},
+	-- },
 	{
 		"williamboman/mason.nvim",
 		config = function()
@@ -71,7 +71,7 @@ return {
 					"clangd",
 					"cmake",
 					"jsonls",
-					"ltex",
+					-- "ltex",
 					"remark_ls",
 					"matlab_ls",
 					"pyright",
@@ -91,6 +91,12 @@ return {
 					})
 				end,
 			})
+			-- require("lspconfig").ltex.setup({
+			-- 	on_attach = on_attach,
+			-- 	ltex = {
+			-- 		language = "en-US",
+			-- 	},
+			-- })
 			-- setup clangd again just because
 			require("lspconfig").clangd.setup({
 				on_attach = on_attach,
@@ -101,32 +107,32 @@ return {
 			require("lspconfig").pyright.setup({
 				on_attach = on_attach,
 			})
-			require("lspconfig").grammar_guard.setup({
-				cmd = { "/usr/bin/ltex-ls" },
-				settings = {
-					ltex = {
-						enabled = { "latex", "tex", "bib", "markdown" },
-						language = "en",
-						diagnosticSeverity = "information",
-						setenceCacheSize = 2000,
-						additionalRules = {
-							enablePickyRules = false,
-							motherTongue = "en",
-						},
-						trace = { server = "verbose" },
-						dictionary = {},
-						disabledRules = {},
-						hiddenFalsePositives = {},
-					},
-				},
-			})
+			-- require("lspconfig").grammar_guard.setup({
+			-- 	cmd = { "/usr/bin/ltex-ls" },
+			-- 	settings = {
+			-- 		ltex = {
+			-- 			enabled = { "latex", "tex", "bib" },
+			-- 			language = "en",
+			-- 			diagnosticSeverity = "information",
+			-- 			setenceCacheSize = 2000,
+			-- 			additionalRules = {
+			-- 				enablePickyRules = false,
+			-- 				motherTongue = "se",
+			-- 			},
+			-- 			trace = { server = "verbose" },
+			-- 			dictionary = {},
+			-- 			disabledRules = {},
+			-- 			hiddenFalsePositives = {},
+			-- 		},
+			-- 	},
+			-- })
 		end,
 	},
 	{
 		"neovim/nvim-lspconfig",
 
 		config = function()
-			require("grammar-guard").init()
+			-- require("grammar-guard").init()
 			require("clangd_extensions.inlay_hints").setup_autocmd()
 			require("clangd_extensions.inlay_hints").set_inlay_hints()
 			-- setup LSP config
