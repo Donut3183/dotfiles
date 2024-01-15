@@ -23,3 +23,11 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Window right" })
 -- Buffer
 vim.keymap.set("n", "<leader>bx", ":bd<CR>", { desc = "Close current buffer" })
 vim.keymap.set("n", "<leader>bn", ":enew<CR>", { desc = "Open new buffer" })
+
+vim.keymap.set("n", "<leader>u", "<<", { desc = "Unindent", noremap = true, silent = true })
+vim.keymap.set("v", "<leader>u", "<gv", { desc = "Unindent", noremap = true, silent = true })
+vim.keymap.set("n", "<leader>i", ">>", { desc = "Indent", noremap = true, silent = true })
+vim.keymap.set("v", "<leader>i", ">gv", { desc = "Indent", noremap = true, silent = true })
+
+-- vim.keymap.set("n", "<S-Tab>", "<<", { noremap = true, silent = true })
+-- vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true })
