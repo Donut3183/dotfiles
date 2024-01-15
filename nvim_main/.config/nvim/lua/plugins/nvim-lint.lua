@@ -7,7 +7,7 @@ return {
 		lint.linters_by_ft = {
 			python = { "pylint" },
 			c = { "clangtidy" },
-			matlab = { "mlint" },
+			-- matlab = { "mlint" },
 			bash = { "shellcheck" },
 			latex = { "chktex" },
 			-- test = { "vale" },

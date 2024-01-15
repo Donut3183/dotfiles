@@ -91,6 +91,20 @@ return {
 					})
 				end,
 			})
+			require("lspconfig").matlab_ls.setup({
+				on_attach = on_attach,
+				cmd = { "/home/pontus/.local/share/nvim/mason/bin/matlab-language-server", "--stdio" },
+				filetypes = { "matlab" },
+				single_file_support = true,
+				settings = {
+					matlab = {
+						indexWorkspace = false,
+						installPath = "/opt/matlab/R2023b/",
+						matlabConnectionTiming = "onStart",
+						telemetry = true,
+					},
+				},
+			})
 			-- require("lspconfig").ltex.setup({
 			-- 	on_attach = on_attach,
 			-- 	ltex = {
