@@ -19,6 +19,7 @@ discord &
 teams-for-linux &
 protonmail-bridge &
 syncthing &
+xset s off -dpms
 
 export XAUTHORITY=$(find /tmp -name 'xauth_*' -user pontus 2>/dev/null)
 ln -sf "$XAUTHORITY" /home/pontus/.Xauthority
