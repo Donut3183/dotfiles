@@ -17,7 +17,7 @@ DIR=$(dirname "$LOC"5)
 # Requires a font with adequate unicode character support
 export IDENTIFIER="unicode"
 
-# Change the charachter(s) used to seperate modules. If two are used, they will be placed at the start and end.
+# Change the character(s) used to separate modules. If two are used, they will be placed at the start and end.
 export SEP1=""
 export SEP2="|"
 
@@ -47,46 +47,43 @@ export SEP2="|"
 # . "$DIR/bar-functions/dwm_network_speed.sh"
 
 parallelize2() {
-    while true
-    do
-        dwm_packages &
-        sleep 60m
-    done
+	while true; do
+		dwm_packages &
+		sleep 60m
+	done
 }
 
 parallelize() {
-    while true
-    do
-        dwm_weather &
-        sleep 5m
-    done
+	while true; do
+		dwm_weather &
+		sleep 5m
+	done
 }
 
 parallelize &
 parallelize2 &
 
 # Update dwm status bar every second
-while true
-do
-    # Append results of each func one by one to the upperbar string
-    upperbar=""
-    # upperbar="$upperbar$(dwm_backlight)"
-    if [ -d "/sys/class/power_supply/BAT0" ]; then
-        upperbar="$upperbar$(dwm_battery)"
-    fi
+while true; do
+	# Append results of each func one by one to the upperbar string
+	upperbar=""
+	# upperbar="$upperbar$(dwm_backlight)"
+	if [ -d "/sys/class/power_supply/BAT0" ]; then
+		upperbar="$upperbar$(dwm_battery)"
+	fi
 
-    upperbar="$upperbar$(dwm_date)"
+	upperbar="$upperbar$(dwm_date)"
 
-    # Append results of each func one by one to the lowerbar string
-    lowerbar=""
-    lowerbar="$lowerbar$(dwm_resources)"
-    # lowerbar="$lowerbar${__DWM_BAR_NETWORKMANAGER__}"
-    lowerbar="$lowerbar$(dwm_vpn)"
-    # lowerbar="$lowerbar$(dwm_network_speed)"; #dwm_network_speed_record
-    lowerbar="$lowerbar${__DWM_BAR_WEATHER__}"
-    lowerbar="$lowerbar${__DWM_BAR_PACKAGES__}"
+	# Append results of each func one by one to the lowerbar string
+	lowerbar=""
+	lowerbar="$lowerbar$(dwm_resources)"
+	# lowerbar="$lowerbar${__DWM_BAR_NETWORKMANAGER__}"
+	lowerbar="$lowerbar$(dwm_vpn)"
+	# lowerbar="$lowerbar$(dwm_network_speed)"; #dwm_network_speed_record
+	lowerbar="$lowerbar${__DWM_BAR_WEATHER__}"
+	lowerbar="$lowerbar${__DWM_BAR_PACKAGES__}"
 
-    # Uncomment the line below to enable the lowerbar
-    xsetroot -name "$upperbar;$lowerbar"
-    sleep 1
+	# Uncomment the line below to enable the lowerbar
+	xsetroot -name "$upperbar;$lowerbar"
+	sleep 1
 done

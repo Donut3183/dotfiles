@@ -1,2 +1,3 @@
-FOO=bar
-JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export PATH="$PATH:$HOME/.local/bin:/snap/bin"
+export EDITOR='nvim'
+export VISUAL='nvim'

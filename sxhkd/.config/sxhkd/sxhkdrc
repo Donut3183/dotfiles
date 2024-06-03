@@ -10,13 +10,15 @@ super + e
 super + shift + h
     alacritty -e htop
 
+super + shift + l
+    betterlockscreen -l dim 90
 # #Pavucontrol
-# super + v
-#     pavucontrol
+super + v
+    pavucontrol
 #
 # #alacritty
-# super + shift + t
-#     alacritty
+super + t
+    alacritty
 #
 #Xkill
 super + Escape
@@ -33,13 +35,13 @@ super + Escape
 
 #File-Manager
 super + shift + Return
-  alacritty -e lf
-	  # thunar
+	  thunar
+  # alacritty -e lf
 
 #Keyboard dependent
 #File-Manager
-super + shift + KP_Enter
-	  thunar
+# super + shift + KP_Enter
+# 	  thunar
 
 #reload sxhkd:
 super + shift + s
@@ -51,14 +53,12 @@ super + shift + s
 #################################################################
 #Firefox
 ctrl + alt + f
-     firefox
+    firefox
 
 #alacritty
 ctrl + alt + t
     alacritty
 
-ctrl + alt + l
-    betterlockscreen -l
 
 ctrl + alt + s
     systemctl suspend
@@ -73,8 +73,8 @@ ctrl + alt + r
 shift + super + v
      flameshot gui
 # scrot
-shift + super + x
-  scrot -s -e 'xclip -selection clipboard -t image/png -i $f'
+# shift + super + x
+#   scrot -s -e 'xclip -selection clipboard -t image/png -i $f'
 
 
 #################################################################
@@ -82,8 +82,8 @@ shift + super + x
 #################################################################
 
 #betterlockscreen
-alt + l
-    betterlockscreen -l dim
+# alt + l
+#     betterlockscreen -l dim
 #win10 gaming virt-manager
 # alt + g
 #     alacritty -e $HOME/scripts/win10-launcher.sh

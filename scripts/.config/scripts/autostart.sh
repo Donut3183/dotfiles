@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
 autorandr --change &
 sleep 1
@@ -17,21 +17,22 @@ spotify &
 thunderbird &
 mullvad-vpn &
 signal-desktop --start-in-tray &
-vesktop --start-minimized &
+discord --start-minimized &
 # teams-for-linux &
 protonmail-bridge &
 qbittorrent &
-syncthing &
+# syncthing &
 xset s off -dpms
 
-# export XAUTHORITY=$(find /tmp -name 'xauth_*' -user pontus 2>/dev/null)
-# ln -sf "$XAUTHORITY" /home/pontus/.Xauthority
+export "XAUTHORITY=$(find /tmp -name 'xauth_*' -user pontus 2>/dev/null)"
+ln -sf "$XAUTHORITY" /home/pontus/.Xauthority
+
 # solaar --window=hide &
 
 feh --bg-fill /home/pontus/Nextcloud/Pictures/Wallapaper/gruvbox_Fnatic_Elements_Earth_Wallpaper_2560x1440.jpg &
 
-if pgrep -x "dwm-bar" > /dev/null; then
-  pkill dwm-bar && dwm-bar &
+if pgrep -x "dwm-bar" >/dev/null; then
+	pkill dwm-bar && dwm-bar &
 else
-    dwm-bar &
+	dwm-bar &
 fi

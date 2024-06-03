@@ -11,7 +11,13 @@
     "ISO's": {
         "save_path": "/home/pontus/.local/share/Torrents/Completed/ISO"
     },
+    "Mobile": {
+        "save_path": ""
+    },
     "Movies": {
+        "save_path": ""
+    },
+    "Software": {
         "save_path": ""
     },
     "Training": {

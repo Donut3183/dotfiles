@@ -100,7 +100,7 @@ return {
 					matlab = {
 						indexWorkspace = false,
 						installPath = "/opt/matlab/R2023b/",
-						matlabConnectionTiming = "onStart",
+						matlabConnectionTiming = "onDemand",
 						telemetry = true,
 					},
 				},

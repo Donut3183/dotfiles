@@ -11,7 +11,7 @@ dwm_vpn () {
   VPN=$(mullvad status )
 
   printf "%s" "$SEP1"
-  if [ "$(echo "$VPN" | sed 's/\s.*$//')" = "Connected" ]; then 
+  if [ "$(echo "$VPN" | head -n 1 | sed 's/\s.*$//')" = "Connected" ]; then
     read -r CITY COUNTRY <<< $(echo "$VPN" | awk '{gsub(/,/, ""); print $(NF-1), $NF}')
     LOCATION="${CITY} - ${COUNTRY}"
     if [ "$IDENTIFIER" = "unicode" ]; then

@@ -4,14 +4,14 @@ cachedir=${XDG_CACHE_HOME:-"$HOME/.cache"}
 if [ -d "$cachedir" ]; then
 	cache=$cachedir/dmenu_run
 	historyfile=$cachedir/dmenu_history
-else			# if no xdg dir, fall back to dotfiles in ~
+else # if no xdg dir, fall back to dotfiles in ~
 	cache=$HOME/.dmenu_cache
 	historyfile=$HOME/.dmenu_history
 fi
 
 IFS=:
 if stest -dqr -n "$cache" $PATH; then
-	stest -flx $PATH | sort -u > "$cache"
+	stest -flx $PATH | sort -u >"$cache"
 fi
 unset IFS
 
@@ -22,9 +22,9 @@ awk -v histfile=$historyfile '
 			print
 			x[$0]=1
 		}
-	} !x[$0]++ ' "$cache" \
-	| dmenu "$@" \
-	| awk -v histfile=$historyfile '
+	} !x[$0]++ ' "$cache" |
+	dmenu "$@" |
+	awk -v histfile=$historyfile '
 		BEGIN {
 			FS=OFS="\t"
 			while ( (getline < histfile) > 0 ) {
@@ -46,5 +46,5 @@ awk -v histfile=$historyfile '
 			for (f in history)
 				print history[f],f | "sort -t '\t' -k1rn >" histfile
 		}
-	' \
-	| while read cmd; do ${SHELL:-"/bin/sh"} -c "$cmd" & done
+	' |
+	while read cmd; do ${SHELL:-"/bin/sh"} -c "$cmd" & done

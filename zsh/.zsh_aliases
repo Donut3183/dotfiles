@@ -1,9 +1,14 @@
 alias pacin="sudo pacman -S"
 alias pacun="sudo pacman -R"
-alias pacupg="yay -Syu --noconfirm"
+alias pacupg="paru -Syu --noconfirm"
 alias nano="nvim"
 alias vim="nvim"
 alias cat="bat --color always --style=plain"
+# alias  l='eza -l  --icons always' # long list
+# alias ls='eza -1  --icons always' # short list
+# alias ll='eza -la --icons always' # long list all
+# alias ld='eza -lD --icons always' # long list dirs
+
 
 alias cd..='cd ..'
 alias pdw='pwd'
@@ -35,6 +40,4 @@ alias clean="clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat"
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
-
-
-
+alias rb="cd ~/ros2_ws/ && colcon build"

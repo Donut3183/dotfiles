@@ -6,11 +6,12 @@ vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " " -- global leader key
 vim.cmd("set relativenumber")
 vim.cmd("set scrolloff=999")
-
+vim.cmd("set clipboard=unnamedplus")
 -- Allow for nice movement on wrapped lines
-vim.api.nvim_set_keymap("n", "j", '(v:count ? "j" : "gj")', { noremap = true, expr = true })
-vim.api.nvim_set_keymap("n", "k", '(v:count ? "k" : "gk")', { noremap = true, expr = true })
-
+vim.api.nvim_set_keymap("n", "j", '(v:count || mode(1)[0:1] == "no" ? "j" : "gj")', { noremap = true, expr = true })
+vim.api.nvim_set_keymap("n", "k", '(v:count || mode(1)[0:1] == "no" ? "k" : "gk")', { noremap = true, expr = true })
+vim.api.nvim_set_keymap("v", "j", '(v:count || mode(1)[0:1] == "\'V\'" ? "j" : "gj")', { noremap = true, expr = true })
+vim.api.nvim_set_keymap("v", "k", '(v:count || mode(1)[0:1] == "\'V\'" ? "k" : "gk")', { noremap = true, expr = true })
 -- Clear highlights
 vim.keymap.set("n", "<Esc>", ":noh<CR>", { desc = "Clear highlights" })
 
