@@ -5,7 +5,7 @@ unset QT_SCREEN_SCALE_FACTORS
 # /home/pontus/.config/scripts/matlab-scale.sh 2
 
 if [ -z "$1" ]; then
-	lockdev-redirect /usr/local/MATLAB/R2023b/bin/matlab -desktop
+	lockdev-redirect /usr/local/MATLAB/R2024a/bin/matlab -desktop
 else
-	lockdev-redirect /usr/local/MATLAB/R2023b/bin/matlab -desktop -r "edit('$1')"
+	lockdev-redirect /usr/local/MATLAB/R2024a/bin/matlab -desktop -r "edit('$1')"
 fi

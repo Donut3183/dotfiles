@@ -1,7 +1,7 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
+bindkey '^I' autosuggest-accept
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh
 ZSH_CUSTOM=$ZSH/custom

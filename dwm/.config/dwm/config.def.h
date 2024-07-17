@@ -63,7 +63,6 @@ static const Rule rules[] = {
     {"Spotify", NULL, NULL, 1 << 7, 0, -1},
     {"thunderbird", NULL, NULL, 1 << 8, 0, -1},
     {"discord", NULL, NULL, 1 << 6, 0, -1},
-    {"chat-gpt", NULL, NULL, 1 << 2, 0, -1},
 
 };
 
