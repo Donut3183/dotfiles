@@ -1,5 +1,6 @@
-set sixel true
-set previewer ~/.config/lf/previewer.sh
+# set sixel true
+set previewer ~/.config/lf/preview.sh
+set cleaner ~/.config/lf/cleaner.sh
 
 # interpreter for shell commands
 set shell sh
