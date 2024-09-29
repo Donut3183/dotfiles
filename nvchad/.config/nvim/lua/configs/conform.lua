@@ -3,6 +3,7 @@ local options = {
     lua = { "stylua" },
     sh = { "shfmt" },
     zsh = { "shfmt" },
+    -- python = { "autopep8" }
     -- css = { "prettier" },
     -- html = { "prettier" },
   },

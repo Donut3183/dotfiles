@@ -10,6 +10,7 @@ export QT_ENABLE_HIGHDPI_SCALING=1
 
 ### Matlab
 export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+export JAVA_COMMAND=$JAVA_HOME/bin/java
 # export MATLAB_JAVA=$JAVA_HOME
 
 ### Matlab prevent grey window

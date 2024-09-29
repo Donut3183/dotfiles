@@ -1,5 +1,4 @@
 import = ["~/.config/alacritty-colorscheme/themes/gruvbox_dark.yaml"]
-
 [window]
 opacity = 0.8
 

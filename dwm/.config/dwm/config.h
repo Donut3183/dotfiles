@@ -24,24 +24,30 @@ static const char *fonts[] = {"Hack Nerd Font:size=12"};
 // {"-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1" ","};  /* For
 // Iconic Glyphs */
 static const char dmenufont[] = "Hack Nerd Font:size=12";
-static const char col_gray1[] = "#222222";
-static const char col_gray2[] = "#444444";
-static const char col_gray3[] = "#bbbbbb";
-static const char col_gray4[] = "#eeeeee";
-static const char col_cyan[] = "#005577";
-static const char norm_fg[] = "#ebdbb2";
-static const char norm_bg[] = "#1d2021";
-static const char norm_border[] = "#504945";
-static const char sel_fg[] = "#1d2021";
-static const char sel_bg[] = "#fe8019";
-static const char sel_border[] = "#fe8019";
-static const char urg_fg[] = "#a89984";
-static const char urg_bg[] = "#cc241d";
-static const char urg_border[] = "#fabd2f";
-static const char title_fg[] = "#fabd2f";
-static const char title_bg[] = "#3A3A3A";
-static const char col_borderbar[] = "#75715e";
 
+static const char col_gray1[]     = "#282828"; // Dark gray (background)
+static const char col_gray2[]     = "#3c3836"; // Medium gray
+static const char col_gray3[]     = "#a89984"; // Light gray
+static const char col_gray4[]     = "#ebdbb2"; // Light beige (foreground)
+static const char col_cyan[]      = "#458588"; // Blue (accent)
+
+static const char norm_fg[]       = "#ebdbb2"; // Light beige (foreground)
+static const char norm_bg[]       = "#282828"; // Dark gray (background)
+static const char norm_border[]   = "#504945"; // Dark grayish-brown
+
+static const char sel_fg[]        = "#282828"; // Dark gray (background)
+static const char sel_bg[]        = "#b8bb26"; // Bright green
+static const char sel_border[]    = "#fabd2f"; // Bright yellow
+
+static const char urg_fg[]        = "#ebdbb2"; // Light beige
+static const char urg_bg[]        = "#cc241d"; // Red
+static const char urg_border[]    = "#fabd2f"; // Yellow
+
+static const char title_fg[]      = "#fabd2f"; // Yellow
+static const char title_bg[]      = "#3c3836"; // Medium gray
+
+static const char col_borderbar[] = "#7c6f64"; // Brown
+                                               //
 static const char *colors[][3] = {
     /*               fg         bg         border   */
     [SchemeNorm] = {norm_fg, norm_bg, norm_border},
@@ -63,7 +69,6 @@ static const Rule rules[] = {
     {"Spotify", NULL, NULL, 1 << 7, 0, -1},
     {"thunderbird", NULL, NULL, 1 << 8, 0, -1},
     {"discord", NULL, NULL, 1 << 6, 0, -1},
-    {"chat-gpt", NULL, NULL, 1 << 2, 0, -1},
 
 };
 
@@ -114,7 +119,7 @@ static const char *dmenucmd[] = {"dmenu_run_history",
                                  "-sf",
                                  sel_fg,
                                  NULL};
-static const char *termcmd[] = {"alacritty", NULL};
+static const char *termcmd[] = {"kitty", NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */

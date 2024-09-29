@@ -1,5 +1,12 @@
 return {
   {
+    "norcalli/nvim-colorizer.lua",
+  },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+  {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
     config = function()
@@ -60,7 +67,7 @@ return {
   {
     "lervag/vimtex",
     config = function()
-      require "configs/vimtexrc.lua"
+      require "configs.vimtexrc"
     end,
     ft = "tex",
   },

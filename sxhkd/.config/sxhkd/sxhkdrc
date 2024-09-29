@@ -2,13 +2,14 @@
 # SUPER + ... KEYS
 #################################################################
 
+
 #lf
 super + e
-    alacritty -e lf
+    kitty -e ranger
 
 #Htop
 super + shift + h
-    alacritty -e htop
+    kitty -e htop
 
 super + shift + l
     betterlockscreen -l dim 90
@@ -17,8 +18,8 @@ super + v
     pavucontrol
 #
 # #alacritty
-super + t
-    alacritty
+# super + t
+#     alacritty
 #
 #Xkill
 super + Escape
@@ -35,7 +36,7 @@ super + Escape
 
 #File-Manager
 super + shift + Return
-	  thunar
+	  kitty
   # alacritty -e lf
 
 #Keyboard dependent
@@ -57,7 +58,7 @@ ctrl + alt + f
 
 #alacritty
 ctrl + alt + t
-    alacritty
+    kitty
 
 
 ctrl + alt + s

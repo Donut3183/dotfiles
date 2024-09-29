@@ -27,9 +27,10 @@ xset s off -dpms
 export "XAUTHORITY=$(find /tmp -name 'xauth_*' -user pontus 2>/dev/null)"
 ln -sf "$XAUTHORITY" /home/pontus/.Xauthority
 
-# solaar --window=hide &
+solaar --window=hide &
 
-feh --bg-fill /home/pontus/Nextcloud/Pictures/Wallapaper/gruvbox_Fnatic_Elements_Earth_Wallpaper_2560x1440.jpg &
+# feh --bg-fill /home/pontus/Nextcloud/Pictures/Wallapaper/gruvbox_Fnatic_Elements_Earth_Wallpaper_2560x1440.jpg &
+variety &
 
 sleep 10
 if pgrep -x "dwm-bar" >/dev/null; then
