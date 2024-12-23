@@ -1,6 +1,6 @@
 #!/bin/sh
 
-autorandr --change &
+# autorandr --change &
 sleep 1
 picom -b --config ~/.config/picom/picom.conf &
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
@@ -11,7 +11,7 @@ pasystray &
 nextcloud --background &
 firefox &
 # mullvad-browser &
-spotify &
+spotify-launcher &
 # bitwarden-desktop &
 # chat-gpt &
 thunderbird &
@@ -19,7 +19,7 @@ mullvad-vpn &
 signal-desktop --start-in-tray &
 discord --start-minimized &
 # teams-for-linux &
-protonmail-bridge &
+protonmail-bridge --no-window &
 qbittorrent &
 # syncthing &
 xset s off -dpms

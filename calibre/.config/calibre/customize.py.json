@@ -8,8 +8,8 @@
   "enabled_plugins": {
     "__class__": "set",
     "__value__": [
-      "Edelweiss",
       "Big Book Search",
+      "Edelweiss",
       "Google Images"
     ]
   },

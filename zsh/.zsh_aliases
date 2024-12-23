@@ -1,6 +1,6 @@
 alias pacin="sudo pacman -S"
 alias pacun="sudo pacman -R"
-alias pacupg="paru -Syu --noconfirm"
+alias pacupg="yay -Syu --noconfirm"
 alias nano="nvim"
 alias vim="nvim"
 alias cat="bat --color always --style=plain"

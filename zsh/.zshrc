@@ -47,6 +47,10 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LC_TIME=en_SE.UTF-8
+
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -57,6 +61,8 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color'
 alias c='clear'
+
+export PATH=/usr/local/bin:$PATH >> ~/.zshrc
 
 source "$HOME/.zsh_aliases"
 # Shell integrations

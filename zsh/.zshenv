@@ -1,3 +1,3 @@
-export PATH="$PATH:$HOME/.local/bin:/snap/bin"
+export PATH="/usr/local/bin/:$HOME/.local/bin:/snap/bin:$PATH"
 export EDITOR='nvim'
 export VISUAL='nvim'

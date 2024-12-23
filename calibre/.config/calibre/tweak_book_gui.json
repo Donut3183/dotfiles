@@ -116,50 +116,50 @@
   },
   "geometry-of-import-foreign-geometry": {
     "frame_geometry": {
-      "height": 1008,
-      "width": 925,
-      "x": 500,
-      "y": 39
+      "height": 994,
+      "width": 919,
+      "x": 0,
+      "y": 0
     },
     "full_screened": false,
     "geometry": {
-      "height": 1002,
+      "height": 994,
       "width": 919,
-      "x": 503,
-      "y": 42
+      "x": 0,
+      "y": 0
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 1002,
+      "height": 994,
       "width": 919,
-      "x": 503,
-      "y": 42
+      "x": 0,
+      "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAH0AAAAJwAABZAAAAQWAAAB9wAAACoAAAWNAAAEEwAAAAEAAAAAB4AAAAH3AAAAKgAABY0AAAQT"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA5YAAAPhAAAAAAAAAAAAAAOWAAAD4QAAAAAAAAAABqsAAAAAAAAAAAAAA5YAAAPh"
     },
     "screen": {
-      "depth": 24,
-      "device_pixel_ratio": 1.0,
+      "depth": 32,
+      "device_pixel_ratio": 2.0,
       "geometry_in_logical_pixels": {
-        "height": 1080,
-        "width": 1920,
+        "height": 1067,
+        "width": 1707,
         "x": 0,
         "y": 0
       },
-      "index_in_screens_list": 1,
-      "manufacturer": "Acer Technologies",
-      "model": "ED270R",
-      "name": "DisplayPort-1",
-      "serial": "TJMEE0013W01",
+      "index_in_screens_list": 0,
+      "manufacturer": "California Institute of Technology",
+      "model": "eDP-1-0x1602",
+      "name": "eDP-1",
+      "serial": "",
       "size_in_logical_pixels": {
-        "height": 1080,
-        "width": 1920
+        "height": 1067,
+        "width": 1707
       },
       "virtual_geometry": {
-        "height": 1080,
-        "width": 3840,
+        "height": 1067,
+        "width": 1707,
         "x": 0,
         "y": 0
       }
@@ -167,50 +167,50 @@
   },
   "geometry-of-main_window_geometry": {
     "frame_geometry": {
-      "height": 1026,
-      "width": 1050,
-      "x": 3,
-      "y": 24
+      "height": 994,
+      "width": 1044,
+      "x": 328,
+      "y": 20
     },
     "full_screened": false,
     "geometry": {
-      "height": 1020,
+      "height": 994,
       "width": 1044,
-      "x": 6,
-      "y": 27
+      "x": 328,
+      "y": 20
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 1020,
+      "height": 994,
       "width": 1044,
-      "x": 6,
-      "y": 27
+      "x": 328,
+      "y": 20
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAADAAAAGAAABBwAAAQZAAAABgAAABsAAAQZAAAEFgAAAAEAAAAAB4AAAAAGAAAAGwAABBkAAAQW"
+      "__value__": "AdnQywADAAAAAAFIAAAAFAAABVsAAAP1AAABSAAAABQAAAVbAAAD9QAAAAAAAAAABqsAAAFIAAAAFAAABVsAAAP1"
     },
     "screen": {
-      "depth": 24,
-      "device_pixel_ratio": 1.0,
+      "depth": 32,
+      "device_pixel_ratio": 2.0,
       "geometry_in_logical_pixels": {
-        "height": 1080,
-        "width": 1920,
+        "height": 1067,
+        "width": 1707,
         "x": 0,
         "y": 0
       },
-      "index_in_screens_list": 1,
-      "manufacturer": "Acer Technologies",
-      "model": "ED270R",
-      "name": "DisplayPort-1",
-      "serial": "TJMEE0013W01",
+      "index_in_screens_list": 0,
+      "manufacturer": "California Institute of Technology",
+      "model": "eDP-1-0x1602",
+      "name": "eDP-1",
+      "serial": "",
       "size_in_logical_pixels": {
-        "height": 1080,
-        "width": 1920
+        "height": 1067,
+        "width": 1707
       },
       "virtual_geometry": {
-        "height": 1080,
-        "width": 3840,
+        "height": 1067,
+        "width": 1707,
         "x": 0,
         "y": 0
       }
@@ -226,7 +226,7 @@
   },
   "main_window_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAADmAAADq/wCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAADoAAAOrAAAAUwD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAFMA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAHkA////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAIEA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAfYA////AAAAAQAAAXsAAAOr/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAOgAAA6sAAABLAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABTAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAhQD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAAyAP///wAAAakAAAOrAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABFv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
+    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAADmAAADkPwCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAADwAAAOQAAAAVwD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAFcA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAHcA////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAIcA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAfUA////AAAAAQAAAXsAAAOQ/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAPAAAA5AAAABMAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABXAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAkAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAAyAP///wAAAacAAAOQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABJv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
   },
   "preferences_geom": {
     "__class__": "bytearray",

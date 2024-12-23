@@ -9,8 +9,8 @@ export QT_ENABLE_HIGHDPI_SCALING=1
 # export QT_QPA_PLATFORMTHEME=qt6ct
 
 ### Matlab
-export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
-export JAVA_COMMAND=$JAVA_HOME/bin/java
+# export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+# export JAVA_COMMAND=$JAVA_HOME/bin/java
 # export MATLAB_JAVA=$JAVA_HOME
 
 ### Matlab prevent grey window
@@ -22,3 +22,6 @@ export LIBSEAT_BACKEND=logind
 
 ### Steam, supports fractional scaling
 export STEAM_FORCE_DESKTOPUI_SCALING=2.0
+
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK

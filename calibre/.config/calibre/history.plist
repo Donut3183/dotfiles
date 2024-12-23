@@ -18,5 +18,9 @@
 	<array>
 		<string>Datasheets</string>
 	</array>
+	<key>lineedit_history_tag_list_search_box_Robotik</key>
+	<array>
+		<string>Project management</string>
+	</array>
 </dict>
 </plist>
