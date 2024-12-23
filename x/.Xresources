@@ -4,8 +4,9 @@
 ! ------------------------------------------------------------------------------
 
 ! Xorg issue nov 2021 - use and change if needed
-Xft.dpi:  192
-/*Xft.dpi:  92*/
+/*Xft.dpi:  192*/
+/*Xft.dpi:  144*/
+Xft.dpi:  92
 ! xrdb -merge ~/.Xresources
 Xcursor.size: 24
 
