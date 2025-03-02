@@ -1,0 +1,15 @@
+keybind = ctrl+enter=unbind
+keybind = ctrl+y=unbind
+keybind = ctrl+o=unbind
+keybind = ctrl+h=unbind
+keybind = ctrl+f=unbind
+keybind = ctrl+c=unbind
+keybind = ctrl+p=unbind
+keybind = ctrl+u=unbind
+keybind = ctrl+k=unbind
+keybind = ctrl+n=unbind
+keybind = ctrl+r=unbind
+keybind = ctrl+s=unbind
+keybind = ctrl+i=unbind
+keybind = ctrl+d=unbind
+command = TERM=xterm-256color /usr/bin/zsh
