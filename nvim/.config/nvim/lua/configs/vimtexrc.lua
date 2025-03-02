@@ -1,5 +1,5 @@
 vim.g.vimtex_view_method = "zathura"
-vim.g.vimtex_view_general_options = '--synctex-forward @line:@col:@tex @pdf --unique'
+vim.g.vimtex_view_general_options = '--synctex-forward @line:@col:@tex --synctex-editor-command "nvim +%{line} %{input}" @pdf --unique'
 vim.g.vimtex_compiler_method = "latexmk"
 -- Configure latexmk to use lualatex
 vim.g.vimtex_compiler_latexmk = {

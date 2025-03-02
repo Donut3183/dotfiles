@@ -2,6 +2,9 @@ local home = vim.fn.expand "$HOME"
 require("chatgpt").setup {
   -- this config assumes you have OPENAI_API_KEY environment variable set
   api_key_cmd = "gpg --decrypt " .. home .. "/Documents/openai_api_key.txt.gpg",
+  actions_paths = {
+    "~/.config/nvim/lua/configs/actions.json",
+  },
   openai_params = {
     -- NOTE: model can be a function returning the model name
     -- this is useful if you want to change the model on the fly
