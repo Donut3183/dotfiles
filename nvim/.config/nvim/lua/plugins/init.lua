@@ -1,5 +1,34 @@
 return {
   {
+    "nvim-tree/nvim-tree.lua",
+    version = "*",
+    lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require "configs.nvim-tree"
+    end,
+  },
+  {
+    "rmagatti/auto-session",
+    lazy = false,
+
+    config = function()
+      require("auto-session").setup {
+        previewer = true,
+        log_level = "info",
+        -- auto_session_enable_last_session = true,
+        auto_session_root_dir = vim.fn.stdpath "data" .. "/sessions/",
+        auto_session_enabled = true,
+        auto_save_enabled = true,
+        -- auto_restore_enabled = true,
+        -- post_restore_cmds = { change_nvim_tree_dir, "NvimTreeOpen" },
+        -- pre_save_cmds = { "NvimTreeClose" },
+      }
+    end,
+  },
+  {
     "rickhowe/diffchar.vim",
     lazy = false, -- Load immediately when in diff mode
     config = function()
@@ -7,7 +36,7 @@ return {
     end,
   },
   {
-    "jackMort/ChatGPT.nvim",
+    "Donut3183/ChatGPT.nvim",
     event = "VeryLazy",
     config = function()
       -- require("chatgpt").setup()

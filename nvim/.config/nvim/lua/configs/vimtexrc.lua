@@ -1,24 +1,26 @@
-vim.g.vimtex_view_method = "zathura"
-vim.g.vimtex_view_general_options = '--synctex-forward @line:@col:@tex --synctex-editor-command "nvim +%{line} %{input}" @pdf --unique'
 vim.g.vimtex_compiler_method = "latexmk"
--- Configure latexmk to use lualatex
+
 vim.g.vimtex_compiler_latexmk = {
-  build_dir = "",  -- Optional: specify a custom build directory if desired
-  continuous = 1,
-  executable = "latexmk",
+  build_dir = "", -- Specify build directory if needed
   options = {
-    "-shell-escape",
-    "-verbose",
-    "-file-line-error",
-    "-synctex=1",
+    "-lualatex",
     "-interaction=nonstopmode",
-    "-lualatex"  -- Use lualatex as the engine
+    "-synctex=1",
+    "-shell-escape",
   },
 }
 
--- Explicitly set the latexmk engine
+-- Automatically run makeglossaries after compilation
 vim.g.vimtex_compiler_latexmk_engines = {
-  _ = "-lualatex"  -- Set lualatex as the default engine
+  _ = "-lualatex",
 }
+
 vim.g.vimtex_quickfix_enabled = 0
 vim.g.vimtex_quickfix_autoclose_after_keystrokes = 1
+
+-- Viewer configuration with forward and inverse search for zathura
+vim.g.vimtex_view_method = "zathura"
+vim.g.vimtex_view_general_options = [[
+  --unique
+  file:@pdf\#src:@line@tex
+]]

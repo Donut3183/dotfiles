@@ -27,7 +27,12 @@ wk.add {
 -- add yours here
 
 local map = vim.keymap.set
+
+map("n", "<C-t>", "<cmd>tabnew<CR>", { desc = "Create new tab" })
+-- Map "gs" to search the current word under the cursor (like the "*" command)
+map("n", "gs", "*", { desc = "Search current word under cursor" })
 map("n", ";", ":", { desc = "CMD enter command mode" })
 
 map({ "n", "v" }, "j", "v:count == 0 ? 'gj' : 'j'", { noremap = true, expr = true })
 map({ "n", "v" }, "k", "v:count == 0 ? 'gk' : 'k'", { noremap = true, expr = true })
+
