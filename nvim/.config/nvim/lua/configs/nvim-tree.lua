@@ -69,6 +69,13 @@ local function on_attach(bufnr)
   -- Override specific binding
   vim.keymap.del("n", "<C-]>", { buffer = bufnr })
   vim.keymap.set("n", "<C-å>", api.tree.change_root_to_node, opts "CD")
+
+  vim.keymap.set("n", "<leader>cd", function()
+    local node = api.tree.get_node_under_cursor()
+    if node and node.type == "directory" then
+      vim.cmd("cd " .. node.absolute_path)
+    end
+  end, opts "Change CWD")
 end
 
 require("nvim-tree").setup {
@@ -78,7 +85,7 @@ require("nvim-tree").setup {
     adaptive_size = true, -- Automatically resizes the NvimTree window
   },
   update_focused_file = {
-    enable = true, -- Sync tree with the current buffer
-    -- update_cwd = true, -- Uncomment if you want to change cwd to match the buffer
+    -- enable = true, -- Sync tree with the current buffer
+    -- update_cwd = false, -- Uncomment if you want to change cwd to match the buffer
   },
 }

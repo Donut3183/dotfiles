@@ -4,6 +4,8 @@ require("conform").setup {
     sh = { "shfmt" },
     zsh = { "shfmt" },
     tex = { "latexindent" },
+    markdown = { "prettier" },
+    c = { "clang-format" },
   },
 
   -- format_on_save = {

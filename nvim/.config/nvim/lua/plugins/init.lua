@@ -1,4 +1,66 @@
 return {
+
+  {
+    "iamcco/markdown-preview.nvim",
+    build = "cd app && npm install",
+    ft = { "markdown" },
+    cmd = { "MarkdownPreview", "MarkdownPreviewStop" },
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+  },
+
+  -- install nvim-telescop plugin
+  {
+    "nvim-telescope/telescope.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope-ui-select.nvim",
+      "nvim-telescope/telescope-fzf-native.nvim",
+    },
+    config = function()
+      require("telescope").setup {
+        defaults = {
+          layout_strategy = "flex",
+          layout_config = {
+            flex = { flip_columns = 120 },
+          },
+          sorting_strategy = "ascending",
+          prompt_prefix = "🔍 ",
+          selection_caret = "➤ ",
+          entry_prefix = "  ",
+          winblend = 0,
+        },
+      }
+      require("telescope").load_extension "ui-select"
+    end,
+  },
+  { "nvim-lua/plenary.nvim", branch = "master" },
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require "configs.lualine"
+    end,
+  },
+  {
+    "github/copilot.vim",
+    lazy = false,
+  },
+  {
+    "olimorris/codecompanion.nvim",
+    event = "BufRead",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-telescope/telescope.nvim",
+      "j-hui/fidget.nvim",
+    },
+    config = function()
+      require "configs.codecompanion"
+    end,
+  },
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
@@ -15,17 +77,7 @@ return {
     lazy = false,
 
     config = function()
-      require("auto-session").setup {
-        previewer = true,
-        log_level = "info",
-        -- auto_session_enable_last_session = true,
-        auto_session_root_dir = vim.fn.stdpath "data" .. "/sessions/",
-        auto_session_enabled = true,
-        auto_save_enabled = true,
-        -- auto_restore_enabled = true,
-        -- post_restore_cmds = { change_nvim_tree_dir, "NvimTreeOpen" },
-        -- pre_save_cmds = { "NvimTreeClose" },
-      }
+      require("configs.auto-session").init_plugin()
     end,
   },
   {
@@ -80,32 +132,100 @@ return {
 
   {
     "williamboman/mason.nvim",
-    dependencies = { "williamboman/mason-lspconfig.nvim" },
+    dependencies = {
+      "williamboman/mason-lspconfig.nvim",
+      "WhoIsSethDaniel/mason-tool-installer.nvim",
+    },
     config = function()
       require("mason").setup()
+
+      -- LSP Servers
       require("mason-lspconfig").setup {
         ensure_installed = {
-          "lua_ls", -- Lua
-          "pyright", -- Python
-          "clangd", -- C/C++
-          "bashls", -- Bash
-          "jsonls", -- JSON
-          "yamlls", -- YAML
-          "marksman", -- Markdown
-          "ltex-ls",
-          "matlab-language-server",
-          "latexindent",
-          "shfmt",
+          -- Core C/C++
+          "clangd",
+          "ccls",
+          "cmake-language-server",
+          "matlab-language-server", -- MATLAB language server
+
+          -- Hardware/Embedded
+          "rust_analyzer",
+          "verible",
+          "vhdl-tool",
+
+          -- Scripting/Tooling
+          "bashls",
+          "pyright",
+          "lua_ls",
+
+          -- Documentation
+          "marksman",
+          "texlab", -- LaTeX language server
+          "ltex-ls", -- LaTeX spell check + grammar
         },
-        automatic_installation = true, -- Ensures missing servers install automatically
+        automatic_installation = true,
+      }
+
+      -- Extended Tools
+      require("mason-tool-installer").setup {
+        ensure_installed = {
+          -- C/C++ Toolchain
+          "cpptools",
+          "codelldb",
+          "clang-format",
+
+          -- Hardware Tools
+          "verilog-formatter",
+          "vhdl-formatter",
+          "gtkwave",
+
+          -- Embedded Debugging
+          "openocd",
+          "stlink",
+
+          -- LaTeX Tools
+          "latexindent", -- Primary LaTeX formatter
+          "texlab", -- Also provides formatting
+          "chktex", -- LaTeX linter
+
+          -- MATLAB Tools
+          "mlint", -- MATLAB linter (requires MATLAB install)
+          "matlab-formatter", -- Community formatting tool
+
+          -- General Utilities
+          "cmakelang",
+          "codespell",
+          "shellcheck",
+        },
+        auto_update = true,
       }
     end,
   },
-
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
+        -- Core
+        "c",
+        "cpp",
+        "cmake",
+        "make",
+
+        -- Hardware
+        "verilog",
+        "vhdl",
+
+        -- Embedded
+        "devicetree",
+        "rust",
+        "python",
+
+        -- Tooling
+        "bash",
+        "json",
+        "yaml",
+
+        -- Existing
         "vim",
         "lua",
         "vimdoc",
@@ -120,6 +240,9 @@ return {
       "hrsh7th/cmp-nvim-lsp",
       "L3MON4D3/LuaSnip",
     },
+    config = function()
+      require "configs.nvim-cmp"
+    end,
   },
 
   {
