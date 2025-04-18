@@ -27,9 +27,9 @@ end
 --       },
 --     },
 --   },
-  -- cmd = { "ltex-ls" },
-  -- filetypes = { "markdown", "text", "tex" },
-  -- flags = { debounce_text_changes = 300 },
+-- cmd = { "ltex-ls" },
+-- filetypes = { "markdown", "text", "tex" },
+-- flags = { debounce_text_changes = 300 },
 -- }
 require("ltex_extra").setup {
   -- your_ltex_extra_opts,
@@ -44,7 +44,7 @@ require("ltex_extra").setup {
         language = "en-US",
         additionalRules = {
           enablePickyRules = true, -- Optional: enables stricter checks
-          languageModel = '~/.ngrams/',
+          languageModel = "~/.ngrams/",
         },
       },
     },

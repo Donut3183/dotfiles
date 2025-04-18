@@ -25,9 +25,42 @@ wk.add {
   },
 }
 -- add yours here
+wk.add {
+  {
+    { "<leader>a", group = "Augment" },
+    mode = { "n", "v" },
+    { "<leader>as", group = "Status" },
+    { "<leader>ass", "<cmd>Augment status<CR>", desc = "Current status of the plugin" },
+    { "<leader>asi", "<cmd>Augment signin<CR>", desc = "Start the sign in flow" },
+    { "<leader>aso", "<cmd>Augment signout<CR>", desc = "Sign out of Augment" },
+    { "<leader>al", "<cmd>Augment log<CR>", desc = "Plugin log" },
+    { "<leader>ac", group = "Chat" },
+    { "<leader>acc", "<cmd>Augment chat<CR>", desc = "Send a chat message to Augment AI" },
+    { "<leader>acn", "<cmd>Augment chat-new<CR>", desc = "Start a new chat conversation" },
+    { "<leader>aca", "<cmd>call augment#Accept()<CR>", desc = "Accept Augments suggestion" },
+    { "<leader>at", "<cmd>Augment chat-toggle<CR>", desc = "Toggle the chat panel visibility" },
+  },
+}
 
+wk.add {
+  {
+    { "<leader>l", group = "LSP" },
+    { "<leader>la", vim.lsp.buf.code_action, desc = "Code Action" },
+    -- You might want to add other LSP related mappings here too
+    { "<leader>lr", vim.lsp.buf.rename, desc = "Rename" },
+    { "<leader>ld", vim.lsp.buf.definition, desc = "Go to Definition" },
+    { "<leader>lh", vim.lsp.buf.hover, desc = "Hover Documentation" },
+  },
+}
 local map = vim.keymap.set
 
+-- Insert mode binding for Augment Accept
+map(
+  "i",
+  "<C-i>",
+  "<cmd>call augment#Accept()<CR>",
+  { noremap = true, silent = true, desc = "Accept Augment suggestion" }
+)
 map("n", "<C-t>", "<cmd>tabnew<CR>", { desc = "Create new tab" })
 -- Map "gs" to search the current word under the cursor (like the "*" command)
 map("n", "gs", "*", { desc = "Search current word under cursor" })
@@ -35,4 +68,3 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 
 map({ "n", "v" }, "j", "v:count == 0 ? 'gj' : 'j'", { noremap = true, expr = true })
 map({ "n", "v" }, "k", "v:count == 0 ? 'gk' : 'k'", { noremap = true, expr = true })
-

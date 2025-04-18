@@ -6,13 +6,35 @@ require("codecompanion").setup {
   log_level = "info",
   strategy = "toggle",
   adapters = {
+
+    copilot = function()
+      return require("codecompanion.adapters").extend("copilot", {
+        -- Add any custom logic here
+        -- For example, you can modify the request or response
+        -- before sending it to the OpenAI API.
+        --
+        model = "o3-mini",
+        parameters = {
+          temperature = 0.7,
+          max_completion_tokens = 2048,
+        },
+        context = function()
+          return {
+            type = "project",
+            max_files = 8,
+            file_types = { ".c", ".h", ".md", ".txt", ".clangd", ".clang-format" },
+            exclude_dirs = { ".git", "node_modules", "venv" },
+          }
+        end,
+      })
+    end,
     openai = function()
       return require("codecompanion.adapters").extend("openai", {
         -- Add any custom logic here
         -- For example, you can modify the request or response
         -- before sending it to the OpenAI API.
         --
-        model = "o3-mini-2025-01-31",
+        model = "o3-mini",
         api_key = os.getenv "OPENAI_API_KEY",
         parameters = {
           temperature = 0.7,
@@ -50,7 +72,7 @@ require("codecompanion").setup {
   -- Adapters setup
   strategies = {
     chat = {
-      adapter = "openai",
+      adapter = "copilot",
     },
   },
   -- Interface settings

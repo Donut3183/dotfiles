@@ -1,4 +1,35 @@
 return {
+  {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- configuration options
+      labels = "asdfghjklqwertyuiopzxcvbnm",
+      search = {
+        -- search/jump in all windows
+        multi_window = true,
+        -- search direction
+        forward = true,
+        -- when `false`, find only matches in the given direction
+        wrap = true,
+      },
+    },
+    -- stylua: ignore
+    keys = {
+      { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+      { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+      { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
+      { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
+    },
+  },
+
+  {
+    "augmentcode/augment.vim",
+    event = "VeryLazy",
+    config = function()
+      require "configs.augment"
+    end,
+  },
 
   {
     "iamcco/markdown-preview.nvim",
@@ -44,10 +75,10 @@ return {
       require "configs.lualine"
     end,
   },
-  {
-    "github/copilot.vim",
-    lazy = false,
-  },
+  -- {
+  --   "github/copilot.vim",
+  --   lazy = false,
+  -- },
   {
     "olimorris/codecompanion.nvim",
     event = "BufRead",
@@ -145,6 +176,7 @@ return {
           -- Core C/C++
           "clangd",
           "ccls",
+          "copilot-language-server",
           "cmake-language-server",
           "matlab-language-server", -- MATLAB language server
 
@@ -161,7 +193,7 @@ return {
           -- Documentation
           "marksman",
           "texlab", -- LaTeX language server
-          "ltex-ls", -- LaTeX spell check + grammar
+          -- "ltex-ls", -- LaTeX spell check + grammar
         },
         automatic_installation = true,
       }
