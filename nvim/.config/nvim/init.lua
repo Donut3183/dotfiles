@@ -1,38 +1,36 @@
-vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- 1) Leaders
+vim.g.mapleader       = " "
+vim.g.maplocalleader  = " "
 
--- bootstrap lazy and all plugins
-local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
+-- init.lua
 
-if not vim.uv.fs_stat(lazypath) then
-  local repo = "https://github.com/folke/lazy.nvim.git"
-  vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
+--------------------------------------------------------------------------------
+-- 1) Bootstrap folke/lazy.nvim
+--------------------------------------------------------------------------------
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git", "clone", "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable",
+    lazypath,
+  })
 end
-
 vim.opt.rtp:prepend(lazypath)
 
-local lazy_config = require "configs.lazy"
+--------------------------------------------------------------------------------
+-- 2) Tell lazy.nvim where your plugin specs live
+--------------------------------------------------------------------------------
+-- Since your specs are in lua/plugins/init.lua, use "plugins" as the module path
+require("lazy").setup("plugins", {
+  -- Optional lazy.nvim settings go here, e.g.:
+  -- defaults = { lazy = true, version = "*" },
+})
 
--- load plugins
-require("lazy").setup({
-  {
-    "NvChad/NvChad",
-    lazy = false,
-    branch = "v2.5",
-    import = "nvchad.plugins",
-  },
+--------------------------------------------------------------------------------
+-- 3) Load the rest of your Neovim config
+--------------------------------------------------------------------------------
+require("options")    -- lua/options.lua
+require("mappings").setup()   -- lua/mappings.lua
+require("autocmds")   -- lua/autocmds.lua
 
-  { import = "plugins" },
-}, lazy_config)
-
--- load theme
-dofile(vim.g.base46_cache .. "defaults")
-dofile(vim.g.base46_cache .. "statusline")
-
-require "options"
-require "nvchad.autocmds"
-
-vim.schedule(function()
-  require "mappings"
-end)
