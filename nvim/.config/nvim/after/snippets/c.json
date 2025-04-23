@@ -1,0 +1,29 @@
+{
+  "nasa": {
+    "prefix": "nasa",
+    "body": [
+      "/*",
+      " *---------------------------------------------------------------",
+      " * Function: ${1:FunctionName}",
+      " *",
+      " * Purpose : ${2:Describe the purpose of the function.}",
+      " *",
+      " * Assumptions and Notes:",
+      " *   ${3:List any assumptions, constraints, or important notes.}",
+      " *",
+      " * Inputs:",
+      " *   ${4:List input parameters and their descriptions.}",
+      " *",
+      " * Outputs:",
+      " *   ${5:List output parameters and what they represent.}",
+      " *",
+      " * Return:",
+      " *   ${6:Description of the return value.}",
+      " *",
+      " *---------------------------------------------------------------",
+      " */"
+    ],
+    "description": "NASA-style C function comment block with purpose, assumptions, inputs, outputs, and return value."
+  }
+}
+

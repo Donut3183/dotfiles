@@ -329,12 +329,15 @@ now(function()
 	local lang_patterns = {
 		tex = tex_patterns,
 		plaintex = tex_patterns,
-		c = { "/c/*.json" },
+		c = { "/c/*.json", "/c.json" },
 		cpp = { "/cpp/*.json" },
-		lua = { "/lua/*.json" },
+		lua = { "/lua/*.json", "/lua.json" },
 		python = { "/python/*.json" },
 	}
 	snippets.setup({
+		mappings = {
+			stop = "<esc>",
+		},
 		snippets = {
 			snippets.gen_loader.from_lang({ lang_patterns = lang_patterns }),
 		},
