@@ -19,6 +19,9 @@ vim.keymap.set("i", "<S-Tab>", [[pumvisible() ? "\<C-p>" : "\<S-Tab>"]], { expr 
 vim.keymap.set('n', '<Tab>',    '<Cmd>bnext<CR>',     { desc = 'Next Buffer' })
 vim.keymap.set('n', '<S-Tab>',  '<Cmd>bprevious<CR>', { desc = 'Previous Buffer' })
 
+-- Augment accept inline
+vim.keymap.set('i', '<C-i>', '<cmd>lua vim.fn["augment#Accept"]()<cr>', { desc = 'Accept Augment suggestion'})
+
 -- Normal mode: Ctrl‑Tab → new tab
 vim.keymap.set('n', '<C-t>', '<Cmd>tabnew<CR>', { desc = 'New Tab' })
 -- Rebind gt / gT to switch tabs, with descriptions
@@ -81,7 +84,6 @@ nmap_leader('pc', '<Nop>',                                  '+Chat')
 -- Chat commands
 nmap_leader('pcc', '<cmd>Augment chat<CR>',                 'Send a chat message to Augment AI')
 nmap_leader('pcn', '<cmd>Augment chat-new<CR>',             'Start a new chat conversation')
-nmap_leader('pca', '<cmd>call augment#Accept()<CR>',        'Accept Augments suggestion')
 nmap_leader('pt', '<cmd>Augment chat-toggle<CR>',           'Toggle the chat panel visibility')
 -- s is for misc ==============================================================
 nmap_leader('sl', '^v$h<cmd>ChatGPTRun grammar_correction<CR>', 'Select paragraph and correct grammar')

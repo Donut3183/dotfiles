@@ -314,9 +314,9 @@ end)
 -- Augment ====================================================================
 now(function()
 	vim.g.augment_disable_tab_mapping = true
-	add({
-		source = "augmentcode/augment.vim",
-	})
+	-- add({
+	-- 	source = "augmentcode/augment.vim",
+	-- })
 
 	local home = os.getenv("HOME")
 
@@ -329,14 +329,6 @@ now(function()
 
 	-- Set the global variable used by augment.vim
 	vim.g.augment_workspace_folders = workspace_folders
-
-	vim.api.nvim_create_autocmd("User", {
-		pattern = "AugmentLoaded", -- hypothetical event; check if Augment emits one
-		callback = function()
-			vim.keymap.set("i", "<Tab>", [[pumvisible() ? "\<C-n>" : "\<Tab>"]], { expr = true })
-			vim.keymap.set("i", "<S-Tab>", [[pumvisible() ? "\<C-p>" : "\<S-Tab>"]], { expr = true })
-		end,
-	})
 end)
 -- -- Popular color schemes for testing ==========================================
 -- later(function()
