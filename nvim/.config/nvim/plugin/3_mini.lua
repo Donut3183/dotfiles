@@ -58,9 +58,9 @@ now(function()
 end)
 
 -- Step one ===================================================================
-now(function()
-	vim.cmd("colorscheme miniwinter")
-end)
+-- now(function()
+-- 	vim.cmd("colorscheme minisummer")
+-- end)
 
 -- Step two ===================================================================
 -- Mini.extra
@@ -148,14 +148,11 @@ end)
 -- Mini.completion
 later(function()
 	require("mini.completion").setup({
+		set_vim_settings = false,
+		delay = { completion = 50, info = 200, signature = 200 },
 		lsp_completion = {
 			source_func = "omnifunc",
 			auto_setup = true,
-			-- process_items = function(items, base)
-			--   -- Don't show 'Text' and 'Snippet' suggestions
-			--   items = vim.tbl_filter(function(x) return x.kind ~= 1 and x.kind ~= 15 end, items)
-			--   return MiniCompletion.default_process_items(items, base)
-			-- end,
 		},
 		mappings = {
 			force_twostep = "<C-Space>",
@@ -329,6 +326,7 @@ now(function()
 	local lang_patterns = {
 		tex = tex_patterns,
 		plaintex = tex_patterns,
+		markdown_inline = tex_patterns,
 		c = { "/c/*.json", "/c.json" },
 		cpp = { "/cpp/*.json" },
 		lua = { "/lua/*.json", "/lua.json" },

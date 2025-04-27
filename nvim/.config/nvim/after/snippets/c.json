@@ -3,10 +3,12 @@
     "prefix": "nasa",
     "body": [
       "/*",
-      " *---------------------------------------------------------------",
-      " * Function: ${1:FunctionName}",
+      " ********************************************************************************",
+      " * Function:",
+      " *   ${1:FunctionName}",
       " *",
-      " * Purpose : ${2:Describe the purpose of the function.}",
+      " * Purpose :",
+      " *   ${2:Describe the purpose of the function.}",
       " *",
       " * Assumptions and Notes:",
       " *   ${3:List any assumptions, constraints, or important notes.}",
@@ -20,10 +22,28 @@
       " * Return:",
       " *   ${6:Description of the return value.}",
       " *",
-      " *---------------------------------------------------------------",
+      " ********************************************************************************",
       " */"
     ],
     "description": "NASA-style C function comment block with purpose, assumptions, inputs, outputs, and return value."
+  },
+  "C File Header Box": {
+    "prefix": "header",
+    "body": [
+      "/*",
+      " ********************************************************************************",
+      " * File:        ${1:filename}",
+      " *",
+      " * Description: ${2:Short description}",
+      " *",
+      " * Author:      Pontus Svensson",
+      " * Date:        ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      " * License:     MIT License",
+      " ********************************************************************************",
+      " */",
+      "",
+      "$0"
+    ],
+    "description": "Boxed file header for C source/header files"
   }
 }
-

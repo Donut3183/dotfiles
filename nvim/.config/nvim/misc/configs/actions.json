@@ -34,7 +34,7 @@
 "grammar_correction": {
   "type": "chat",
   "opts": {
-    "template": "Revise the following text for grammatical accuracy, sentence structure, and formal tone while improving readability. Ensure alignment with IEEE style and the Chicago Manual of Style, with spelling conforming to the Merriam-Webster dictionary in {{lang}}. Maintain LaTeX formatting and scientific precision. Respond with corrected text only:\n\n{{input}}",
+    "template": "Revise the following text for grammatical accuracy, sentence structure, and formal tone while improving readability. Ensure alignment with IEEE style and the Chicago Manual of Style, with spelling conforming to the Merriam-Webster dictionary in {{lang}}. Maintain LaTeX formatting and scientific precision. Keep acronyms in its latex format, do not change the latex math environments, do not remove any percentage symbols. Respond with corrected text only:\n\n{{input}}",
     "strategy": "edit",
     "params": {
       "model": "gpt-4o-mini"

@@ -1,0 +1,49 @@
+{
+  "acronym": { "prefix": "ac", "body": ["\\ac{$0}"], "description": "Acronym" },
+  "acronym plural": {
+    "prefix": "acp",
+    "body": ["\\acp{$0}"],
+    "description": "Acronym plural"
+  },
+  "acronym short": {
+    "prefix": "acs",
+    "body": ["\\acs{$0}"],
+    "description": "Acronym short form"
+  },
+  "nomeclature": {
+    "prefix": "gls",
+    "body": ["\\gls{$0}"],
+    "description": "Nomenclature"
+  },
+  "Figure Inkscape": {
+    "prefix": "figi",
+    "body": [
+      "\\begin{figure}\n\t\\begin{center}\n\t\t\\centering\n\t\t\\def\\svgwidth{.9\\textwidth}\n\t\t\\input{images/INKSCAPE/$1}\n\t\\end{center}\n\t\\caption{$2}\\label{fig:$3}\n\\end{figure}\n$0"
+    ],
+    "description": "Figure environment using input"
+  },
+  "Figure": {
+    "prefix": "fig",
+    "body": [
+      "\\begin{figure}\n\t\\begin{center}\n\t\t\\includegraphics[width=0.95\\textwidth]{images/$1}\n\t\\end{center}\n\t\\caption{$2}\\label{fig:$3}\n\\end{figure}\n$0"
+    ],
+    "description": "Figure environment using input"
+  },
+  "input Figure": {
+    "prefix": "figp",
+    "body": [
+      "\\begin{figure}\n\t\\begin{center}\n\t\t\\input{images/$1}\n\t\\end{center}\n\t\\caption{$2}\\label{fig:$3}\n\\end{figure}\n$0"
+    ],
+    "description": "Figure environment using input"
+  },
+  "label:sec": {
+    "prefix": "labs",
+    "body": ["\\label{sec:$0}"],
+    "description": "Section label"
+  },
+  "label:fig": {
+    "prefix": "labf",
+    "body": ["\\label{fig:$0}"],
+    "description": "Figure label"
+  }
+}

@@ -16,9 +16,9 @@ now(function()
 
   --stylua: ignore
   local ensure_installed = {
-    'bash', 'c',        'cpp',             'json',
-    'lua',  'markdown', 'markdown_inline', 'python',
-    'toml', 'yaml',     'vim',             'vimdoc',
+    'bash', 'c', 'cpp', 'json',
+    'lua', 'markdown', 'markdown_inline', 'python',
+    'toml', 'yaml', 'vim', 'vimdoc',
   }
 
 	require("nvim-treesitter.configs").setup({
@@ -38,6 +38,7 @@ now(function()
 		"clangd",
 		"lua_ls",
 		"ltex",
+		"matlab_ls",
 	}
 	require("mason").setup()
 	require("mason-lspconfig").setup({
@@ -58,6 +59,7 @@ later(function()
 			python = { "black" },
 			c = { "clang-format" },
 			tex = { "latexindent" },
+			markdown = { "prettier" },
 		},
 	})
 end)
@@ -121,57 +123,81 @@ now(function()
 	-- C/C++
 	lspconfig.clangd.setup({ on_attach = custom_on_attach })
 
-	-- LaTex plus
-	lspconfig.ltex_plus.setup({
-		on_attach = custom_on_attach,
+	-- Grammar
+	lspconfig.harper_ls.setup({ on_attach = custom_on_attach })
+end)
+
+-- 1) Clone only
+now(function()
+	add("lervag/vimtex")
+	vim.g.vimtex_complete_enabled = 1
+	vim.g.vimtex_view_method = "zathura"
+	vim.g.vimtex_view_general_viewer = "zathura"
+	vim.g.vimtex_compiler_method = "latexmk"
+	vim.g.vimtex_compiler_latexmk = {
+		build_dir = vim.fn.expand("vimtex#project#root()" .. "/build"),
+		continuous = 1,
+		executable = "latexmk",
+		options = {
+			"-lualatex",
+			"-interaction=nonstopmode",
+			"-synctex=1",
+			"-shell-escape",
+			"-file-line-error",
+			"-bibtex",
+			"-verbose",
+		},
+	}
+	vim.g.vimtex_compiler_latexmk_engines = { _ = "-lualatex" }
+	vim.g.vimtex_quickfix_enabled = 0
+	vim.g.vimtex_quickfix_autoclose_after_keystrokes = 1
+end)
+
+now(function()
+	add("barreiroleo/ltex_extra.nvim")
+	local home = vim.fn.expand("~")
+	local lspconfig = require("lspconfig")
+	lspconfig.ltex.setup({
+		filetypes = { "tex", "markdown", "md", "plaintex", "bib", "latex" },
+		on_attach = function(client, bufnr)
+			vim.bo[bufnr].omnifunc = "v:lua.MiniCompletion.completefunc_lsp"
+			require("ltex_extra").setup({
+				load_lang = { "en-US" },
+			})
+		end,
 		handlers = {
 			-- swallow all progress notifications
 			["$/progress"] = function() end,
 		},
 		settings = {
 			ltex = {
-				enabled = true,
+				enabled = { "latex", "tex", "markdown", "md", "bib", "plaintex" },
 				language = "en-US",
+				motherTongue = "en-US",
 				additionalRules = {
 					enablePickyRules = true,
-					languageModel = "~/.ngrams/",
+					languageModel = { home .. "/.ngrams/" },
+				},
+				dictionary = {
+					["ja-JP"] = {}, -- Empty dictionary to prevent error for Japanese
+					["km-KH"] = {}, -- Empty dictionary to prevent error for Khmer
+				},
+				disabledRules = {
+					["ja-JP"] = {},
+					["km-KH"] = {},
 				},
 			},
 		},
 	})
 end)
 
--- 1) Clone only
-now(function()
-	add("lervag/vimtex")
-
-	-- Zathura viewer (full integration via xdotool+libsynctex)
-	vim.g.vimtex_view_method = "zathura"
-	-- vim.g.vimtex_view_zathura_options = "--unique file:@pdf#src:@line@tex"
-	-- vim.g.vimtex_view_zathura_check_libsynctex = 1
-
-	-- Compiler settings
-	vim.g.vimtex_compiler_method = "latexmk"
-	vim.g.vimtex_compiler_latexmk = {
-		build_dir = "", -- change if you want an out‑dir
-		options = {
-			"-lualatex",
-			"-interaction=nonstopmode",
-			"-synctex=1",
-			"-shell-escape",
-		},
-	}
-	vim.g.vimtex_compiler_latexmk_engines = { _ = "-lualatex" }
-
-	vim.g.vimtex_quickfix_enabled = 0
-	vim.g.vimtex_quickfix_autoclose_after_keystrokes = 1
-end)
-
 later(function()
 	vim.api.nvim_create_autocmd("FileType", {
-		pattern = "tex",
+		pattern = { "tex", "md", "markdown" },
 		callback = function()
+			vim.cmd("packadd ltex_extra")
 			vim.cmd("packadd vimtex")
+			vim.opt_local.completefunc = "vimtex#complete#omnifunc"
 		end,
 	})
 end)
@@ -274,25 +300,12 @@ now(function()
 			"echasnovski/mini.icons",
 		},
 	})
-	local home = vim.fn.expand("$HOME")
+	local home = vim.fn.expand("~")
+	local vim_path = vim.fn.stdpath("config")
 	require("chatgpt").setup({
-		-- this config assumes you have OPENAI_API_KEY environment variable set
 		api_key_cmd = "gpg --decrypt " .. home .. "/Documents/openai_api_key.txt.gpg",
-		actions_paths = {
-			"~/.config/nvim/misc/configs/actions.json",
-		},
+		actions_paths = { vim_path .. "/misc/configs/actions.json" },
 		openai_params = {
-			-- NOTE: model can be a function returning the model name
-			-- this is useful if you want to change the model on the fly
-			-- using commands
-			-- Example:
-			-- model = function()
-			--     if some_condition() then
-			--         return "gpt-4-1106-preview"
-			--     else
-			--         return "gpt-3.5-turbo"
-			--     end
-			-- end,
 			model = "gpt-4-1106-preview",
 			frequency_penalty = 0,
 			presence_penalty = 0,
@@ -308,43 +321,27 @@ now(function()
 	add({
 		source = "rickhowe/diffchar.vim",
 	})
-	vim.g.DiffUnit = "Word1" -- Enable word-level diff highlighting
+	-- vim.g.DiffUnit = "Word1" -- Enable word-level diff highlighting
+	vim.g.DiffColors = 0
 end)
 
--- Augment ====================================================================
-now(function()
-	vim.g.augment_disable_tab_mapping = true
-	-- add({
-	-- 	source = "augmentcode/augment.vim",
-	-- })
-
-	local home = os.getenv("HOME")
-
-	-- Define your workspace folders here
-	workspace_folders = {
-		home .. "/DVA218/RTP",
-		home .. "/.config/nvim",
-		home .. "/dotfiles/nvim/.config/nvim",
-	}
-
-	-- Set the global variable used by augment.vim
-	vim.g.augment_workspace_folders = workspace_folders
-end)
 -- -- Popular color schemes for testing ==========================================
--- later(function()
---   add('folke/tokyonight.nvim')
---   add({ source = 'catppuccin/nvim', name = 'catppuccin-nvim' })
---   add('rebelot/kanagawa.nvim')
---   add('sainnhe/everforest')
---   add({ source = 'rose-pine/neovim', name = 'rose-pine' })
---   add('bluz71/vim-moonfly-colors')
---   add('ellisonleao/gruvbox.nvim')
---   add('craftzdog/solarized-osaka.nvim')
---   add('navarasu/onedark.nvim')
---   add('projekt0n/github-nvim-theme')
---   add('marko-cerovac/material.nvim')
---   require('material').setup({ plugins = { 'mini' } })
---   add('EdenEast/nightfox.nvim')
---   add('scottmckendry/cyberdream.nvim')
---   add('Shatur/neovim-ayu')
--- end)
+later(function()
+	add("folke/tokyonight.nvim")
+	add({ source = "catppuccin/nvim", name = "catppuccin-nvim" })
+	add("ellisonleao/gruvbox.nvim")
+	add("rebelot/kanagawa.nvim")
+	add("sainnhe/everforest")
+	add({ source = "rose-pine/neovim", name = "rose-pine" })
+	add("bluz71/vim-moonfly-colors")
+	add("ellisonleao/gruvbox.nvim")
+	add("craftzdog/solarized-osaka.nvim")
+	add("navarasu/onedark.nvim")
+	add("projekt0n/github-nvim-theme")
+	add("marko-cerovac/material.nvim")
+	require("material").setup({ plugins = { "mini" } })
+	add("EdenEast/nightfox.nvim")
+	add("scottmckendry/cyberdream.nvim")
+	add("Shatur/neovim-ayu")
+	vim.cmd("colorscheme ayu-mirage")
+end)
