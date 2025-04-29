@@ -208,7 +208,11 @@ nmap_leader('lk', '<Cmd>lua vim.diagnostic.goto_prev()<CR>', 'Prev diagnostic')
 nmap_leader('lR', '<Cmd>lua vim.lsp.buf.references()<CR>', 'References')
 nmap_leader('lr', '<Cmd>lua vim.lsp.buf.rename()<CR>', 'Rename')
 nmap_leader('ls', '<Cmd>lua vim.lsp.buf.definition()<CR>', 'Source definition')
-
+nmap_leader('ln', function() require("todo-comments").jump_next() end, "Next todo comment")
+nmap_leader('lp', function() require("todo-comments").jump_prev() end, "Previous todo comment")
+nmap_leader('lq', "<Cmd>TodoQuickFix<CR>", "Todo Quick Fix list")
+nmap_leader('ll', "<Cmd>TodoLocList<CR>", "Todo Location List")
+nmap_leader('lt', "<Cmd>TodoTelescope<CR>", "Todo Telescope")
 xmap_leader('lf', formatting_cmd, 'Format selection')
 
 -- m is for 'map'

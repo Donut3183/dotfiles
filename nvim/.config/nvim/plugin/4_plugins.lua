@@ -139,6 +139,7 @@ now(function()
 		continuous = 1,
 		executable = "latexmk",
 		options = {
+      "-outdir=build/",
 			"-lualatex",
 			"-interaction=nonstopmode",
 			"-synctex=1",
@@ -286,6 +287,15 @@ later(function()
 	vim.g["pandoc#folding#fold_fenced_codeblocks"] = 1
 	vim.g["pandoc#folding#fastfolds"] = 1
 	vim.g["pandoc#folding#fdc"] = 0
+end)
+
+-- Todo-comments.nvim **********************************************************
+later(function()
+	add({
+		source = "folke/todo-comments.nvim",
+		depends = { "nvim-lua/plenary.nvim" },
+	})
+	require("todo-comments").setup()
 end)
 
 -- ChatGPT plugin =============================================================

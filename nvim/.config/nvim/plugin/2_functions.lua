@@ -1,6 +1,6 @@
 -- Helper table
 local H = {}
-
+-- TODO:
 -- Log for personal use during debugging
 Config.log = {}
 
