@@ -129,24 +129,22 @@ end)
 
 -- 1) Clone only
 now(function()
-	add("lervag/vimtex")
+	add({ source = "lervag/vimtex", checkout = "master" })
 	vim.g.vimtex_complete_enabled = 1
 	vim.g.vimtex_view_method = "zathura"
 	vim.g.vimtex_view_general_viewer = "zathura"
 	vim.g.vimtex_compiler_method = "latexmk"
 	vim.g.vimtex_compiler_latexmk = {
-		build_dir = vim.fn.expand("vimtex#project#root()" .. "/build"),
+		out_dir = "build",
 		continuous = 1,
 		executable = "latexmk",
 		options = {
-      "-outdir=build/",
 			"-lualatex",
 			"-interaction=nonstopmode",
 			"-synctex=1",
 			"-shell-escape",
 			"-file-line-error",
 			"-bibtex",
-			"-verbose",
 		},
 	}
 	vim.g.vimtex_compiler_latexmk_engines = { _ = "-lualatex" }
