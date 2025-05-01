@@ -64,6 +64,11 @@ alias c='clear'
 
 export PATH=/usr/local/bin:$PATH >> ~/.zshrc
 
+# TeX Live 2025 paths
+export PATH="/usr/local/texlive/2025/bin/x86_64-linux:$PATH"
+export MANPATH="/usr/local/texlive/2025/texmf-dist/doc/man:$MANPATH"
+export INFOPATH="/usr/local/texlive/2025/texmf-dist/doc/info:$INFOPATH"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source "$HOME/.zsh_aliases"
 # Shell integrations

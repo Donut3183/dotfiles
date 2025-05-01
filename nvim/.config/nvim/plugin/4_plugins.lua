@@ -1,25 +1,25 @@
 local add, now, later = MiniDeps.add, MiniDeps.now, MiniDeps.later
 local now_if_args = vim.fn.argc(-1) > 0 and now or later
 
-now(function()
-	vim.g.augment_disable_tab_mapping = true
-	add({
-		source = "augmentcode/augment.vim",
-	})
-
-	local home = os.getenv("HOME")
-
-	-- Define your workspace folders here
-	workspace_folders = {
-		home .. "/DVA218/RTP",
-		home .. "/.config/nvim",
-		home .. "/dotfiles/nvim/.config/nvim",
-    home .. "/DVA502/Thesis",
-	}
-
-	-- Set the global variable used by augment.vim
-	vim.g.augment_workspace_folders = workspace_folders
-end)
+-- now(function()
+-- 	vim.g.augment_disable_tab_mapping = true
+-- 	add({
+-- 		source = "augmentcode/augment.vim",
+-- 	})
+--
+-- 	local home = os.getenv("HOME")
+--
+-- 	-- Define your workspace folders here
+-- 	workspace_folders = {
+-- 		home .. "/DVA218/RTP",
+-- 		home .. "/.config/nvim",
+-- 		home .. "/dotfiles/nvim/.config/nvim",
+-- 		home .. "/DVA502/Thesis",
+-- 	}
+--
+-- 	-- Set the global variable used by augment.vim
+-- 	vim.g.augment_workspace_folders = workspace_folders
+-- end)
 -- Tree-sitter (advanced syntax parsing, highlighting, textobjects) ===========
 now(function()
 	add({
@@ -153,24 +153,34 @@ now(function()
 	vim.g.vimtex_view_method = "zathura"
 	vim.g.vimtex_view_general_viewer = "zathura"
 	vim.g.vimtex_compiler_method = "latexmk"
+
+	-- Enable debug mode to see what's happening
+	vim.g.vimtex_compiler_latexmk_engines = {
+		_ = "-lualatex",
+	}
+
 	vim.g.vimtex_compiler_latexmk = {
-		-- out_dir = "build",
-		-- aux_dir = "build",
+		out_dir = "build",
+		aux_dir = "build",
+		callback = 1,
 		continuous = 1,
 		executable = "latexmk",
+		hooks = {},
 		options = {
-			"-outdir=build",
-			"-auxdir=build",
-			"-lualatex",
-			"-interaction=nonstopmode",
+			"-verbose",
+			"-file-line-error",
 			"-synctex=1",
 			"-shell-escape",
-			"-file-line-error",
+			"-interaction=nonstopmode",
 			"-bibtex",
+      "-out2dir=final"
 		},
 	}
-	vim.g.vimtex_compiler_latexmk_engines = { _ = "-lualatex" }
-	vim.g.vimtex_quickfix_enabled = 0
+
+	-- Enable logging for debugging
+	vim.g.vimtex_log_verbose = 1
+
+	vim.g.vimtex_quickfix_enabled = 1
 	vim.g.vimtex_quickfix_autoclose_after_keystrokes = 1
 end)
 

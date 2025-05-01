@@ -48,7 +48,7 @@ _G.Config.leader_group_clues = {
   { mode = 'n', keys = '<Leader>s', desc = '+Thesis' },
   { mode = 'n', keys = '<Leader>t', desc = '+Terminal' },
   { mode = 'n', keys = '<Leader>v', desc = '+Visits' },
-  { mode = 'n', keys = '<Leader>p', desc = '+Augment' },
+  -- { mode = 'n', keys = '<Leader>p', desc = '+Augment' },
 
   { mode = 'x', keys = '<Leader>l', desc = '+LSP' },
 }
@@ -65,24 +65,24 @@ local xmap_leader = function(suffix, rhs, desc, opts)
   vim.keymap.set('x', '<Leader>' .. suffix, rhs, opts)
 end
 
--- p is for Augment ===========================================================
--- Plugin status
-nmap_leader('ps', '<cmd>Augment status<CR>',                'Current status of the plugin')
-
--- Authentication
-nmap_leader('psi', '<cmd>Augment signin<CR>',               'Start the sign in flow')
-nmap_leader('pso', '<cmd>Augment signout<CR>',              'Sign out of Augment')
-
--- Logs
-nmap_leader('pl', '<cmd>Augment log<CR>',                   'Plugin log')
-
--- Chat group header
-nmap_leader('pc', '<Nop>',                                  '+Chat')
-
--- Chat commands
-nmap_leader('pcc', '<cmd>Augment chat<CR>',                 'Send a chat message to Augment AI')
-nmap_leader('pcn', '<cmd>Augment chat-new<CR>',             'Start a new chat conversation')
-nmap_leader('pt', '<cmd>Augment chat-toggle<CR>',           'Toggle the chat panel visibility')
+-- -- p is for Augment ===========================================================
+-- -- Plugin status
+-- nmap_leader('ps', '<cmd>Augment status<CR>',                'Current status of the plugin')
+--
+-- -- Authentication
+-- nmap_leader('psi', '<cmd>Augment signin<CR>',               'Start the sign in flow')
+-- nmap_leader('pso', '<cmd>Augment signout<CR>',              'Sign out of Augment')
+--
+-- -- Logs
+-- nmap_leader('pl', '<cmd>Augment log<CR>',                   'Plugin log')
+--
+-- -- Chat group header
+-- nmap_leader('pc', '<Nop>',                                  '+Chat')
+--
+-- -- Chat commands
+-- nmap_leader('pcc', '<cmd>Augment chat<CR>',                 'Send a chat message to Augment AI')
+-- nmap_leader('pcn', '<cmd>Augment chat-new<CR>',             'Start a new chat conversation')
+-- nmap_leader('pt', '<cmd>Augment chat-toggle<CR>',           'Toggle the chat panel visibility')
 -- s is for misc ==============================================================
 nmap_leader('sl', '^v$h<cmd>ChatGPTRun grammar_correction<CR>', 'Select paragraph and correct grammar')
 xmap_leader('sl', '^v$h<cmd>ChatGPTRun grammar_correction<CR>', 'Select paragraph and correct grammar')

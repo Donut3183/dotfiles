@@ -45,5 +45,28 @@
     "prefix": "labf",
     "body": ["\\label{fig:$0}"],
     "description": "Figure label"
+  },
+
+  "minipage:stacked": {
+    "prefix": "minipage:stacked",
+    "body": [
+      "\\begin{figure}[!ht]",
+      "\t\\begin{center}",
+      "\t\t\\begin{minipage}[t]{0.48\\textwidth}",
+      "\t\t\t\\centering",
+      "\t\t\t\\input{images/$1}",
+      "\t\t\t\\caption{$2}\\label{fig:$3}",
+      "\t\t\\end{minipage}",
+      "\t\t\\hfill",
+      "\t\t\\begin{minipage}[t]{0.48\\textwidth}",
+      "\t\t\t\\centering",
+      "\t\t\t\\input{images/TIKZ/$4}",
+      "\t\t\t\\caption{$5}\\label{fig:$6}",
+      "\t\t\\end{minipage}",
+      "\t\\end{center}",
+      "\\end{figure}",
+      "$0"
+    ],
+    "description": "Minipage Stacked"
   }
 }
