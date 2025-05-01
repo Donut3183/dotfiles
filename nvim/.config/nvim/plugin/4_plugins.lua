@@ -1,6 +1,12 @@
 local add, now, later = MiniDeps.add, MiniDeps.now, MiniDeps.later
 local now_if_args = vim.fn.argc(-1) > 0 and now or later
 
+now(function()
+	vim.g.augment_disable_tab_mapping = true
+	add({
+		source = "augmentcode/augment.vim",
+	})
+end)
 -- Tree-sitter (advanced syntax parsing, highlighting, textobjects) ===========
 now(function()
 	add({
@@ -140,8 +146,8 @@ now(function()
 		continuous = 1,
 		executable = "latexmk",
 		options = {
-      "-outdir=build",
-      "-auxdir=build",
+			"-outdir=build",
+			"-auxdir=build",
 			"-lualatex",
 			"-interaction=nonstopmode",
 			"-synctex=1",
