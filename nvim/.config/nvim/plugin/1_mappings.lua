@@ -48,6 +48,7 @@ _G.Config.leader_group_clues = {
   { mode = 'n', keys = '<Leader>s', desc = '+Thesis' },
   { mode = 'n', keys = '<Leader>t', desc = '+Terminal' },
   { mode = 'n', keys = '<Leader>v', desc = '+Visits' },
+  { mode = 'n', keys = '<Leader>p', desc = '+Augment' },
 
   { mode = 'x', keys = '<Leader>l', desc = '+LSP' },
 }
