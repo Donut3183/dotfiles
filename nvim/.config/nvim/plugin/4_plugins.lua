@@ -135,10 +135,13 @@ now(function()
 	vim.g.vimtex_view_general_viewer = "zathura"
 	vim.g.vimtex_compiler_method = "latexmk"
 	vim.g.vimtex_compiler_latexmk = {
-		out_dir = "build",
+		-- out_dir = "build",
+		-- aux_dir = "build",
 		continuous = 1,
 		executable = "latexmk",
 		options = {
+      "-outdir=build",
+      "-auxdir=build",
 			"-lualatex",
 			"-interaction=nonstopmode",
 			"-synctex=1",
