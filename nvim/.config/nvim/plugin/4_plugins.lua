@@ -6,6 +6,19 @@ now(function()
 	add({
 		source = "augmentcode/augment.vim",
 	})
+
+	local home = os.getenv("HOME")
+
+	-- Define your workspace folders here
+	workspace_folders = {
+		home .. "/DVA218/RTP",
+		home .. "/.config/nvim",
+		home .. "/dotfiles/nvim/.config/nvim",
+    home .. "/DVA502/Thesis",
+	}
+
+	-- Set the global variable used by augment.vim
+	vim.g.augment_workspace_folders = workspace_folders
 end)
 -- Tree-sitter (advanced syntax parsing, highlighting, textobjects) ===========
 now(function()
