@@ -160,8 +160,8 @@ now(function()
 	}
 
 	vim.g.vimtex_compiler_latexmk = {
-		out_dir = "build",
-		aux_dir = "build",
+		out_dir = "",
+		aux_dir = "",
 		callback = 1,
 		continuous = 1,
 		executable = "latexmk",
@@ -173,7 +173,6 @@ now(function()
 			"-shell-escape",
 			"-interaction=nonstopmode",
 			"-bibtex",
-      "-out2dir=final"
 		},
 	}
 
@@ -189,6 +188,20 @@ now(function()
 	local home = vim.fn.expand("~")
 	local lspconfig = require("lspconfig")
 	lspconfig.ltex.setup({
+		-- launch ltex-ls via bash, pipe ALL output into sed,
+		-- delete the two “no common words file” warnings,
+		-- and leave the rest (the JSON-RPC traffic) intact
+		cmd = {
+			"bash",
+			"-c",
+			table.concat({
+				"exec ltex-ls --server-type=standardStream",
+				"2>&1", -- merge stderr into stdout
+				"| sed -E",
+				[[ '/WARN: no common words file defined for Japanese/d' ]],
+				[[ '/WARN: no common words file defined for Khmer/d' ]],
+			}, " "),
+		},
 		filetypes = { "tex", "markdown", "md", "plaintex", "bib", "latex" },
 		on_attach = function(client, bufnr)
 			vim.bo[bufnr].omnifunc = "v:lua.MiniCompletion.completefunc_lsp"
@@ -196,27 +209,18 @@ now(function()
 				load_lang = { "en-US" },
 			})
 		end,
-		handlers = {
-			-- swallow all progress notifications
-			["$/progress"] = function() end,
-		},
 		settings = {
 			ltex = {
 				enabled = { "latex", "tex", "markdown", "md", "bib", "plaintex" },
 				language = "en-US",
-				motherTongue = "en-US",
 				additionalRules = {
 					enablePickyRules = true,
 					languageModel = { home .. "/.ngrams/" },
 				},
-				dictionary = {
-					["ja-JP"] = {}, -- Empty dictionary to prevent error for Japanese
-					["km-KH"] = {}, -- Empty dictionary to prevent error for Khmer
-				},
-				disabledRules = {
-					["ja-JP"] = {},
-					["km-KH"] = {},
-				},
+			},
+			handlers = {
+				-- swallow all progress notifications
+				["$/progress"] = function() end,
 			},
 		},
 	})
@@ -342,19 +346,24 @@ now(function()
 	})
 	local home = vim.fn.expand("~")
 	local vim_path = vim.fn.stdpath("config")
-	require("chatgpt").setup({
+	local chatgpt = require("chatgpt")
+	chatgpt.setup({
 		api_key_cmd = "gpg --decrypt " .. home .. "/Documents/openai_api_key.txt.gpg",
 		actions_paths = { vim_path .. "/misc/configs/actions.json" },
 		openai_params = {
-			model = "gpt-4-1106-preview",
+			model = "gpt-4.1-mini-2025-04-14",
+			max_completion_tokens = 4095,
 			frequency_penalty = 0,
 			presence_penalty = 0,
-			max_tokens = 4095,
-			temperature = 0.2,
-			top_p = 0.1,
+			temperature = 1.0,
+			top_p = 1.0,
 			n = 1,
 		},
+		debug = true,
 	})
+	-- now remove the leftover default max_tokens:
+	local cfg = require("chatgpt.config").options
+	cfg.openai_params.max_tokens = nil
 end)
 
 now(function()

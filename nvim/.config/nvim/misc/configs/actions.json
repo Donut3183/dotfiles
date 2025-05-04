@@ -6,111 +6,109 @@
       "strategy": "replace",
       "params": {
         "model": "gpt-3.5-turbo",
-        "stop": [
-          "```"
-        ]
+        "stop": ["```"]
       }
     }
   },
 
-"paraphrase": {
-  "type": "chat",
-  "opts": {
-    "template": "Paraphrase the following academic text while enhancing clarity, conciseness, and logical flow, ensuring scientific precision. Maintain formal tone, LaTeX formatting, and technical accuracy, and improve coherence while preserving the intended meaning. Adhere to IEEE style and the Chicago Manual of Style, with spelling conforming to the Merriam-Webster dictionary in {{lang}}. Respond with corrected text only:\n\n{{input}}",
-    "strategy": "edit",
-    "params": {
-      "model": "gpt-4o-mini"
+  "paraphrase": {
+    "type": "chat",
+    "opts": {
+      "template": "Paraphrase the following academic text while enhancing clarity, conciseness, and logical flow, ensuring scientific precision. Maintain formal tone, LaTeX formatting, and technical accuracy, and improve coherence while preserving the intended meaning. Adhere to IEEE style and the Chicago Manual of Style, with spelling conforming to the Merriam-Webster dictionary in {{lang}}. Respond with corrected text only:\n\n{{input}}",
+      "strategy": "edit",
+      "params": {
+        "model": "gpt-4o-mini"
+      }
+    },
+    "args": {
+      "lang": {
+        "type": "string",
+        "optional": "true",
+        "default": "english"
+      }
     }
   },
-  "args": {
-    "lang": {
-      "type": "string",
-      "optional": "true",
-      "default": "english"
-    }
-  }
-},
 
-"grammar_correction": {
-  "type": "chat",
-  "opts": {
-    "template": "Revise the following text for grammatical accuracy, sentence structure, and formal tone while improving readability. Ensure alignment with IEEE style and the Chicago Manual of Style, with spelling conforming to the Merriam-Webster dictionary in {{lang}}. Maintain LaTeX formatting and scientific precision. Keep acronyms in its latex format, do not change the latex math environments, do not remove any percentage symbols. Respond with corrected text only:\n\n{{input}}",
-    "strategy": "edit",
-    "params": {
-      "model": "gpt-4o-mini"
+  "grammar_correction": {
+    "type": "chat",
+    "opts": {
+      "template": "Revise the following text for grammatical accuracy, sentence structure, and formal tone while improving readability. Ensure alignment with IEEE style and the Chicago Manual of Style, with spelling conforming to the Merriam-Webster dictionary in {{lang}}. Maintain LaTeX formatting and scientific precision. Keep acronyms in its latex format, do not change the latex math environments, do not remove any percentage symbols. Respond with corrected text only:\n\n{{input}}",
+      "strategy": "edit",
+      "params": {
+        "model": "o4-mini-2025-04-16"
+      }
+    },
+    "args": {
+      "lang": {
+        "type": "string",
+        "optional": "true",
+        "default": "english"
+      }
     }
   },
-  "args": {
-    "lang": {
-      "type": "string",
-      "optional": "true",
-      "default": "english"
-    }
-  }
-},
 
-"academic_style": {
-  "type": "chat",
-  "opts": {
-    "template": "Enhance the following text for academic writing, ensuring formal tone, logical structure, and coherence. Improve transitions between ideas and ensure clarity in complex sentences. Adhere to IEEE style and the Chicago Manual of Style, with spelling conforming to the Merriam-Webster dictionary in {{lang}}. Maintain LaTeX formatting and respond with corrected text only:\n\n{{input}}",
-    "strategy": "edit",
-    "params": {
-      "model": "gpt-4o-mini"
+  "academic_style": {
+    "type": "chat",
+    "opts": {
+      "template": "Enhance the following text for academic writing, ensuring formal tone, logical structure, and coherence. Improve transitions between ideas and ensure clarity in complex sentences. Adhere to IEEE style and the Chicago Manual of Style, with spelling conforming to the Merriam-Webster dictionary in {{lang}}. Maintain LaTeX formatting and respond with corrected text only:\n\n{{input}}",
+      "strategy": "edit",
+      "params": {
+        "model": "gpt-4o-mini"
+      }
+    },
+    "args": {
+      "lang": {
+        "type": "string",
+        "optional": "true",
+        "default": "english"
+      }
     }
   },
-  "args": {
-    "lang": {
-      "type": "string",
-      "optional": "true",
-      "default": "english"
-    }
-  }
-},
-"citation_format": {
-  "type": "chat",
-  "opts": {
-    "template": "Format the citations in the following text according to the {{style}} citation format. Ensure correctness in LaTeX syntax for references and bibliography entries. Respond with the corrected text only:\n\n{{input}}",
-    "strategy": "edit",
-    "params": {
-      "model": "gpt-4o-mini"
+  "citation_format": {
+    "type": "chat",
+    "opts": {
+      "template": "Format the citations in the following text according to the {{style}} citation format. Ensure correctness in LaTeX syntax for references and bibliography entries. Respond with the corrected text only:\n\n{{input}}",
+      "strategy": "edit",
+      "params": {
+        "model": "gpt-4o-mini"
+      }
+    },
+    "args": {
+      "style": {
+        "type": "string",
+        "optional": "false",
+        "default": "IEEE"
+      }
     }
   },
-  "args": {
-    "style": {
-      "type": "string",
-      "optional": "false",
-      "default": "IEEE"
+  "math_check": {
+    "type": "chat",
+    "opts": {
+      "template": "Check the LaTeX math expressions in the following text for correctness. Ensure proper syntax, clarity, and typographical consistency while preserving scientific accuracy. Respond with the corrected text only:\n\n{{input}}",
+      "strategy": "edit",
+      "params": {
+        "model": "gpt-4o-mini"
+      }
     }
-  }
-},
-"math_check": {
-  "type": "chat",
-  "opts": {
-    "template": "Check the LaTeX math expressions in the following text for correctness. Ensure proper syntax, clarity, and typographical consistency while preserving scientific accuracy. Respond with the corrected text only:\n\n{{input}}",
-    "strategy": "edit",
-    "params": {
-      "model": "gpt-4o-mini"
-    }
-  }
-},
+  },
 
-"reduce_passive_voice": {
-  "type": "chat",
-  "opts": {
-    "template": "Rewrite the following text to reduce passive voice while maintaining an academic and scientific tone. Ensure clarity, formality, and adherence to IEEE style and the Chicago Manual of Style. Preserve LaTeX formatting. Respond with the revised text only:\n\n{{input}}",
-    "strategy": "edit",
-    "params": {
-      "model": "gpt-4o-mini"
+  "reduce_passive_voice": {
+    "type": "chat",
+    "opts": {
+      "template": "Rewrite the following text to reduce passive voice while maintaining an academic and scientific tone. Ensure clarity, formality, and adherence to IEEE style and the Chicago Manual of Style. Preserve LaTeX formatting. Respond with the revised text only:\n\n{{input}}",
+      "strategy": "edit",
+      "params": {
+        "model": "gpt-4o-mini"
+      }
     }
-  }
-},
+  },
   "translate": {
     "type": "chat",
     "opts": {
       "template": "Translate this into {{lang}}:\n\n{{input}}",
       "strategy": "replace",
       "params": {
-        "model": "gpt-3.5-turbo",
+        "model": "o4-mini-2025-04-16",
         "temperature": 0.3
       }
     },
@@ -128,7 +126,7 @@
       "template": "Extract the main keywords from the following text.\n\n{{input}}",
       "strategy": "replace",
       "params": {
-        "model": "gpt-3.5-turbo",
+        "model": "o4-mini-2025-04-16",
         "temperature": 0.5,
         "frequency_penalty": 0.8
       }
@@ -141,9 +139,7 @@
       "strategy": "edit",
       "params": {
         "model": "gpt-3.5-turbo",
-        "stop": [
-          "```"
-        ]
+        "stop": ["```"]
       }
     }
   },
@@ -154,9 +150,7 @@
       "strategy": "append",
       "params": {
         "model": "gpt-3.5-turbo",
-        "stop": [
-          "```"
-        ]
+        "stop": ["```"]
       }
     }
   },
@@ -167,9 +161,7 @@
       "strategy": "edit",
       "params": {
         "model": "gpt-3.5-turbo",
-        "stop": [
-          "```"
-        ]
+        "stop": ["```"]
       }
     }
   },
@@ -190,9 +182,7 @@
       "strategy": "edit",
       "params": {
         "model": "gpt-3.5-turbo",
-        "stop": [
-          "```"
-        ]
+        "stop": ["```"]
       }
     }
   },
@@ -204,9 +194,7 @@
       "strategy": "display",
       "params": {
         "model": "gpt-3.5-turbo",
-        "stop": [
-          "```"
-        ]
+        "stop": ["```"]
       }
     }
   },
@@ -264,4 +252,3 @@
     }
   }
 }
-
