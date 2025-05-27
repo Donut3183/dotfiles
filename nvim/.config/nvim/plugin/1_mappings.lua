@@ -22,8 +22,11 @@ vim.keymap.set("n", "<S-Tab>", "<Cmd>bprevious<CR>", { desc = "Previous Buffer" 
 -- Normal mode: Ctrl‑Tab → new tab
 vim.keymap.set("n", "<C-t>", "<Cmd>tabnew<CR>", { desc = "New Tab" })
 -- Rebind gt / gT to switch tabs, with descriptions
-vim.keymap.set("n", "gt", "<Cmd>tabnext<CR>", { desc = "Next Tab" })
-vim.keymap.set("n", "gT", "<Cmd>tabprevious<CR>", { desc = "Previous Tab" })
+-- vim.keymap.set("n", "gt", "<Cmd>tabnext<Count><CR>", { desc = "Next Tab" })
+-- vim.keymap.set("n", "gT", "<Cmd>tabprevious<Count><CR>", { desc = "Previous Tab" })
+
+-- Augment inline suggestion acceptance
+vim.keymap.set("i", "<C-i>", "<Cmd>call augment#Accept()<CR>", { desc = "Accept Augment inline suggestion" })
 
 -- Paste before/after linewise
 vim.keymap.set({ "n", "x" }, "[p", '<Cmd>exe "put! " . v:register<CR>', { desc = "Paste Above" })
@@ -48,7 +51,7 @@ _G.Config.leader_group_clues = {
   { mode = 'n', keys = '<Leader>s', desc = '+Thesis' },
   { mode = 'n', keys = '<Leader>t', desc = '+Terminal' },
   { mode = 'n', keys = '<Leader>v', desc = '+Visits' },
-  -- { mode = 'n', keys = '<Leader>p', desc = '+Augment' },
+  { mode = 'n', keys = '<Leader>p', desc = '+Augment' },
 
   { mode = 'x', keys = '<Leader>l', desc = '+LSP' },
 }
@@ -65,24 +68,25 @@ local xmap_leader = function(suffix, rhs, desc, opts)
   vim.keymap.set('x', '<Leader>' .. suffix, rhs, opts)
 end
 
--- -- p is for Augment ===========================================================
--- -- Plugin status
--- nmap_leader('ps', '<cmd>Augment status<CR>',                'Current status of the plugin')
---
--- -- Authentication
--- nmap_leader('psi', '<cmd>Augment signin<CR>',               'Start the sign in flow')
--- nmap_leader('pso', '<cmd>Augment signout<CR>',              'Sign out of Augment')
---
--- -- Logs
--- nmap_leader('pl', '<cmd>Augment log<CR>',                   'Plugin log')
---
--- -- Chat group header
--- nmap_leader('pc', '<Nop>',                                  '+Chat')
---
--- -- Chat commands
--- nmap_leader('pcc', '<cmd>Augment chat<CR>',                 'Send a chat message to Augment AI')
--- nmap_leader('pcn', '<cmd>Augment chat-new<CR>',             'Start a new chat conversation')
--- nmap_leader('pt', '<cmd>Augment chat-toggle<CR>',           'Toggle the chat panel visibility')
+-- p is for Augment ===========================================================
+-- Plugin status
+nmap_leader('ps', '<cmd>Augment status<CR>',                'Current status of the plugin')
+
+-- Authentication
+nmap_leader('psi', '<cmd>Augment signin<CR>',               'Start the sign in flow')
+nmap_leader('pso', '<cmd>Augment signout<CR>',              'Sign out of Augment')
+
+-- Logs
+nmap_leader('pl', '<cmd>Augment log<CR>',                   'Plugin log')
+
+-- Chat group header
+nmap_leader('pc', '<Nop>',                                  '+Chat')
+
+-- Chat commands
+nmap_leader('pcc', '<cmd>Augment chat<CR>',                 'Send a chat message to Augment AI')
+nmap_leader('pcn', '<cmd>Augment chat-new<CR>',             'Start a new chat conversation')
+nmap_leader('pt', '<cmd>Augment chat-toggle<CR>',           'Toggle the chat panel visibility')
+
 -- s is for misc ==============================================================
 nmap_leader('sl', '^v$h<cmd>ChatGPTRun grammar_correction<CR>', 'Select paragraph and correct grammar')
 xmap_leader('sl', '^v$h<cmd>ChatGPTRun grammar_correction<CR>', 'Select paragraph and correct grammar')
@@ -263,6 +267,9 @@ xmap_leader('rx', '"+y :T reprex::reprex()<CR>', 'Reprex selection')
 -- t is for 'terminal' (uses 'neoterm') and 'minitest'
 nmap_leader('tT', '<Cmd>belowright Tnew<CR>', 'Terminal (horizontal)')
 nmap_leader('tt', '<Cmd>vertical Tnew<CR>', 'Terminal (vertical)')
+
+nmap_leader("tc", vim.cmd.tabclose, "Close current tab")
+nmap_leader("to", vim.cmd.tabonly, "Close other tabs")
 
 -- v is for 'visits'
 nmap_leader('vv', '<Cmd>lua MiniVisits.add_label("core")<CR>', 'Add "core" label')

@@ -312,6 +312,7 @@ now(function()
 		plaintex = tex_patterns,
 		markdown_inline = tex_patterns,
 		c = { "/c/*.json", "/c.json" },
+		h = { "/c/*.json", "/c.json" },
 		cpp = { "/cpp/*.json" },
 		lua = { "/lua/*.json", "/lua.json" },
 		python = { "/python/*.json" },

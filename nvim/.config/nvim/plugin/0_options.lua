@@ -75,10 +75,11 @@ o.formatoptions = "rqnl1j" -- Improve comment editing
 o.ignorecase = true -- Ignore case when searching (use `\C` to force not doing that)
 o.incsearch = true -- Show search results while typing
 o.infercase = true -- Infer letter cases for a richer built-in keyword completion
-o.shiftwidth = 2 -- Use this number of spaces for indentation
+o.shiftwidth = 4 -- Use this number of spaces for indentation
 o.smartcase = true -- Don't ignore case when searching if pattern has upper case
 o.smartindent = true -- Make indenting smart
-o.tabstop = 2 -- Insert 2 spaces for a tab
+o.tabstop = 4 -- Insert 2 spaces for a tab
+o.softtabstop = 4 -- Insert 2 spaces for a tab
 o.virtualedit = "block" -- Allow going past the end of line in visual block mode
 
 o.iskeyword = "@,48-57,_,192-255,-" -- Treat dash separated words as a word text object

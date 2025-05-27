@@ -1,25 +1,62 @@
 local add, now, later = MiniDeps.add, MiniDeps.now, MiniDeps.later
 local now_if_args = vim.fn.argc(-1) > 0 and now or later
 
--- now(function()
--- 	vim.g.augment_disable_tab_mapping = true
--- 	add({
--- 		source = "augmentcode/augment.vim",
--- 	})
---
--- 	local home = os.getenv("HOME")
---
--- 	-- Define your workspace folders here
--- 	workspace_folders = {
--- 		home .. "/DVA218/RTP",
--- 		home .. "/.config/nvim",
--- 		home .. "/dotfiles/nvim/.config/nvim",
--- 		home .. "/DVA502/Thesis",
--- 	}
---
--- 	-- Set the global variable used by augment.vim
--- 	vim.g.augment_workspace_folders = workspace_folders
--- end)
+now(function()
+	vim.g.augment_disable_tab_mapping = true
+	add({
+		source = "augmentcode/augment.vim",
+	})
+
+	local home = os.getenv("HOME")
+
+	-- Define your workspace folders here
+	workspace_folders = {
+		home .. "/DVA218/rtp_demo",
+		home .. "/.config/nvim",
+		home .. "/dotfiles/nvim/.config/nvim",
+		home .. "/DVA502/Thesis",
+	}
+
+	-- Set the global variable used by augment.vim
+	vim.g.augment_workspace_folders = workspace_folders
+end)
+
+now(function()
+	add({
+		source = "https://gitlab.com/itaranto/preview.nvim",
+	})
+	require("preview").setup({
+		previewers_by_ft = {
+			markdown = {
+				name = "pandoc_wkhtmltopdf",
+				renderer = { type = "command", opts = { cmd = { "zathura" } } },
+			},
+			plantuml = {
+				name = "plantuml_svg",
+				renderer = { type = "command", opts = { cmd = { "feh" } } },
+			},
+			groff = {
+				name = "groff_ms_pdf",
+				renderer = { type = "command", opts = { cmd = { "zathura" } } },
+			},
+		},
+		previewers = {
+			plantuml_svg = {
+				args = { "-pipe", "-tpng" },
+			},
+		},
+
+		render_on_write = true,
+	})
+	-- Recognize .puml files as PlantUML
+	vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+		pattern = "*.puml",
+		callback = function()
+			vim.bo.filetype = "plantuml"
+		end,
+		desc = "Set filetype=plantuml for .puml files",
+	})
+end)
 -- Tree-sitter (advanced syntax parsing, highlighting, textobjects) ===========
 now(function()
 	add({
