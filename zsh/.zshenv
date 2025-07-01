@@ -6,3 +6,4 @@ export ANKI_WAYLAND=1
 export OPENAI_API_KEY=$(gpg --decrypt ~/Documents/openai_api_key.txt.gpg 2>/dev/null | tr -d '\n')
 export GEMINI_API_KEY=$(gpg --decrypt "$HOME/Documents/gemini_api_key.txt.gpg" 2>/dev/null | tr -d '\n')
 # export TERM=xterm-256color
+. "$HOME/.cargo/env"

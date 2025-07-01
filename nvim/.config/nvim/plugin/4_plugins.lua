@@ -180,7 +180,7 @@ now(function()
 	lspconfig.clangd.setup({ on_attach = custom_on_attach })
 
 	-- Grammar
-	lspconfig.harper_ls.setup({ on_attach = custom_on_attach })
+	-- lspconfig.harper_ls.setup({ on_attach = custom_on_attach })
 end)
 
 -- 1) Clone only
@@ -216,7 +216,7 @@ now(function()
 	-- Enable logging for debugging
 	vim.g.vimtex_log_verbose = 1
 
-	vim.g.vimtex_quickfix_enabled = 1
+	vim.g.vimtex_quickfix_enabled = 0
 	vim.g.vimtex_quickfix_autoclose_after_keystrokes = 1
 end)
 

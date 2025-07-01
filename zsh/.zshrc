@@ -75,3 +75,4 @@ source "$HOME/.zsh_aliases"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+export PICO_SDK_PATH=~/pico-workspace/pico-sdk
