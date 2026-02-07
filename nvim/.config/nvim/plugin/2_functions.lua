@@ -76,9 +76,16 @@ Config.align_boxed_comment = function()
 end
 
 Config.search_manpages = function()
-	local word = vim.fn.expand("<cword>")
-	print(word)
-	vim.cmd("Man " .. word)
+    local word = vim.fn.expand("<cword>")
+    local ft = vim.bo.filetype
+
+    if (ft == "cpp" or ft == "c") and vim.fn.executable("cppman") == 1 then
+        vim.cmd("T cppman " .. word)
+        return
+    end
+
+    -- Annars kör vanlig Man
+    vim.cmd("vertical Man " .. word)
 end
 -- Create listed scratch buffer and focus on it
 Config.new_scratch_buffer = function()
@@ -403,3 +410,19 @@ end
 Config.luals_unique_definition = function()
 	return vim.lsp.buf.definition({ on_list = on_list })
 end
+
+Config.cppman_neoterm = function()
+    local word = vim.fn.expand("<cword>")
+    vim.cmd("T cppman " .. word)
+end
+
+-- Använd cppman som sökverktyg för C++ och C
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "cpp", "c" },
+    callback = function()
+        -- Om cppman finns installerat, sätt det som lokalt sökverktyg
+        if vim.fn.executable("cppman") == 1 then
+            vim.keymap.set('n', 'K', Config.cppman_neoterm, { buffer = true, desc = "Cppman (neoterm)" })
+        end
+    end,
+})

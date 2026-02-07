@@ -83,8 +83,6 @@ end)
 later(function()
 	require("mini.align").setup()
 end)
--- Mini.animate
--- later(function() require('mini.animate').setup({ scroll = { enable = false } }) end)
 -- Mini.bracketed
 later(function()
 	require("mini.bracketed").setup()
@@ -229,13 +227,13 @@ later(function()
 end)
 
 -- Mini.jump2d
-later(function()
-	local jump2d = require("mini.jump2d")
-	jump2d.setup({
-		spotter = jump2d.gen_pattern_spotter("[^%s%p]+"),
-		view = { dim = true, n_steps_ahead = 2 },
-	})
-end)
+-- later(function()
+-- 	local jump2d = require("mini.jump2d")
+-- 	jump2d.setup({
+-- 		spotter = jump2d.gen_spotter("[^%s%p]+"),
+-- 		view = { dim = true, n_steps_ahead = 2 },
+-- 	})
+-- end)
 
 -- MIni.map
 later(function()

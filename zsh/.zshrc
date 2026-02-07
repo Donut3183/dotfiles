@@ -4,6 +4,10 @@ if [ ! -d "$ZINIT_HOME" ]; then
    mkdir -p "$(dirname $ZINIT_HOME)"
    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
+
+# Load completions
+autoload -Uz compinit && compinit
+
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
@@ -16,20 +20,13 @@ zinit light Aloxaf/fzf-tab
 # Add in snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-# zinit snippet OMZP::archlinux
-# zinit snippet OMZP::aws
-# zinit snippet OMZP::kubectl
-# zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
-
-# Load completions
-autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 # Keybindings
-bindkey -e
+bindkey -e # Emacs mode
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
@@ -62,17 +59,18 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias c='clear'
 
-export PATH=/usr/local/bin:$PATH >> ~/.zshrc
-
 # TeX Live 2025 paths
 export PATH="/usr/local/texlive/2025/bin/x86_64-linux:$PATH"
 export MANPATH="/usr/local/texlive/2025/texmf-dist/doc/man:$MANPATH"
 export INFOPATH="/usr/local/texlive/2025/texmf-dist/doc/info:$INFOPATH"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source "$HOME/.zsh_aliases"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-export PICO_SDK_PATH=~/pico-workspace/pico-sdk
+# export PICO_SDK_PATH=~/pico-workspace/pico-sdk
+

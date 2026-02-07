@@ -1,3 +1,4 @@
+clipboard-paste-protection = false
 keybind = ctrl+enter=unbind
 keybind = ctrl+y=unbind
 keybind = ctrl+o=unbind
