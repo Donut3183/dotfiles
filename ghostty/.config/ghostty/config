@@ -13,4 +13,5 @@ keybind = ctrl+r=unbind
 keybind = ctrl+s=unbind
 keybind = ctrl+i=unbind
 keybind = ctrl+d=unbind
+keybind = ctrl+l=text: clean\r
 command = TERM=xterm-256color /usr/bin/zsh
