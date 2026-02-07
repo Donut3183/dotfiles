@@ -104,6 +104,7 @@ o.spelloptions = "camel" -- Treat parts of camelCase words as seprate words
 o.dictionary = vim.fn.stdpath("config") .. "/misc/dict/english.txt" -- Use specific dictionaries
 
 -- Folds ======================================================================
+o.foldenable = false;
 o.foldmethod = "indent" -- Set 'indent' folding method
 o.foldlevel = 1 -- Display all folds except top ones
 o.foldnestmax = 10 -- Create folds only for some number of nested levels

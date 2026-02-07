@@ -6,6 +6,7 @@ vim.keymap.set("t", "<C-h>", [[<C-\><C-N><C-w>h]])
 vim.keymap.set("t", "<C-k>", [[<C-\><C-N><C-w>k]])
 vim.keymap.set("t", "<C-j>", [[<C-\><C-N><C-w>j]])
 vim.keymap.set("t", "<C-l>", [[<C-\><C-N><C-w>l]])
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { desc = "Lämna terminal-mode" })
 
 -- Disable space in normal mode
 vim.keymap.set("n", "<Space>", "<Nop>", { silent = true })
@@ -25,9 +26,6 @@ vim.keymap.set("n", "<C-t>", "<Cmd>tabnew<CR>", { desc = "New Tab" })
 -- vim.keymap.set("n", "gt", "<Cmd>tabnext<Count><CR>", { desc = "Next Tab" })
 -- vim.keymap.set("n", "gT", "<Cmd>tabprevious<Count><CR>", { desc = "Previous Tab" })
 
--- Augment inline suggestion acceptance
-vim.keymap.set("i", "<C-i>", "<Cmd>call augment#Accept()<CR>", { desc = "Accept Augment inline suggestion" })
-
 -- Paste before/after linewise
 vim.keymap.set({ "n", "x" }, "[p", '<Cmd>exe "put! " . v:register<CR>', { desc = "Paste Above" })
 vim.keymap.set({ "n", "x" }, "]p", '<Cmd>exe "put "  . v:register<CR>', { desc = "Paste Below" })
@@ -38,7 +36,6 @@ vim.keymap.set({ "n", "x" }, "]p", '<Cmd>exe "put "  . v:register<CR>', { desc =
 -- Create global tables with information about clue groups in certain modes
 -- Structure of tables is taken to be compatible with 'mini.clue'.
 _G.Config.leader_group_clues = {
-  { mode = 'n', keys = '<Leader>a', desc = '+ChatGPT' },
   { mode = 'n', keys = '<Leader>b', desc = '+Buffer' },
   { mode = 'n', keys = '<Leader>c', desc = '+Vimtex' },
   { mode = 'n', keys = '<Leader>d', desc = '+Doc/Search' },
@@ -51,8 +48,6 @@ _G.Config.leader_group_clues = {
   { mode = 'n', keys = '<Leader>s', desc = '+Thesis' },
   { mode = 'n', keys = '<Leader>t', desc = '+Terminal' },
   { mode = 'n', keys = '<Leader>v', desc = '+Visits' },
-  { mode = 'n', keys = '<Leader>p', desc = '+Augment' },
-
   { mode = 'x', keys = '<Leader>l', desc = '+LSP' },
 }
 
@@ -66,56 +61,6 @@ local xmap_leader = function(suffix, rhs, desc, opts)
   opts = opts or {}
   opts.desc = desc
   vim.keymap.set('x', '<Leader>' .. suffix, rhs, opts)
-end
-
--- p is for Augment ===========================================================
--- Plugin status
-nmap_leader('ps', '<cmd>Augment status<CR>',                'Current status of the plugin')
-
--- Authentication
-nmap_leader('psi', '<cmd>Augment signin<CR>',               'Start the sign in flow')
-nmap_leader('pso', '<cmd>Augment signout<CR>',              'Sign out of Augment')
-
--- Logs
-nmap_leader('pl', '<cmd>Augment log<CR>',                   'Plugin log')
-
--- Chat group header
-nmap_leader('pc', '<Nop>',                                  '+Chat')
-
--- Chat commands
-nmap_leader('pcc', '<cmd>Augment chat<CR>',                 'Send a chat message to Augment AI')
-nmap_leader('pcn', '<cmd>Augment chat-new<CR>',             'Start a new chat conversation')
-nmap_leader('pt', '<cmd>Augment chat-toggle<CR>',           'Toggle the chat panel visibility')
-
--- s is for misc ==============================================================
-nmap_leader('sl', '^v$h<cmd>ChatGPTRun grammar_correction<CR>', 'Select paragraph and correct grammar')
-xmap_leader('sl', '^v$h<cmd>ChatGPTRun grammar_correction<CR>', 'Select paragraph and correct grammar')
-xmap_leader("sa", "<Cmd>lua Config.align_boxed_comment()<CR>", "Align all '*' in a boxed comment")
-
--- a is for 'ChatGPT' =======================================================
--- single‑mode mapping for launching ChatGPT
-nmap_leader('ac', '<Cmd>ChatGPT<CR>', 'ChatGPT')
-
--- dual‑mode (normal+visual) ChatGPT commands
-do
-  local chat_cmds = {
-    { 'ae',  '<cmd>ChatGPTEditWithInstruction<CR>',      'Edit with instruction' },
-    { 'ag',  '<cmd>ChatGPTRun grammar_correction<CR>',   'Grammar Correction' },
-    { 'ak',  '<cmd>ChatGPTRun keywords<CR>',             'Keywords' },
-    { 'ar',  '<cmd>ChatGPTRun reduce_passive_voice<CR>', 'Reduce Passive Voice' },
-    { 'ai',  '<cmd>ChatGPTRun citation_format<CR>',      'Citation Format' },
-    { 'ame', '<cmd>ChatGPTRun math_check<CR>',           'Math Check' },
-    { 'as',  '<cmd>ChatGPTRun summarize<CR>',            'Summarize' },
-    { 'at',  '<cmd>ChatGPTRun academic_style<CR>',       'Academic Style' },
-    { 'ap',  '<cmd>ChatGPTRun paraphrase<CR>',           'Paraphrase' },
-    { 'ax',  '<cmd>ChatGPTRun explain_code<CR>',         'Explain Code' },
-  }
-
-  for _, cmd in ipairs(chat_cmds) do
-    local suffix, rhs, desc = unpack(cmd)
-    nmap_leader(suffix, rhs, desc)
-    xmap_leader(suffix, rhs, desc)
-  end
 end
 
 -- b is for 'buffer'
@@ -221,22 +166,44 @@ xmap_leader('gs', '<Cmd>lua MiniGit.show_at_cursor()<CR>', 'Show at selection')
 
 
 -- l is for 'LSP' (Language Server Protocol)
+
 local formatting_cmd = '<Cmd>lua require("conform").format({ lsp_fallback = true })<CR>'
 nmap_leader('la', '<Cmd>lua vim.lsp.buf.code_action()<CR>', 'Actions')
-nmap_leader('ld', '<Cmd>lua vim.diagnostic.open_float()<CR>', 'Diagnostics popup')
+nmap_leader('ld', '<Cmd>lua vim.lsp.buf.definition()<CR>', 'Definition (Source)') -- Ändrad från popup
+nmap_leader('lD', '<Cmd>lua vim.diagnostic.open_float()<CR>', 'Diagnostics popup') -- Flyttad till stor bokstav
 nmap_leader('lf', formatting_cmd, 'Format')
 nmap_leader('li', '<Cmd>lua vim.lsp.buf.hover()<CR>', 'Information')
 nmap_leader('lj', '<Cmd>lua vim.diagnostic.goto_next()<CR>', 'Next diagnostic')
 nmap_leader('lk', '<Cmd>lua vim.diagnostic.goto_prev()<CR>', 'Prev diagnostic')
 nmap_leader('lR', '<Cmd>lua vim.lsp.buf.references()<CR>', 'References')
 nmap_leader('lr', '<Cmd>lua vim.lsp.buf.rename()<CR>', 'Rename')
-nmap_leader('ls', '<Cmd>lua vim.lsp.buf.definition()<CR>', 'Source definition')
+nmap_leader('ls', '<Cmd>lua vim.lsp.buf.signature_help()<CR>', 'Signature help') -- ls passar bättre för signature
+nmap_leader('lh', '<Cmd>lua vim.lsp.buf.hover()<CR>', 'Information/Hover')
 nmap_leader('ln', function() require("todo-comments").jump_next() end, "Next todo comment")
 nmap_leader('lp', function() require("todo-comments").jump_prev() end, "Previous todo comment")
 nmap_leader('lq', "<Cmd>TodoQuickFix<CR>", "Todo Quick Fix list")
 nmap_leader('ll', "<Cmd>TodoLocList<CR>", "Todo Location List")
 nmap_leader('lt', "<Cmd>TodoTelescope<CR>", "Todo Telescope")
 xmap_leader('lf', formatting_cmd, 'Format selection')
+nmap_leader('lv', function()
+  local params = vim.lsp.util.make_position_params()
+  vim.lsp.buf_request(0, 'textDocument/definition', params, function(err, result, ctx, config)
+    if err or not result or vim.tbl_isempty(result) then
+      print("Ingen definition hittades")
+      return
+    end
+
+    -- Om vi hittar en definition, öppna split och hoppa
+    vim.cmd('vsplit')
+
+    -- Hantera både enstaka resultat och listor (vissa LSP:er returnerar en lista)
+    if vim.islist(result) then
+      vim.lsp.util.jump_to_location(result[1], "utf-8")
+    else
+      vim.lsp.util.jump_to_location(result, "utf-8")
+    end
+  end)
+end, 'Definition in vertical split (safe)')
 
 -- m is for 'map'
 nmap_leader('mc', '<Cmd>lua MiniMap.close()<CR>', 'Close')

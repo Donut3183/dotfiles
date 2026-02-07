@@ -2,26 +2,6 @@ local add, now, later = MiniDeps.add, MiniDeps.now, MiniDeps.later
 local now_if_args = vim.fn.argc(-1) > 0 and now or later
 
 now(function()
-	vim.g.augment_disable_tab_mapping = true
-	add({
-		source = "augmentcode/augment.vim",
-	})
-
-	local home = os.getenv("HOME")
-
-	-- Define your workspace folders here
-	workspace_folders = {
-		home .. "/DVA218/rtp_demo",
-		home .. "/.config/nvim",
-		home .. "/dotfiles/nvim/.config/nvim",
-		home .. "/DVA502/Thesis",
-	}
-
-	-- Set the global variable used by augment.vim
-	vim.g.augment_workspace_folders = workspace_folders
-end)
-
-now(function()
 	add({
 		source = "https://gitlab.com/itaranto/preview.nvim",
 	})
@@ -94,7 +74,6 @@ now(function()
 		"clangd",
 		"lua_ls",
 		"ltex",
-		"matlab_ls",
 	}
 	require("mason").setup()
 	require("mason-lspconfig").setup({
@@ -114,9 +93,15 @@ later(function()
 			lua = { "stylua" },
 			python = { "black" },
 			c = { "clang-format" },
+			cpp = { "clang-format" },
 			tex = { "latexindent" },
 			markdown = { "prettier" },
 		},
+        formatters = {
+            ["clang-format"] = {
+                prepend_args = { "--style={BasedOnStyle: llvm, BreakBeforeBraces: Allman, IndentWidth: 4}" },
+            },
+        },
 	})
 end)
 
@@ -177,10 +162,7 @@ now(function()
 	})
 
 	-- C/C++
-	lspconfig.clangd.setup({ on_attach = custom_on_attach })
-
-	-- Grammar
-	-- lspconfig.harper_ls.setup({ on_attach = custom_on_attach })
+	-- lspconfig.clangd.setup({ on_attach = custom_on_attach })
 end)
 
 -- 1) Clone only
@@ -367,40 +349,6 @@ later(function()
 		depends = { "nvim-lua/plenary.nvim" },
 	})
 	require("todo-comments").setup()
-end)
-
--- ChatGPT plugin =============================================================
-now(function()
-	add({
-		source = "Donut3183/ChatGPT.nvim",
-		depends = {
-			"MunifTanjim/nui.nvim",
-			"nvim-lua/plenary.nvim",
-			"folke/trouble.nvim", -- optional
-			"nvim-telescope/telescope.nvim",
-			"echasnovski/mini.icons",
-		},
-	})
-	local home = vim.fn.expand("~")
-	local vim_path = vim.fn.stdpath("config")
-	local chatgpt = require("chatgpt")
-	chatgpt.setup({
-		api_key_cmd = "gpg --decrypt " .. home .. "/Documents/openai_api_key.txt.gpg",
-		actions_paths = { vim_path .. "/misc/configs/actions.json" },
-		openai_params = {
-			model = "gpt-4.1-mini-2025-04-14",
-			max_completion_tokens = 4095,
-			frequency_penalty = 0,
-			presence_penalty = 0,
-			temperature = 1.0,
-			top_p = 1.0,
-			n = 1,
-		},
-		debug = true,
-	})
-	-- now remove the leftover default max_tokens:
-	local cfg = require("chatgpt.config").options
-	cfg.openai_params.max_tokens = nil
 end)
 
 now(function()

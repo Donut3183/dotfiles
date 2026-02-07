@@ -25,3 +25,9 @@
 
 # eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 # export SSH_AUTH_SOCK
+
+if [[ $DISPLAY ]]; then
+  xset s off
+  xset s noblank
+  xset -dpms
+fi
