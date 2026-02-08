@@ -1,12 +1,20 @@
 -- Basic mappings =============================================================
 -- NOTE: Most basic mappings come from 'mini.basics'
 
+-- Compile c++
+vim.keymap.set(
+	"n",
+	"<leader>r",
+	":w<CR>:!clang++ -std=c++20 -Wall % -o %:r && ./%:r<CR>",
+	{ desc = "Clang++ Build & Run" }
+)
+-- Spara, bygg och kör med CMake
 -- Shorter version of the most frequent way of going outside of terminal window
 vim.keymap.set("t", "<C-h>", [[<C-\><C-N><C-w>h]])
 vim.keymap.set("t", "<C-k>", [[<C-\><C-N><C-w>k]])
 vim.keymap.set("t", "<C-j>", [[<C-\><C-N><C-w>j]])
 vim.keymap.set("t", "<C-l>", [[<C-\><C-N><C-w>l]])
-vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { desc = "Lämna terminal-mode" })
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Lämna terminal-mode" })
 
 -- Disable space in normal mode
 vim.keymap.set("n", "<Space>", "<Nop>", { silent = true })
@@ -70,6 +78,12 @@ nmap_leader('bD', '<Cmd>lua MiniBufremove.delete(0, true)<CR>', 'Delete!')
 nmap_leader('bs', '<Cmd>lua Config.new_scratch_buffer()<CR>', 'Scratch')
 nmap_leader('bw', '<Cmd>lua MiniBufremove.wipeout()<CR>', 'Wipeout')
 nmap_leader('bW', '<Cmd>lua MiniBufremove.wipeout(0, true)<CR>', 'Wipeout!')
+
+nmap_leader('bb', function()
+  vim.cmd('write')
+  -- Kör build. Om det lyckas (&&), kör programmet.
+  vim.cmd('!cmake --build build && ./build/mitt_program')
+end, 'CMake Build & Run')
 
 -- VimTeX mappings under <Leader>c ===========================================
 -- Info
